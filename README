@@ -10,7 +10,3 @@
 - 版本：目前TLC是2.18版本，TLACC是基于2.18版本编写的。
 - TLACC在TLC之上进行了破坏性变更，目前必须传入`-rounds`参数（只能检测有损同步执行）。
 
-
-<!-- 操作记录
-- 生成dot图：使用参数`-dump dotactionlabels TwoPhase.dot`
-- 生成svg图：`dot -Tsvg -o TwoPhase.svg TwoPhase.dot` -->
