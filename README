@@ -11,6 +11,6 @@
 - TLACC在TLC之上进行了破坏性变更，目前必须传入`-rounds`参数（只能检测有损同步执行）。
 
 
-; 操作记录
-; - 生成dot图：使用参数`-dump dotactionlabels TwoPhase.dot`
-; - 生成svg图：`dot -Tsvg -o TwoPhase.svg TwoPhase.dot`
+<!-- 操作记录
+- 生成dot图：使用参数`-dump dotactionlabels TwoPhase.dot`
+- 生成svg图：`dot -Tsvg -o TwoPhase.svg TwoPhase.dot` -->
