@@ -1,0 +1,707 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 121 and seed 1573729204980068366 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 16879] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-9945689258079764942/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-9945689258079764942/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-9945689258079764942/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-9945689258079764942/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-23 13:32:14)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-23 13:32:14.
+Progress(7) at 2024-03-23 13:32:17: 12,282 states generated (12,282 s/min), 3,741 distinct states found (3,741 ds/min), 2,875 states left on queue.
+Progress(10) at 2024-03-23 13:33:17: 346,246 states generated (333,964 s/min), 79,339 distinct states found (75,598 ds/min), 55,024 states left on queue.
+Progress(10) at 2024-03-23 13:34:17: 708,598 states generated (362,352 s/min), 152,041 distinct states found (72,702 ds/min), 104,115 states left on queue.
+Progress(11) at 2024-03-23 13:35:17: 1,016,601 states generated (308,003 s/min), 224,124 distinct states found (72,083 ds/min), 154,135 states left on queue.
+Progress(11) at 2024-03-23 13:36:17: 1,343,110 states generated (326,509 s/min), 292,210 distinct states found (68,086 ds/min), 201,630 states left on queue.
+Progress(11) at 2024-03-23 13:37:17: 1,664,273 states generated (321,163 s/min), 359,326 distinct states found (67,116 ds/min), 247,209 states left on queue.
+Progress(11) at 2024-03-23 13:38:17: 2,041,963 states generated (377,690 s/min), 429,482 distinct states found (70,156 ds/min), 293,815 states left on queue.
+Progress(11) at 2024-03-23 13:39:17: 2,371,545 states generated (329,582 s/min), 507,513 distinct states found (78,031 ds/min), 351,005 states left on queue.
+Progress(11) at 2024-03-23 13:40:17: 2,699,702 states generated (328,157 s/min), 583,107 distinct states found (75,594 ds/min), 406,216 states left on queue.
+Progress(11) at 2024-03-23 13:41:17: 3,029,083 states generated (329,381 s/min), 653,653 distinct states found (70,546 ds/min), 454,876 states left on queue.
+Progress(12) at 2024-03-23 13:42:17: 3,364,292 states generated (335,209 s/min), 716,126 distinct states found (62,473 ds/min), 493,458 states left on queue.
+Progress(12) at 2024-03-23 13:43:17: 3,650,623 states generated (286,331 s/min), 782,088 distinct states found (65,962 ds/min), 541,775 states left on queue.
+Progress(12) at 2024-03-23 13:44:17: 4,004,365 states generated (353,742 s/min), 855,129 distinct states found (73,041 ds/min), 595,741 states left on queue.
+Progress(12) at 2024-03-23 13:45:17: 4,343,237 states generated (338,872 s/min), 924,397 distinct states found (69,268 ds/min), 645,308 states left on queue.
+Progress(12) at 2024-03-23 13:46:17: 4,633,143 states generated (289,906 s/min), 991,504 distinct states found (67,107 ds/min), 694,259 states left on queue.
+Progress(12) at 2024-03-23 13:47:17: 4,966,891 states generated (333,748 s/min), 1,061,170 distinct states found (69,666 ds/min), 744,499 states left on queue.
+Progress(12) at 2024-03-23 13:48:17: 5,235,343 states generated (268,452 s/min), 1,128,740 distinct states found (67,570 ds/min), 793,837 states left on queue.
+Progress(12) at 2024-03-23 13:49:17: 5,544,921 states generated (309,578 s/min), 1,194,007 distinct states found (65,267 ds/min), 839,786 states left on queue.
+Progress(12) at 2024-03-23 13:50:17: 5,912,682 states generated (367,761 s/min), 1,265,717 distinct states found (71,710 ds/min), 890,492 states left on queue.
+Progress(12) at 2024-03-23 13:51:17: 6,259,156 states generated (346,474 s/min), 1,334,731 distinct states found (69,014 ds/min), 938,892 states left on queue.
+Progress(12) at 2024-03-23 13:52:17: 6,604,291 states generated (345,135 s/min), 1,405,211 distinct states found (70,480 ds/min), 988,452 states left on queue.
+Progress(12) at 2024-03-23 13:53:17: 7,019,284 states generated (414,993 s/min), 1,480,853 distinct states found (75,642 ds/min), 1,038,285 states left on queue.
+Progress(12) at 2024-03-23 13:54:17: 7,375,232 states generated (355,948 s/min), 1,548,668 distinct states found (67,815 ds/min), 1,081,316 states left on queue.
+Progress(12) at 2024-03-23 13:55:17: 7,785,348 states generated (410,116 s/min), 1,619,830 distinct states found (71,162 ds/min), 1,125,689 states left on queue.
+Progress(12) at 2024-03-23 13:56:17: 8,135,414 states generated (350,066 s/min), 1,690,713 distinct states found (70,883 ds/min), 1,174,640 states left on queue.
+Progress(12) at 2024-03-23 13:57:17: 8,502,588 states generated (367,174 s/min), 1,761,185 distinct states found (70,472 ds/min), 1,221,573 states left on queue.
+Progress(12) at 2024-03-23 13:58:17: 8,830,329 states generated (327,741 s/min), 1,821,866 distinct states found (60,681 ds/min), 1,259,484 states left on queue.
+Progress(12) at 2024-03-23 13:59:17: 9,232,110 states generated (401,781 s/min), 1,887,040 distinct states found (65,174 ds/min), 1,298,002 states left on queue.
+Progress(12) at 2024-03-23 14:00:17: 9,577,007 states generated (344,897 s/min), 1,951,959 distinct states found (64,919 ds/min), 1,339,997 states left on queue.
+Progress(12) at 2024-03-23 14:01:17: 9,927,516 states generated (350,509 s/min), 2,017,536 distinct states found (65,577 ds/min), 1,383,374 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 14:02:17)
+Progress(12) at 2024-03-23 14:02:17: 10,249,914 states generated (322,398 s/min), 2,077,902 distinct states found (60,366 ds/min), 1,421,176 states left on queue.
+Progress(12) at 2024-03-23 14:03:17: 10,605,207 states generated (355,293 s/min), 2,140,725 distinct states found (62,823 ds/min), 1,460,693 states left on queue.
+Progress(13) at 2024-03-23 14:04:17: 10,953,610 states generated (348,403 s/min), 2,195,991 distinct states found (55,266 ds/min), 1,490,337 states left on queue.
+Progress(13) at 2024-03-23 14:05:17: 11,256,110 states generated (302,500 s/min), 2,263,266 distinct states found (67,275 ds/min), 1,541,262 states left on queue.
+Progress(13) at 2024-03-23 14:06:17: 11,549,381 states generated (293,271 s/min), 2,330,636 distinct states found (67,370 ds/min), 1,592,051 states left on queue.
+Progress(13) at 2024-03-23 14:07:17: 11,862,475 states generated (313,094 s/min), 2,398,093 distinct states found (67,457 ds/min), 1,642,432 states left on queue.
+Progress(13) at 2024-03-23 14:08:17: 12,142,032 states generated (279,557 s/min), 2,465,317 distinct states found (67,224 ds/min), 1,693,071 states left on queue.
+Progress(13) at 2024-03-23 14:09:17: 12,430,767 states generated (288,735 s/min), 2,530,219 distinct states found (64,902 ds/min), 1,741,100 states left on queue.
+Progress(13) at 2024-03-23 14:10:17: 12,775,534 states generated (344,767 s/min), 2,602,686 distinct states found (72,467 ds/min), 1,795,581 states left on queue.
+Progress(13) at 2024-03-23 14:11:17: 13,214,284 states generated (438,750 s/min), 2,682,096 distinct states found (79,410 ds/min), 1,854,477 states left on queue.
+Progress(13) at 2024-03-23 14:12:17: 13,617,122 states generated (402,838 s/min), 2,757,198 distinct states found (75,102 ds/min), 1,909,323 states left on queue.
+Progress(13) at 2024-03-23 14:13:17: 13,940,012 states generated (322,890 s/min), 2,827,216 distinct states found (70,018 ds/min), 1,960,841 states left on queue.
+Progress(13) at 2024-03-23 14:14:17: 14,330,031 states generated (390,019 s/min), 2,901,102 distinct states found (73,886 ds/min), 2,014,807 states left on queue.
+Progress(13) at 2024-03-23 14:15:17: 14,754,600 states generated (424,569 s/min), 2,975,446 distinct states found (74,344 ds/min), 2,067,958 states left on queue.
+Progress(13) at 2024-03-23 14:16:17: 15,015,917 states generated (261,317 s/min), 3,041,360 distinct states found (65,914 ds/min), 2,118,027 states left on queue.
+Progress(13) at 2024-03-23 14:17:17: 15,283,673 states generated (267,756 s/min), 3,106,030 distinct states found (64,670 ds/min), 2,166,463 states left on queue.
+Progress(13) at 2024-03-23 14:18:17: 15,580,815 states generated (297,142 s/min), 3,172,481 distinct states found (66,451 ds/min), 2,216,140 states left on queue.
+Progress(13) at 2024-03-23 14:19:17: 15,895,725 states generated (314,910 s/min), 3,241,431 distinct states found (68,950 ds/min), 2,266,932 states left on queue.
+Progress(13) at 2024-03-23 14:20:17: 16,221,276 states generated (325,551 s/min), 3,312,921 distinct states found (71,490 ds/min), 2,320,570 states left on queue.
+Progress(13) at 2024-03-23 14:21:17: 16,611,747 states generated (390,471 s/min), 3,384,852 distinct states found (71,931 ds/min), 2,371,861 states left on queue.
+Progress(13) at 2024-03-23 14:22:17: 16,909,143 states generated (297,396 s/min), 3,451,827 distinct states found (66,975 ds/min), 2,420,342 states left on queue.
+Progress(13) at 2024-03-23 14:23:17: 17,280,578 states generated (371,435 s/min), 3,520,604 distinct states found (68,777 ds/min), 2,469,150 states left on queue.
+Progress(13) at 2024-03-23 14:24:17: 17,591,751 states generated (311,173 s/min), 3,586,520 distinct states found (65,916 ds/min), 2,516,491 states left on queue.
+Progress(13) at 2024-03-23 14:25:17: 17,873,268 states generated (281,517 s/min), 3,653,824 distinct states found (67,304 ds/min), 2,566,528 states left on queue.
+Progress(13) at 2024-03-23 14:26:17: 18,146,398 states generated (273,130 s/min), 3,720,961 distinct states found (67,137 ds/min), 2,616,494 states left on queue.
+Progress(13) at 2024-03-23 14:27:17: 18,419,400 states generated (273,002 s/min), 3,788,131 distinct states found (67,170 ds/min), 2,666,217 states left on queue.
+Progress(13) at 2024-03-23 14:28:17: 18,745,992 states generated (326,592 s/min), 3,851,787 distinct states found (63,656 ds/min), 2,709,699 states left on queue.
+Progress(13) at 2024-03-23 14:29:17: 19,036,228 states generated (290,236 s/min), 3,916,274 distinct states found (64,487 ds/min), 2,756,259 states left on queue.
+Progress(13) at 2024-03-23 14:30:17: 19,358,654 states generated (322,426 s/min), 3,976,637 distinct states found (60,363 ds/min), 2,796,926 states left on queue.
+Progress(13) at 2024-03-23 14:31:17: 19,714,130 states generated (355,476 s/min), 4,049,532 distinct states found (72,895 ds/min), 2,850,810 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 14:32:17)
+Progress(13) at 2024-03-23 14:32:17: 20,100,084 states generated (385,954 s/min), 4,123,891 distinct states found (74,359 ds/min), 2,905,196 states left on queue.
+Progress(13) at 2024-03-23 14:33:17: 20,534,818 states generated (434,734 s/min), 4,199,935 distinct states found (76,044 ds/min), 2,959,577 states left on queue.
+Progress(13) at 2024-03-23 14:34:17: 20,860,416 states generated (325,598 s/min), 4,268,913 distinct states found (68,978 ds/min), 3,010,052 states left on queue.
+Progress(13) at 2024-03-23 14:35:17: 21,238,731 states generated (378,315 s/min), 4,339,839 distinct states found (70,926 ds/min), 3,060,330 states left on queue.
+Progress(13) at 2024-03-23 14:36:18: 21,579,169 states generated (340,438 s/min), 4,407,736 distinct states found (67,897 ds/min), 3,108,580 states left on queue.
+Progress(13) at 2024-03-23 14:37:18: 21,901,807 states generated (322,638 s/min), 4,471,164 distinct states found (63,428 ds/min), 3,152,052 states left on queue.
+Progress(13) at 2024-03-23 14:38:18: 22,313,103 states generated (411,296 s/min), 4,542,939 distinct states found (71,775 ds/min), 3,202,418 states left on queue.
+Progress(13) at 2024-03-23 14:39:18: 22,700,010 states generated (386,907 s/min), 4,608,116 distinct states found (65,177 ds/min), 3,246,361 states left on queue.
+Progress(13) at 2024-03-23 14:40:18: 23,027,209 states generated (327,199 s/min), 4,672,683 distinct states found (64,567 ds/min), 3,288,708 states left on queue.
+Progress(13) at 2024-03-23 14:41:18: 23,385,253 states generated (358,044 s/min), 4,734,450 distinct states found (61,767 ds/min), 3,325,728 states left on queue.
+Progress(13) at 2024-03-23 14:42:18: 23,844,026 states generated (458,773 s/min), 4,801,671 distinct states found (67,221 ds/min), 3,362,856 states left on queue.
+Progress(13) at 2024-03-23 14:43:17: 24,261,750 states generated (417,724 s/min), 4,865,099 distinct states found (63,428 ds/min), 3,397,387 states left on queue.
+Progress(13) at 2024-03-23 14:44:18: 24,638,602 states generated (376,852 s/min), 4,928,602 distinct states found (63,503 ds/min), 3,434,649 states left on queue.
+Progress(13) at 2024-03-23 14:45:18: 25,031,417 states generated (392,815 s/min), 4,986,378 distinct states found (57,776 ds/min), 3,462,790 states left on queue.
+Progress(13) at 2024-03-23 14:46:18: 25,428,047 states generated (396,630 s/min), 5,045,286 distinct states found (58,908 ds/min), 3,492,848 states left on queue.
+Progress(13) at 2024-03-23 14:47:18: 25,886,979 states generated (458,932 s/min), 5,108,781 distinct states found (63,495 ds/min), 3,525,417 states left on queue.
+Progress(13) at 2024-03-23 14:48:18: 26,324,850 states generated (437,871 s/min), 5,167,252 distinct states found (58,471 ds/min), 3,552,624 states left on queue.
+Progress(13) at 2024-03-23 14:49:18: 26,683,059 states generated (358,209 s/min), 5,228,295 distinct states found (61,043 ds/min), 3,589,451 states left on queue.
+Progress(13) at 2024-03-23 14:50:18: 26,998,229 states generated (315,170 s/min), 5,282,694 distinct states found (54,399 ds/min), 3,621,622 states left on queue.
+Progress(13) at 2024-03-23 14:51:18: 27,410,487 states generated (412,258 s/min), 5,349,718 distinct states found (67,024 ds/min), 3,661,238 states left on queue.
+Progress(13) at 2024-03-23 14:52:18: 27,803,641 states generated (393,154 s/min), 5,410,762 distinct states found (61,044 ds/min), 3,695,090 states left on queue.
+Progress(13) at 2024-03-23 14:53:18: 28,229,512 states generated (425,871 s/min), 5,472,933 distinct states found (62,171 ds/min), 3,728,903 states left on queue.
+Progress(13) at 2024-03-23 14:54:18: 28,551,759 states generated (322,247 s/min), 5,529,686 distinct states found (56,753 ds/min), 3,762,140 states left on queue.
+Progress(13) at 2024-03-23 14:55:18: 28,912,432 states generated (360,673 s/min), 5,580,795 distinct states found (51,109 ds/min), 3,786,085 states left on queue.
+Progress(13) at 2024-03-23 14:56:18: 29,280,433 states generated (368,001 s/min), 5,634,098 distinct states found (53,303 ds/min), 3,812,820 states left on queue.
+Progress(13) at 2024-03-23 14:57:18: 29,724,462 states generated (444,029 s/min), 5,696,117 distinct states found (62,019 ds/min), 3,845,022 states left on queue.
+Progress(13) at 2024-03-23 14:58:18: 30,136,745 states generated (412,283 s/min), 5,748,886 distinct states found (52,769 ds/min), 3,868,367 states left on queue.
+Progress(13) at 2024-03-23 14:59:18: 30,493,456 states generated (356,711 s/min), 5,805,190 distinct states found (56,304 ds/min), 3,899,255 states left on queue.
+Progress(13) at 2024-03-23 15:00:18: 30,799,560 states generated (306,104 s/min), 5,858,794 distinct states found (53,604 ds/min), 3,931,288 states left on queue.
+Progress(13) at 2024-03-23 15:01:18: 31,179,848 states generated (380,288 s/min), 5,919,816 distinct states found (61,022 ds/min), 3,967,187 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 15:02:18)
+Progress(13) at 2024-03-23 15:02:18: 31,548,530 states generated (368,682 s/min), 5,977,314 distinct states found (57,498 ds/min), 3,999,196 states left on queue.
+Progress(13) at 2024-03-23 15:03:18: 31,946,817 states generated (398,287 s/min), 6,031,671 distinct states found (54,357 ds/min), 4,026,886 states left on queue.
+Progress(13) at 2024-03-23 15:04:18: 32,262,287 states generated (315,470 s/min), 6,089,301 distinct states found (57,630 ds/min), 4,061,931 states left on queue.
+Progress(13) at 2024-03-23 15:05:18: 32,619,640 states generated (357,353 s/min), 6,141,985 distinct states found (52,684 ds/min), 4,087,729 states left on queue.
+Progress(13) at 2024-03-23 15:06:18: 32,975,142 states generated (355,502 s/min), 6,192,999 distinct states found (51,014 ds/min), 4,112,822 states left on queue.
+Progress(13) at 2024-03-23 15:07:18: 33,363,206 states generated (388,064 s/min), 6,249,236 distinct states found (56,237 ds/min), 4,142,656 states left on queue.
+Progress(13) at 2024-03-23 15:08:18: 33,751,880 states generated (388,674 s/min), 6,300,474 distinct states found (51,238 ds/min), 4,166,055 states left on queue.
+Progress(14) at 2024-03-23 15:09:18: 34,166,971 states generated (415,091 s/min), 6,349,175 distinct states found (48,701 ds/min), 4,184,045 states left on queue.
+Progress(14) at 2024-03-23 15:10:18: 34,434,045 states generated (267,074 s/min), 6,414,169 distinct states found (64,994 ds/min), 4,234,546 states left on queue.
+Progress(14) at 2024-03-23 15:11:18: 34,683,655 states generated (249,610 s/min), 6,476,610 distinct states found (62,441 ds/min), 4,282,409 states left on queue.
+Progress(14) at 2024-03-23 15:12:18: 34,953,824 states generated (270,169 s/min), 6,537,053 distinct states found (60,443 ds/min), 4,327,677 states left on queue.
+Progress(14) at 2024-03-23 15:13:18: 35,259,686 states generated (305,862 s/min), 6,603,878 distinct states found (66,825 ds/min), 4,378,879 states left on queue.
+Progress(14) at 2024-03-23 15:14:18: 35,599,124 states generated (339,438 s/min), 6,672,112 distinct states found (68,234 ds/min), 4,429,683 states left on queue.
+Progress(14) at 2024-03-23 15:15:18: 35,964,565 states generated (365,441 s/min), 6,740,455 distinct states found (68,343 ds/min), 4,479,176 states left on queue.
+Progress(14) at 2024-03-23 15:16:18: 36,279,362 states generated (314,797 s/min), 6,807,827 distinct states found (67,372 ds/min), 4,529,753 states left on queue.
+Progress(14) at 2024-03-23 15:17:18: 36,620,514 states generated (341,152 s/min), 6,874,657 distinct states found (66,830 ds/min), 4,578,630 states left on queue.
+Progress(14) at 2024-03-23 15:18:18: 36,947,360 states generated (326,846 s/min), 6,938,699 distinct states found (64,042 ds/min), 4,624,643 states left on queue.
+Progress(14) at 2024-03-23 15:19:18: 37,231,887 states generated (284,527 s/min), 7,002,478 distinct states found (63,779 ds/min), 4,671,823 states left on queue.
+Progress(14) at 2024-03-23 15:20:18: 37,599,357 states generated (367,470 s/min), 7,070,018 distinct states found (67,540 ds/min), 4,720,337 states left on queue.
+Progress(14) at 2024-03-23 15:21:18: 37,952,018 states generated (352,661 s/min), 7,132,870 distinct states found (62,852 ds/min), 4,764,239 states left on queue.
+Progress(14) at 2024-03-23 15:22:18: 38,269,821 states generated (317,803 s/min), 7,197,029 distinct states found (64,159 ds/min), 4,811,025 states left on queue.
+Progress(14) at 2024-03-23 15:23:18: 38,562,656 states generated (292,835 s/min), 7,264,711 distinct states found (67,682 ds/min), 4,862,662 states left on queue.
+Progress(14) at 2024-03-23 15:24:18: 38,903,807 states generated (341,151 s/min), 7,332,305 distinct states found (67,594 ds/min), 4,911,737 states left on queue.
+Progress(14) at 2024-03-23 15:25:18: 39,202,896 states generated (299,089 s/min), 7,396,640 distinct states found (64,335 ds/min), 4,959,027 states left on queue.
+Progress(14) at 2024-03-23 15:26:18: 39,463,152 states generated (260,256 s/min), 7,459,461 distinct states found (62,821 ds/min), 5,005,399 states left on queue.
+Progress(14) at 2024-03-23 15:27:18: 39,727,294 states generated (264,142 s/min), 7,524,350 distinct states found (64,889 ds/min), 5,054,342 states left on queue.
+Progress(14) at 2024-03-23 15:28:18: 40,028,388 states generated (301,094 s/min), 7,581,786 distinct states found (57,436 ds/min), 5,093,363 states left on queue.
+Progress(14) at 2024-03-23 15:29:18: 40,369,726 states generated (341,338 s/min), 7,648,150 distinct states found (66,364 ds/min), 5,140,985 states left on queue.
+Progress(14) at 2024-03-23 15:30:18: 40,651,233 states generated (281,507 s/min), 7,706,517 distinct states found (58,367 ds/min), 5,182,090 states left on queue.
+Progress(14) at 2024-03-23 15:31:18: 40,983,400 states generated (332,167 s/min), 7,768,742 distinct states found (62,225 ds/min), 5,225,842 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 15:32:18)
+Progress(14) at 2024-03-23 15:32:18: 41,368,221 states generated (384,821 s/min), 7,841,706 distinct states found (72,964 ds/min), 5,279,820 states left on queue.
+Progress(14) at 2024-03-23 15:33:18: 41,756,358 states generated (388,137 s/min), 7,913,768 distinct states found (72,062 ds/min), 5,331,839 states left on queue.
+Progress(14) at 2024-03-23 15:34:18: 42,115,134 states generated (358,776 s/min), 7,984,337 distinct states found (70,569 ds/min), 5,383,002 states left on queue.
+Progress(14) at 2024-03-23 15:35:18: 42,541,797 states generated (426,663 s/min), 8,058,423 distinct states found (74,086 ds/min), 5,435,885 states left on queue.
+Progress(14) at 2024-03-23 15:36:18: 43,036,686 states generated (494,889 s/min), 8,135,548 distinct states found (77,125 ds/min), 5,489,406 states left on queue.
+Progress(14) at 2024-03-23 15:37:18: 43,527,986 states generated (491,300 s/min), 8,210,366 distinct states found (74,818 ds/min), 5,540,402 states left on queue.
+Progress(14) at 2024-03-23 15:38:18: 43,941,422 states generated (413,436 s/min), 8,283,911 distinct states found (73,545 ds/min), 5,591,945 states left on queue.
+Progress(14) at 2024-03-23 15:39:18: 44,452,422 states generated (511,000 s/min), 8,358,366 distinct states found (74,455 ds/min), 5,641,560 states left on queue.
+Progress(14) at 2024-03-23 15:40:18: 44,881,166 states generated (428,744 s/min), 8,429,837 distinct states found (71,471 ds/min), 5,691,432 states left on queue.
+Progress(14) at 2024-03-23 15:41:18: 45,184,134 states generated (302,968 s/min), 8,496,540 distinct states found (66,703 ds/min), 5,740,768 states left on queue.
+Progress(14) at 2024-03-23 15:42:18: 45,552,459 states generated (368,325 s/min), 8,566,589 distinct states found (70,049 ds/min), 5,791,096 states left on queue.
+Progress(14) at 2024-03-23 15:43:18: 45,909,293 states generated (356,834 s/min), 8,631,547 distinct states found (64,958 ds/min), 5,836,082 states left on queue.
+Progress(14) at 2024-03-23 15:44:18: 46,248,204 states generated (338,911 s/min), 8,700,075 distinct states found (68,528 ds/min), 5,885,189 states left on queue.
+Progress(14) at 2024-03-23 15:45:18: 46,540,037 states generated (291,833 s/min), 8,763,750 distinct states found (63,675 ds/min), 5,930,603 states left on queue.
+Progress(14) at 2024-03-23 15:46:18: 46,884,564 states generated (344,527 s/min), 8,826,228 distinct states found (62,478 ds/min), 5,972,964 states left on queue.
+Progress(14) at 2024-03-23 15:47:18: 47,310,253 states generated (425,689 s/min), 8,899,563 distinct states found (73,335 ds/min), 6,024,336 states left on queue.
+Progress(14) at 2024-03-23 15:48:18: 47,826,166 states generated (515,913 s/min), 8,974,714 distinct states found (75,151 ds/min), 6,074,752 states left on queue.
+Progress(14) at 2024-03-23 15:49:18: 48,294,020 states generated (467,854 s/min), 9,046,260 distinct states found (71,546 ds/min), 6,122,873 states left on queue.
+Progress(14) at 2024-03-23 15:50:18: 48,668,877 states generated (374,857 s/min), 9,112,709 distinct states found (66,449 ds/min), 6,168,576 states left on queue.
+Progress(14) at 2024-03-23 15:51:18: 49,159,606 states generated (490,729 s/min), 9,182,730 distinct states found (70,021 ds/min), 6,214,192 states left on queue.
+Progress(14) at 2024-03-23 15:52:18: 49,494,107 states generated (334,501 s/min), 9,248,900 distinct states found (66,170 ds/min), 6,262,368 states left on queue.
+Progress(14) at 2024-03-23 15:53:18: 49,751,727 states generated (257,620 s/min), 9,313,232 distinct states found (64,332 ds/min), 6,311,572 states left on queue.
+Progress(14) at 2024-03-23 15:54:18: 50,016,210 states generated (264,483 s/min), 9,376,205 distinct states found (62,973 ds/min), 6,359,016 states left on queue.
+Progress(14) at 2024-03-23 15:55:18: 50,300,645 states generated (284,435 s/min), 9,441,266 distinct states found (65,061 ds/min), 6,407,870 states left on queue.
+Progress(14) at 2024-03-23 15:56:18: 50,614,614 states generated (313,969 s/min), 9,503,963 distinct states found (62,697 ds/min), 6,451,931 states left on queue.
+Progress(14) at 2024-03-23 15:57:18: 50,881,094 states generated (266,480 s/min), 9,567,653 distinct states found (63,690 ds/min), 6,499,325 states left on queue.
+Progress(14) at 2024-03-23 15:58:18: 51,175,244 states generated (294,150 s/min), 9,625,456 distinct states found (57,803 ds/min), 6,539,086 states left on queue.
+Progress(14) at 2024-03-23 15:59:18: 51,456,571 states generated (281,327 s/min), 9,686,911 distinct states found (61,455 ds/min), 6,584,146 states left on queue.
+Progress(14) at 2024-03-23 16:00:18: 51,760,135 states generated (303,564 s/min), 9,746,655 distinct states found (59,744 ds/min), 6,625,724 states left on queue.
+Progress(14) at 2024-03-23 16:01:18: 52,072,160 states generated (312,025 s/min), 9,802,186 distinct states found (55,531 ds/min), 6,662,716 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 16:02:18)
+Progress(14) at 2024-03-23 16:02:18: 52,392,914 states generated (320,754 s/min), 9,872,392 distinct states found (70,206 ds/min), 6,715,987 states left on queue.
+Progress(14) at 2024-03-23 16:03:18: 52,759,888 states generated (366,974 s/min), 9,940,689 distinct states found (68,297 ds/min), 6,764,906 states left on queue.
+Progress(14) at 2024-03-23 16:04:18: 53,053,687 states generated (293,799 s/min), 10,006,415 distinct states found (65,726 ds/min), 6,812,846 states left on queue.
+Progress(14) at 2024-03-23 16:05:18: 53,394,741 states generated (341,054 s/min), 10,075,193 distinct states found (68,778 ds/min), 6,862,950 states left on queue.
+Progress(14) at 2024-03-23 16:06:18: 53,751,898 states generated (357,157 s/min), 10,142,037 distinct states found (66,844 ds/min), 6,910,158 states left on queue.
+Progress(14) at 2024-03-23 16:07:18: 54,100,957 states generated (349,059 s/min), 10,208,269 distinct states found (66,232 ds/min), 6,956,980 states left on queue.
+Progress(14) at 2024-03-23 16:08:18: 54,415,226 states generated (314,269 s/min), 10,275,207 distinct states found (66,938 ds/min), 7,005,551 states left on queue.
+Progress(14) at 2024-03-23 16:09:18: 54,784,338 states generated (369,112 s/min), 10,342,780 distinct states found (67,573 ds/min), 7,053,076 states left on queue.
+Progress(14) at 2024-03-23 16:10:18: 55,142,801 states generated (358,463 s/min), 10,411,637 distinct states found (68,857 ds/min), 7,102,048 states left on queue.
+Progress(14) at 2024-03-23 16:11:18: 55,556,382 states generated (413,581 s/min), 10,479,751 distinct states found (68,114 ds/min), 7,147,477 states left on queue.
+Progress(14) at 2024-03-23 16:12:18: 55,948,264 states generated (391,882 s/min), 10,544,939 distinct states found (65,188 ds/min), 7,189,520 states left on queue.
+Progress(14) at 2024-03-23 16:13:18: 56,374,756 states generated (426,492 s/min), 10,608,790 distinct states found (63,851 ds/min), 7,229,883 states left on queue.
+Progress(14) at 2024-03-23 16:14:18: 56,728,200 states generated (353,444 s/min), 10,671,787 distinct states found (62,997 ds/min), 7,271,871 states left on queue.
+Progress(14) at 2024-03-23 16:15:18: 57,021,160 states generated (292,960 s/min), 10,737,296 distinct states found (65,509 ds/min), 7,318,230 states left on queue.
+Progress(14) at 2024-03-23 16:16:18: 57,313,986 states generated (292,826 s/min), 10,796,319 distinct states found (59,023 ds/min), 7,357,567 states left on queue.
+Progress(14) at 2024-03-23 16:17:18: 57,672,772 states generated (358,786 s/min), 10,862,446 distinct states found (66,127 ds/min), 7,404,058 states left on queue.
+Progress(14) at 2024-03-23 16:18:18: 58,036,543 states generated (363,771 s/min), 10,928,133 distinct states found (65,687 ds/min), 7,449,659 states left on queue.
+Progress(14) at 2024-03-23 16:19:18: 58,429,013 states generated (392,470 s/min), 10,992,697 distinct states found (64,564 ds/min), 7,492,450 states left on queue.
+Progress(14) at 2024-03-23 16:20:18: 58,846,371 states generated (417,358 s/min), 11,052,866 distinct states found (60,169 ds/min), 7,528,821 states left on queue.
+Progress(14) at 2024-03-23 16:21:18: 59,214,948 states generated (368,577 s/min), 11,113,062 distinct states found (60,196 ds/min), 7,567,701 states left on queue.
+Progress(14) at 2024-03-23 16:22:18: 59,557,965 states generated (343,017 s/min), 11,174,067 distinct states found (61,005 ds/min), 7,609,033 states left on queue.
+Progress(14) at 2024-03-23 16:23:18: 59,826,640 states generated (268,675 s/min), 11,238,759 distinct states found (64,692 ds/min), 7,656,727 states left on queue.
+Progress(14) at 2024-03-23 16:24:18: 60,099,676 states generated (273,036 s/min), 11,305,603 distinct states found (66,844 ds/min), 7,707,081 states left on queue.
+Progress(14) at 2024-03-23 16:25:18: 60,413,110 states generated (313,434 s/min), 11,365,922 distinct states found (60,319 ds/min), 7,748,248 states left on queue.
+Progress(14) at 2024-03-23 16:26:18: 60,738,476 states generated (325,366 s/min), 11,433,377 distinct states found (67,455 ds/min), 7,796,863 states left on queue.
+Progress(14) at 2024-03-23 16:27:18: 61,024,948 states generated (286,472 s/min), 11,493,562 distinct states found (60,185 ds/min), 7,838,615 states left on queue.
+Progress(14) at 2024-03-23 16:28:18: 61,326,600 states generated (301,652 s/min), 11,556,442 distinct states found (62,880 ds/min), 7,883,426 states left on queue.
+Progress(14) at 2024-03-23 16:29:18: 61,616,442 states generated (289,842 s/min), 11,620,144 distinct states found (63,702 ds/min), 7,929,393 states left on queue.
+Progress(14) at 2024-03-23 16:30:18: 61,902,825 states generated (286,383 s/min), 11,682,024 distinct states found (61,880 ds/min), 7,972,917 states left on queue.
+Progress(14) at 2024-03-23 16:31:18: 62,189,102 states generated (286,277 s/min), 11,745,844 distinct states found (63,820 ds/min), 8,017,985 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 16:32:18)
+Progress(14) at 2024-03-23 16:32:18: 62,484,580 states generated (295,478 s/min), 11,804,312 distinct states found (58,468 ds/min), 8,056,672 states left on queue.
+Progress(14) at 2024-03-23 16:33:18: 62,781,187 states generated (296,607 s/min), 11,868,965 distinct states found (64,653 ds/min), 8,102,963 states left on queue.
+Progress(14) at 2024-03-23 16:34:18: 63,087,818 states generated (306,631 s/min), 11,930,802 distinct states found (61,837 ds/min), 8,145,300 states left on queue.
+Progress(14) at 2024-03-23 16:35:18: 63,406,144 states generated (318,326 s/min), 11,992,112 distinct states found (61,310 ds/min), 8,185,488 states left on queue.
+Progress(14) at 2024-03-23 16:36:18: 63,760,962 states generated (354,818 s/min), 12,048,543 distinct states found (56,431 ds/min), 8,218,679 states left on queue.
+Progress(14) at 2024-03-23 16:37:18: 64,121,749 states generated (360,787 s/min), 12,101,727 distinct states found (53,184 ds/min), 8,248,124 states left on queue.
+Progress(14) at 2024-03-23 16:38:18: 64,425,613 states generated (303,864 s/min), 12,162,664 distinct states found (60,937 ds/min), 8,290,462 states left on queue.
+Progress(14) at 2024-03-23 16:39:18: 64,746,938 states generated (321,325 s/min), 12,223,456 distinct states found (60,792 ds/min), 8,331,848 states left on queue.
+Progress(14) at 2024-03-23 16:40:18: 65,056,889 states generated (309,951 s/min), 12,281,198 distinct states found (57,742 ds/min), 8,369,819 states left on queue.
+Progress(14) at 2024-03-23 16:41:18: 65,404,994 states generated (348,105 s/min), 12,334,030 distinct states found (52,832 ds/min), 8,399,825 states left on queue.
+Progress(14) at 2024-03-23 16:42:18: 65,768,744 states generated (363,750 s/min), 12,385,110 distinct states found (51,080 ds/min), 8,428,071 states left on queue.
+Progress(14) at 2024-03-23 16:43:18: 66,082,344 states generated (313,600 s/min), 12,451,407 distinct states found (66,297 ds/min), 8,476,709 states left on queue.
+Progress(14) at 2024-03-23 16:44:18: 66,467,295 states generated (384,951 s/min), 12,522,841 distinct states found (71,434 ds/min), 8,528,391 states left on queue.
+Progress(14) at 2024-03-23 16:45:18: 66,828,840 states generated (361,545 s/min), 12,590,531 distinct states found (67,690 ds/min), 8,576,537 states left on queue.
+Progress(14) at 2024-03-23 16:46:18: 67,203,063 states generated (374,223 s/min), 12,659,205 distinct states found (68,674 ds/min), 8,625,299 states left on queue.
+Progress(14) at 2024-03-23 16:47:18: 67,553,689 states generated (350,626 s/min), 12,727,941 distinct states found (68,736 ds/min), 8,674,307 states left on queue.
+Progress(14) at 2024-03-23 16:48:18: 67,887,684 states generated (333,995 s/min), 12,790,592 distinct states found (62,651 ds/min), 8,717,286 states left on queue.
+Progress(14) at 2024-03-23 16:49:18: 68,295,101 states generated (407,417 s/min), 12,861,463 distinct states found (70,871 ds/min), 8,766,880 states left on queue.
+Progress(14) at 2024-03-23 16:50:18: 68,765,222 states generated (470,121 s/min), 12,936,098 distinct states found (74,635 ds/min), 8,818,091 states left on queue.
+Progress(14) at 2024-03-23 16:51:18: 69,286,874 states generated (521,652 s/min), 13,009,487 distinct states found (73,389 ds/min), 8,866,216 states left on queue.
+Progress(14) at 2024-03-23 16:52:18: 69,689,400 states generated (402,526 s/min), 13,078,579 distinct states found (69,092 ds/min), 8,913,955 states left on queue.
+Progress(14) at 2024-03-23 16:53:18: 70,105,797 states generated (416,397 s/min), 13,147,495 distinct states found (68,916 ds/min), 8,960,358 states left on queue.
+Progress(14) at 2024-03-23 16:54:18: 70,561,101 states generated (455,304 s/min), 13,217,166 distinct states found (69,671 ds/min), 9,007,226 states left on queue.
+Progress(14) at 2024-03-23 16:55:18: 70,876,281 states generated (315,180 s/min), 13,282,805 distinct states found (65,639 ds/min), 9,054,457 states left on queue.
+Progress(14) at 2024-03-23 16:56:18: 71,200,401 states generated (324,120 s/min), 13,343,900 distinct states found (61,095 ds/min), 9,096,048 states left on queue.
+Progress(14) at 2024-03-23 16:57:18: 71,568,870 states generated (368,469 s/min), 13,409,134 distinct states found (65,234 ds/min), 9,141,006 states left on queue.
+Progress(14) at 2024-03-23 16:58:18: 71,945,278 states generated (376,408 s/min), 13,477,056 distinct states found (67,922 ds/min), 9,188,177 states left on queue.
+Progress(14) at 2024-03-23 16:59:18: 72,331,203 states generated (385,925 s/min), 13,543,112 distinct states found (66,056 ds/min), 9,232,604 states left on queue.
+Progress(14) at 2024-03-23 17:00:18: 72,776,582 states generated (445,379 s/min), 13,604,416 distinct states found (61,304 ds/min), 9,268,967 states left on queue.
+Progress(14) at 2024-03-23 17:01:18: 73,141,595 states generated (365,013 s/min), 13,667,247 distinct states found (62,831 ds/min), 9,310,256 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-23-13-32-13.808
+Checkpointing completed at (2024-03-23 17:02:18)
+Progress(14) at 2024-03-23 17:02:18: 73,521,752 states generated (380,157 s/min), 13,728,783 distinct states found (61,536 ds/min), 9,350,010 states left on queue.
+Progress(14) at 2024-03-23 17:03:18: 73,858,001 states generated (336,249 s/min), 13,792,118 distinct states found (63,335 ds/min), 9,393,086 states left on queue.
+Progress(14) at 2024-03-23 17:04:18: 74,181,849 states generated (323,848 s/min), 13,853,836 distinct states found (61,718 ds/min), 9,434,640 states left on queue.
+Progress(14) at 2024-03-23 17:05:18: 74,514,328 states generated (332,479 s/min), 13,912,349 distinct states found (58,513 ds/min), 9,471,691 states left on queue.
+Progress(14) at 2024-03-23 17:06:18: 74,888,836 states generated (374,508 s/min), 13,965,870 distinct states found (53,521 ds/min), 9,501,253 states left on queue.
+Progress(14) at 2024-03-23 17:07:18: 75,280,182 states generated (391,346 s/min), 14,026,004 distinct states found (60,134 ds/min), 9,538,684 states left on queue.
+Progress(14) at 2024-03-23 17:08:18: 75,679,435 states generated (399,253 s/min), 14,092,732 distinct states found (66,728 ds/min), 9,583,824 states left on queue.
+Progress(14) at 2024-03-23 17:09:18: 76,189,790 states generated (510,355 s/min), 14,164,328 distinct states found (71,596 ds/min), 9,630,472 states left on queue.
+Progress(14) at 2024-03-23 17:10:18: 76,575,589 states generated (385,799 s/min), 14,227,589 distinct states found (63,261 ds/min), 9,672,377 states left on queue.
+Progress(14) at 2024-03-23 17:11:18: 76,990,797 states generated (415,208 s/min), 14,286,680 distinct states found (59,091 ds/min), 9,707,965 states left on queue.
+Progress(14) at 2024-03-23 17:12:18: 77,419,313 states generated (428,516 s/min), 14,344,033 distinct states found (57,353 ds/min), 9,740,900 states left on queue.
+Error: Invariant Inv is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {}
+/\ msgsBak = {}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+
+State 2: <Phase1a(0) line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {[type |-> "1a", bal |-> 0]}
+/\ msgsBak = {[type |-> "1a", bal |-> 0]}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+
+State 3: <Phase1a(1) line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {[type |-> "1a", bal |-> 0], [type |-> "1a", bal |-> 1]}
+/\ msgsBak = {[type |-> "1a", bal |-> 0], [type |-> "1a", bal |-> 1]}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+
+State 4: <Phase1b(a1) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+
+State 5: <Phase1b(a1) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+
+State 6: <Phase1b(a2) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 0 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 7: <Phase1b(a2) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 8: <Phase1b(a3) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 0 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 9: <Phase1b(a3) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 10: <Phase1b(a4) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 11: <Phase2a(0,v1) line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 12: <Phase2b(a4) line 156, col 15 to line 162, col 69 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> v1 @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> 0 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 13: <Phase1b(a4) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> v1 @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> 0 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> 0, mval |-> v1] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> 0, mval |-> v1] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+State 14: <Phase2a(1,v2) line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> v1 @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> 0 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2a", bal |-> 1, val |-> v2],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> 0, mval |-> v1] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2a", bal |-> 1, val |-> v2],
+  [type |-> "2b", bal |-> 0, acc |-> a4, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> 0, mval |-> v1] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+
+77489094 states generated, 14351710 distinct states found, 9744555 states left on queue.
+The depth of the complete state graph search is 14.
+Finished in 03h 40min at (2024-03-23 17:12:28)

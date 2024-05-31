@@ -1,0 +1,363 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 26 and seed 1920440654102663540 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 71277] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-2/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-5409423342572830530/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-5409423342572830530/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-5409423342572830530/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-2/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-5409423342572830530/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-23 17:13:49)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-23 17:13:49.
+Progress(6) at 2024-03-23 17:13:52: 5,282 states generated (5,282 s/min), 1,986 distinct states found (1,986 ds/min), 1,652 states left on queue.
+Progress(8) at 2024-03-23 17:14:52: 182,996 states generated (177,714 s/min), 42,587 distinct states found (40,601 ds/min), 32,616 states left on queue.
+Progress(9) at 2024-03-23 17:15:52: 343,265 states generated (160,269 s/min), 76,179 distinct states found (33,592 ds/min), 56,996 states left on queue.
+Progress(9) at 2024-03-23 17:16:52: 519,193 states generated (175,928 s/min), 116,924 distinct states found (40,745 ds/min), 89,886 states left on queue.
+Progress(9) at 2024-03-23 17:17:52: 716,592 states generated (197,399 s/min), 149,085 distinct states found (32,161 ds/min), 112,377 states left on queue.
+Progress(9) at 2024-03-23 17:18:52: 857,974 states generated (141,382 s/min), 172,095 distinct states found (23,010 ds/min), 125,337 states left on queue.
+Error: Invariant Inv is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = {}
+/\ msgsBak = {}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 2: <Phase1a(0) line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = {[type |-> "1a", bal |-> 0]}
+/\ msgsBak = {[type |-> "1a", bal |-> 0]}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 3: <Phase1b(a1) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 4: <Phase1b(a2) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 5: <Phase1b(a3) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> 0 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 6: <Phase1b(a4) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> 0 @@
+  a4 :> 0 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 7: <Phase1b(a5) line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> 0 @@
+  a4 :> 0 @@
+  a5 :> 0 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 8: <Phase2a(0,v1) line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> 0 @@
+  a4 :> 0 @@
+  a5 :> 0 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+State 9: <Phase2b(a1) line 156, col 15 to line 162, col 49 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None @@
+  a8 :> None @@
+  a9 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a5, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> 0 @@
+  a3 :> 0 @@
+  a4 :> 0 @@
+  a5 :> 0 @@
+  a6 :> -1 @@
+  a7 :> -1 @@
+  a8 :> -1 @@
+  a9 :> -1 )
+
+922313 states generated, 180606 distinct states found, 129323 states left on queue.
+The depth of the complete state graph search is 9.
+Finished in 05min 27s at (2024-03-23 17:19:16)

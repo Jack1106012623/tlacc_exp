@@ -1,0 +1,27 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 12 and seed -7629121003779710585 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 23902] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16099211958145020816/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16099211958145020816/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16099211958145020816/TLC.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16099211958145020816/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16099211958145020816/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-23 20:42:40)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-23 20:42:40.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 4.2E-12
+23839 states generated, 3921 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 17.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 6 and the 95th percentile is 3).
+Finished in 01s at (2024-03-23 20:42:41)

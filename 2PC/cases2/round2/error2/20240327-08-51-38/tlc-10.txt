@@ -1,0 +1,59 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 73 and seed 5640972236610445625 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 52623] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/error2/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/error2/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-27 08:51:57)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-27 08:51:57.
+Error: Invariant TPConsistent is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ msgs = {}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 2: <TMCommit line 89, col 3 to line 93, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Commit"]}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "committed"
+/\ tmPrepared = {}
+
+State 3: <RMChooseToAbort(n1) line 118, col 3 to line 120, col 44 of module TwoPhase>
+/\ msgs = {[type |-> "Commit"]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "committed"
+/\ tmPrepared = {}
+
+25 states generated, 25 distinct states found, 22 states left on queue.
+The depth of the complete state graph search is 3.
+Finished in 00s at (2024-03-27 08:51:57)

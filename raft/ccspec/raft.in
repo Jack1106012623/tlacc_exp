@@ -1,0 +1,15 @@
+@Msg.Type = Fcn
+@Msg.Var = messages
+
+
+Phase = [1,2,3]
+
+[NULL, Timeout(*)]
+for i in Phase:
+    [RequestVote(*,*),CCHandleRequestVoteRequest(*,*)]
+    [NULL,CCHandleRequestVoteResponse(n1,*)]
+    [BecomeLeader(*),ClientRequest(*, *)]
+    [AppendEntries(*, *),CCHandleAppendEntriesRequest(*,*)+CCHandleAppendEntriesRequest(*,*)]
+    [NULL,CCHandleAppendEntriesResponse(*,*)]
+    [AdvanceCommitIndex(*),Restart(*)+Timeout(*)]
+

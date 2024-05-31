@@ -1,0 +1,189 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 55 and seed -1766233017429284798 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 60059] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/error3/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/error3/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-25 17:38:38)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-25 17:38:39.
+Error: Invariant TPConsistent is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ msgs = {}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 2: <RMPrepare(n1) line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 3: <TMRcvPrepared(n1) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 4: <RMPrepare(n2) line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 5: <TMRcvPrepared(n2) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 6: <RMPrepare(n3) line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 7: <TMRcvPrepared(n3) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 8: <RMPrepare(n4) line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 9: <TMRcvPrepared(n4) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 10: <RMPrepare(n5) line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 11: <TMRcvPrepared(n5) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 12: <TMCommit line 89, col 3 to line 93, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Commit"],
+  [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "committed"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 13: <TMAbort line 100, col 3 to line 102, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Commit"],
+  [type |-> "Abort"],
+  [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "aborted"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 14: <RMRcvCommitMsg(n1) line 126, col 3 to line 128, col 44 of module TwoPhase>
+/\ msgs = { [type |-> "Commit"],
+  [type |-> "Abort"],
+  [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "committed" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "aborted"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+62236 states generated, 8605 distinct states found, 378 states left on queue.
+The depth of the complete state graph search is 14.
+Finished in 00s at (2024-03-25 17:38:39)

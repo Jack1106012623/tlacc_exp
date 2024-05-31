@@ -1,0 +1,362 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 88 and seed -6775209352418073584 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 93273] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/raft/cases/error-1/raft.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-1650910050061761912/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-1650910050061761912/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-1650910050061761912/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-1650910050061761912/TLC.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module raft
+Starting... (2024-03-24 08:09:49)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-24 08:09:49.
+Progress(10) at 2024-03-24 08:09:52: 226,235 states generated (226,235 s/min), 100,515 distinct states found (100,515 ds/min), 76,453 states left on queue.
+Error: Invariant ElectionSafety is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Follower @@ n2 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 1 @@ n2 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 2: <Timeout(n1) line 182, col 15 to line 191, col 60 of module raft>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 3: <Timeout(n2) line 182, col 15 to line 191, col 60 of module raft>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 4: <RequestVote(n1,n1) line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 5: <RequestVote(n2,n2) line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 6: <CCHandleRequestVoteRequest(n1,n1) line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> n1 @@ n2 :> Nil)
+
+State 7: <CCHandleRequestVoteRequest(n2,n2) line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n2)
+
+State 8: <CCHandleRequestVoteResponse(n1,n1) line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> <<>>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n2)
+
+State 9: <CCHandleRequestVoteResponse(n2,n2) line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {n2})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> (n2 :> <<>>))
+/\ votedFor = (n1 :> n1 @@ n2 :> n2)
+
+State 10: <BecomeLeader(n1) line 234, col 5 to line 247, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1},
+    evoterLog |-> (n1 :> <<>>) ] }
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {n2})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> (n2 :> <<>>))
+/\ votedFor = (n1 :> n1 @@ n2 :> n2)
+
+State 11: <BecomeLeader(n2) line 234, col 5 to line 247, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1},
+    evoterLog |-> (n1 :> <<>>) ],
+  [ eterm |-> 2,
+    eleader |-> n2,
+    elog |-> <<>>,
+    evotes |-> {n2},
+    evoterLog |-> (n2 :> <<>>) ] }
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Leader)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {n2})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> (n2 :> <<>>))
+/\ votedFor = (n1 :> n1 @@ n2 :> n2)
+
+991648 states generated, 423417 distinct states found, 323291 states left on queue.
+The depth of the complete state graph search is 11.
+Finished in 09s at (2024-03-24 08:09:58)

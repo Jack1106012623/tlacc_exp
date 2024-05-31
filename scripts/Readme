@@ -1,0 +1,4 @@
+`tla2tools`是tlc，`tlacctools-v2.jar`是tlacc
+
+做实验时Paxos有些结果用的是前一版`tlacctools`，该版本已经被删掉了，删除前做过对比，这两个版本的状态搜索数是相同的，可能是模拟模式或者是rounds构建相关的部分做了改动，不影响论文中的实验结果。
+

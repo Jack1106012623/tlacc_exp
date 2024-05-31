@@ -1,0 +1,217 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 38 and seed 2204944154014600920 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 60089] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round3/error1/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round3/error1/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-25 17:38:43)
+set Empty's CCState
+Initialize CC.
+action 1 : TMCommit []
+action 2 : TMAbort []
+action 3 : TMRcvPrepared [rm->n1, rm->n1]
+action 4 : RMPrepare [rm->n1, rm->n1]
+action 5 : RMChooseToAbort [rm->n1, rm->n1]
+action 6 : RMRcvCommitMsg [rm->n1, rm->n1]
+action 7 : RMRcvAbortMsg [rm->n1, rm->n1]
+action 8 : TMRcvPrepared [rm->n2, rm->n2]
+action 9 : RMPrepare [rm->n2, rm->n2]
+action 10 : RMChooseToAbort [rm->n2, rm->n2]
+action 11 : RMRcvCommitMsg [rm->n2, rm->n2]
+action 12 : RMRcvAbortMsg [rm->n2, rm->n2]
+action 13 : TMRcvPrepared [rm->n3, rm->n3]
+action 14 : RMPrepare [rm->n3, rm->n3]
+action 15 : RMChooseToAbort [rm->n3, rm->n3]
+action 16 : RMRcvCommitMsg [rm->n3, rm->n3]
+action 17 : RMRcvAbortMsg [rm->n3, rm->n3]
+action 18 : TMRcvPrepared [rm->n4, rm->n4]
+action 19 : RMPrepare [rm->n4, rm->n4]
+action 20 : RMChooseToAbort [rm->n4, rm->n4]
+action 21 : RMRcvCommitMsg [rm->n4, rm->n4]
+action 22 : RMRcvAbortMsg [rm->n4, rm->n4]
+action 23 : TMRcvPrepared [rm->n5, rm->n5]
+action 24 : RMPrepare [rm->n5, rm->n5]
+action 25 : RMChooseToAbort [rm->n5, rm->n5]
+action 26 : RMRcvCommitMsg [rm->n5, rm->n5]
+action 27 : RMRcvAbortMsg [rm->n5, rm->n5]
+construct Rounds
+Printing rounds...
+round 0: [(R)RMPrepare [rm->n1, rm->n1], (R)RMPrepare [rm->n2, rm->n2], (R)RMPrepare [rm->n3, rm->n3], (R)RMPrepare [rm->n4, rm->n4], (R)RMPrepare [rm->n5, rm->n5], (R)RMChooseToAbort [rm->n1, rm->n1], (R)RMChooseToAbort [rm->n2, rm->n2], (R)RMChooseToAbort [rm->n3, rm->n3], (R)RMChooseToAbort [rm->n4, rm->n4], (R)RMChooseToAbort [rm->n5, rm->n5], (R)TMAbort [], ]
+round 1: [(R)TMRcvPrepared [rm->n1, rm->n1], (R)TMRcvPrepared [rm->n2, rm->n2], (R)TMRcvPrepared [rm->n3, rm->n3], (R)TMRcvPrepared [rm->n4, rm->n4], (R)TMRcvPrepared [rm->n5, rm->n5], (R)RMRcvAbortMsg [rm->n1, rm->n1], (R)RMRcvAbortMsg [rm->n2, rm->n2], (R)RMRcvAbortMsg [rm->n3, rm->n3], (R)RMRcvAbortMsg [rm->n4, rm->n4], (R)RMRcvAbortMsg [rm->n5, rm->n5], ]
+round 2: [(R)TMCommit [], (R)TMAbort [], ]
+round 3: [(R)RMRcvCommitMsg [rm->n1, rm->n1], (R)RMRcvCommitMsg [rm->n2, rm->n2], (R)RMRcvCommitMsg [rm->n3, rm->n3], (R)RMRcvCommitMsg [rm->n4, rm->n4], (R)RMRcvCommitMsg [rm->n5, rm->n5], (R)RMRcvAbortMsg [rm->n1, rm->n1], (R)RMRcvAbortMsg [rm->n2, rm->n2], (R)RMRcvAbortMsg [rm->n3, rm->n3], (R)RMRcvAbortMsg [rm->n4, rm->n4], (R)RMRcvAbortMsg [rm->n5, rm->n5], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, rcv = 4, nexts=[9, 14, 19, 24, 5, 10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 1, rcv = 9, nexts=[14, 19, 24, 5, 10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 2, rcv = 14, nexts=[19, 24, 5, 10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 3, rcv = 19, nexts=[24, 5, 10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 4, rcv = 24, nexts=[5, 10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 5, rcv = 5, nexts=[10, 15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 6, rcv = 10, nexts=[15, 20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 7, rcv = 15, nexts=[20, 25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 8, rcv = 20, nexts=[25, 2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 9, rcv = 25, nexts=[2, 3, 8, 13, 18, 23, 7, 12, 17, 22, 27], [rn = 0, idx = 10, rcv = 2, nexts=[3, 8, 13, 18, 23, 7, 12, 17, 22, 27]]
+round 1: [[rn = 1, idx = 0, rcv = 3, nexts=[8, 13, 18, 23, 7, 12, 17, 22, 27, 1, 2], [rn = 1, idx = 1, rcv = 8, nexts=[13, 18, 23, 7, 12, 17, 22, 27, 1, 2], [rn = 1, idx = 2, rcv = 13, nexts=[18, 23, 7, 12, 17, 22, 27, 1, 2], [rn = 1, idx = 3, rcv = 18, nexts=[23, 7, 12, 17, 22, 27, 1, 2], [rn = 1, idx = 4, rcv = 23, nexts=[7, 12, 17, 22, 27, 1, 2], [rn = 1, idx = 5, rcv = 7, nexts=[12, 17, 22, 27, 1, 2], [rn = 1, idx = 6, rcv = 12, nexts=[17, 22, 27, 1, 2], [rn = 1, idx = 7, rcv = 17, nexts=[22, 27, 1, 2], [rn = 1, idx = 8, rcv = 22, nexts=[27, 1, 2], [rn = 1, idx = 9, rcv = 27, nexts=[1, 2]]
+round 2: [[rn = 2, idx = 0, rcv = 1, nexts=[2, 6, 11, 16, 21, 26, 7, 12, 17, 22, 27], [rn = 2, idx = 1, rcv = 2, nexts=[6, 11, 16, 21, 26, 7, 12, 17, 22, 27]]
+round 3: [[rn = 3, idx = 0, rcv = 6, nexts=[11, 16, 21, 26, 7, 12, 17, 22, 27], [rn = 3, idx = 1, rcv = 11, nexts=[16, 21, 26, 7, 12, 17, 22, 27], [rn = 3, idx = 2, rcv = 16, nexts=[21, 26, 7, 12, 17, 22, 27], [rn = 3, idx = 3, rcv = 21, nexts=[26, 7, 12, 17, 22, 27], [rn = 3, idx = 4, rcv = 26, nexts=[7, 12, 17, 22, 27], [rn = 3, idx = 5, rcv = 7, nexts=[12, 17, 22, 27], [rn = 3, idx = 6, rcv = 12, nexts=[17, 22, 27], [rn = 3, idx = 7, rcv = 17, nexts=[22, 27], [rn = 3, idx = 8, rcv = 22, nexts=[27], [rn = 3, idx = 9, rcv = 27, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-25 17:38:43.
+Error: Invariant TPConsistent is violated.
+Error: The behavior up to this point is:
+State 1: <TPInit line 66, col 3 to line 69, col 14 of module TwoPhase>
+/\ msgs = {}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: Initial Action, msgs1 = null, msgs2 = null
+State 2: <RMPrepare[rm->n1, rm->n1] line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: [rn = 0, idx = 0, rcv = 4], msgs1 = null, msgs2 = null
+State 3: <RMPrepare[rm->n2, rm->n2] line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: [rn = 0, idx = 1, rcv = 9], msgs1 = null, msgs2 = null
+State 4: <RMPrepare[rm->n3, rm->n3] line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: [rn = 0, idx = 2, rcv = 14], msgs1 = null, msgs2 = null
+State 5: <RMPrepare[rm->n4, rm->n4] line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: [rn = 0, idx = 3, rcv = 19], msgs1 = null, msgs2 = null
+State 6: <RMPrepare[rm->n5, rm->n5] line 108, col 3 to line 111, col 38 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+/\ CCIterator: [rn = 0, idx = 4, rcv = 24], msgs1 = null, msgs2 = null
+State 7: <TMRcvPrepared[rm->n1, rm->n1] line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+/\ CCIterator: [rn = 1, idx = 0, rcv = 3], msgs1 = null, msgs2 = 5
+State 8: <TMRcvPrepared[rm->n2, rm->n2] line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+/\ CCIterator: [rn = 1, idx = 1, rcv = 8], msgs1 = null, msgs2 = 5
+State 9: <TMRcvPrepared[rm->n3, rm->n3] line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+/\ CCIterator: [rn = 1, idx = 2, rcv = 13], msgs1 = null, msgs2 = 5
+State 10: <TMRcvPrepared[rm->n4, rm->n4] line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+/\ CCIterator: [rn = 1, idx = 3, rcv = 18], msgs1 = null, msgs2 = 5
+State 11: <TMRcvPrepared[rm->n5, rm->n5] line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+/\ CCIterator: [rn = 1, idx = 4, rcv = 23], msgs1 = null, msgs2 = 5
+State 12: <RMRcvAbortMsg[rm->n1, rm->n1] line 135, col 3 to line 136, col 44 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+/\ CCIterator: [rn = 1, idx = 5, rcv = 7], msgs1 = null, msgs2 = 5
+State 13: <TMCommit[] line 89, col 3 to line 93, col 38 of module TwoPhase>
+/\ msgs = {[type |-> "Commit"]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" )
+/\ tmState = "committed"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+/\ CCIterator: [rn = 2, idx = 0, rcv = 1], msgs1 = null, msgs2 = 0
+36860 states generated, 11436 distinct states found, 635 states left on queue.
+The depth of the complete state graph search is 13.
+Finished in 00s at (2024-03-25 17:38:43)

@@ -1,0 +1,578 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 114 and seed -5319637972752696509 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 49958] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-27 03:39:09)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-27 03:39:09.
+Progress(7) at 2024-03-27 03:39:12: 539,982 states generated (539,982 s/min), 86,538 distinct states found (86,538 ds/min), 65,030 states left on queue.
+Progress(10) at 2024-03-27 03:40:12: 15,282,784 states generated (14,742,802 s/min), 1,721,552 distinct states found (1,635,014 ds/min), 1,047,633 states left on queue.
+Progress(11) at 2024-03-27 03:41:12: 31,260,206 states generated (15,977,422 s/min), 3,215,687 distinct states found (1,494,135 ds/min), 1,792,306 states left on queue.
+Progress(11) at 2024-03-27 03:42:12: 46,467,022 states generated (15,206,816 s/min), 4,723,976 distinct states found (1,508,289 ds/min), 2,604,406 states left on queue.
+Progress(11) at 2024-03-27 03:43:12: 63,056,592 states generated (16,589,570 s/min), 6,111,806 distinct states found (1,387,830 ds/min), 3,217,590 states left on queue.
+Progress(12) at 2024-03-27 03:44:12: 78,877,350 states generated (15,820,758 s/min), 7,516,782 distinct states found (1,404,976 ds/min), 3,839,436 states left on queue.
+Progress(12) at 2024-03-27 03:45:12: 94,592,422 states generated (15,715,072 s/min), 8,896,320 distinct states found (1,379,538 ds/min), 4,461,924 states left on queue.
+Progress(12) at 2024-03-27 03:46:12: 110,655,020 states generated (16,062,598 s/min), 10,254,902 distinct states found (1,358,582 ds/min), 5,022,538 states left on queue.
+Progress(12) at 2024-03-27 03:47:12: 128,106,470 states generated (17,451,450 s/min), 11,529,301 distinct states found (1,274,399 ds/min), 5,464,271 states left on queue.
+Progress(13) at 2024-03-27 03:48:12: 144,314,033 states generated (16,207,563 s/min), 12,840,615 distinct states found (1,311,314 ds/min), 5,937,897 states left on queue.
+Progress(13) at 2024-03-27 03:49:12: 160,028,105 states generated (15,714,072 s/min), 14,181,112 distinct states found (1,340,497 ds/min), 6,510,989 states left on queue.
+Progress(13) at 2024-03-27 03:50:12: 176,164,057 states generated (16,135,952 s/min), 15,480,490 distinct states found (1,299,378 ds/min), 7,006,191 states left on queue.
+Progress(13) at 2024-03-27 03:51:12: 192,453,311 states generated (16,289,254 s/min), 16,753,544 distinct states found (1,273,054 ds/min), 7,443,572 states left on queue.
+Progress(13) at 2024-03-27 03:52:12: 208,955,679 states generated (16,502,368 s/min), 18,007,726 distinct states found (1,254,182 ds/min), 7,832,492 states left on queue.
+Progress(13) at 2024-03-27 03:53:12: 226,331,091 states generated (17,375,412 s/min), 19,227,297 distinct states found (1,219,571 ds/min), 8,199,138 states left on queue.
+Progress(14) at 2024-03-27 03:54:12: 244,420,255 states generated (18,089,164 s/min), 20,357,329 distinct states found (1,130,032 ds/min), 8,356,489 states left on queue.
+Progress(14) at 2024-03-27 03:55:12: 260,096,010 states generated (15,675,755 s/min), 21,673,873 distinct states found (1,316,544 ds/min), 8,904,290 states left on queue.
+Progress(14) at 2024-03-27 03:56:12: 276,741,898 states generated (16,645,888 s/min), 22,919,133 distinct states found (1,245,260 ds/min), 9,295,206 states left on queue.
+Progress(14) at 2024-03-27 03:57:12: 292,406,818 states generated (15,664,920 s/min), 24,172,880 distinct states found (1,253,747 ds/min), 9,754,556 states left on queue.
+Progress(14) at 2024-03-27 03:58:12: 308,818,648 states generated (16,411,830 s/min), 25,400,643 distinct states found (1,227,763 ds/min), 10,137,392 states left on queue.
+Progress(14) at 2024-03-27 03:59:12: 326,093,823 states generated (17,275,175 s/min), 26,540,851 distinct states found (1,140,208 ds/min), 10,347,424 states left on queue.
+Progress(14) at 2024-03-27 04:00:12: 341,957,879 states generated (15,864,056 s/min), 27,788,247 distinct states found (1,247,396 ds/min), 10,737,538 states left on queue.
+Progress(14) at 2024-03-27 04:01:12: 358,983,444 states generated (17,025,565 s/min), 28,949,012 distinct states found (1,160,765 ds/min), 10,973,305 states left on queue.
+Progress(14) at 2024-03-27 04:02:12: 376,671,313 states generated (17,687,869 s/min), 30,102,773 distinct states found (1,153,761 ds/min), 11,240,265 states left on queue.
+Progress(14) at 2024-03-27 04:03:12: 395,400,021 states generated (18,728,708 s/min), 31,163,026 distinct states found (1,060,253 ds/min), 11,325,453 states left on queue.
+Progress(15) at 2024-03-27 04:04:12: 411,796,105 states generated (16,396,084 s/min), 32,348,271 distinct states found (1,185,245 ds/min), 11,613,124 states left on queue.
+Progress(15) at 2024-03-27 04:05:12: 428,128,850 states generated (16,332,745 s/min), 33,553,289 distinct states found (1,205,018 ds/min), 11,977,420 states left on queue.
+Progress(15) at 2024-03-27 04:06:12: 444,534,373 states generated (16,405,523 s/min), 34,749,738 distinct states found (1,196,449 ds/min), 12,292,278 states left on queue.
+Progress(15) at 2024-03-27 04:07:12: 460,961,974 states generated (16,427,601 s/min), 35,921,817 distinct states found (1,172,079 ds/min), 12,612,248 states left on queue.
+Progress(15) at 2024-03-27 04:08:12: 477,382,166 states generated (16,420,192 s/min), 37,068,410 distinct states found (1,146,593 ds/min), 12,877,736 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/states/24-03-27-03-39-09.278
+Checkpointing completed at (2024-03-27 04:09:12)
+Progress(15) at 2024-03-27 04:09:12: 494,044,240 states generated (16,662,074 s/min), 38,217,539 distinct states found (1,149,129 ds/min), 13,138,443 states left on queue.
+Progress(15) at 2024-03-27 04:10:12: 510,866,342 states generated (16,822,102 s/min), 39,330,172 distinct states found (1,112,633 ds/min), 13,298,093 states left on queue.
+Progress(15) at 2024-03-27 04:11:12: 528,039,941 states generated (17,173,599 s/min), 40,440,725 distinct states found (1,110,553 ds/min), 13,470,437 states left on queue.
+Progress(15) at 2024-03-27 04:12:12: 544,519,780 states generated (16,479,839 s/min), 41,588,693 distinct states found (1,147,968 ds/min), 13,677,932 states left on queue.
+Progress(15) at 2024-03-27 04:13:12: 562,090,909 states generated (17,571,129 s/min), 42,668,457 distinct states found (1,079,764 ds/min), 13,773,020 states left on queue.
+Progress(15) at 2024-03-27 04:14:12: 580,047,264 states generated (17,956,355 s/min), 43,744,830 distinct states found (1,076,373 ds/min), 13,918,646 states left on queue.
+Progress(15) at 2024-03-27 04:15:13: 598,581,920 states generated (18,534,656 s/min), 44,758,877 distinct states found (1,014,047 ds/min), 13,925,626 states left on queue.
+Progress(16) at 2024-03-27 04:16:13: 616,341,315 states generated (17,759,395 s/min), 45,827,101 distinct states found (1,068,224 ds/min), 14,024,251 states left on queue.
+Progress(16) at 2024-03-27 04:17:13: 632,326,638 states generated (15,985,323 s/min), 46,980,752 distinct states found (1,153,651 ds/min), 14,317,662 states left on queue.
+Progress(16) at 2024-03-27 04:18:13: 649,248,540 states generated (16,921,902 s/min), 48,115,644 distinct states found (1,134,892 ds/min), 14,552,259 states left on queue.
+Progress(16) at 2024-03-27 04:19:13: 665,838,985 states generated (16,590,445 s/min), 49,245,047 distinct states found (1,129,403 ds/min), 14,759,109 states left on queue.
+Progress(16) at 2024-03-27 04:20:13: 683,071,897 states generated (17,232,912 s/min), 50,318,559 distinct states found (1,073,512 ds/min), 14,890,339 states left on queue.
+Progress(16) at 2024-03-27 04:21:13: 699,194,235 states generated (16,122,338 s/min), 51,431,818 distinct states found (1,113,259 ds/min), 15,119,797 states left on queue.
+Progress(16) at 2024-03-27 04:22:13: 716,575,723 states generated (17,381,488 s/min), 52,459,458 distinct states found (1,027,640 ds/min), 15,176,878 states left on queue.
+Progress(16) at 2024-03-27 04:23:13: 733,099,384 states generated (16,523,661 s/min), 53,572,257 distinct states found (1,112,799 ds/min), 15,373,213 states left on queue.
+Progress(16) at 2024-03-27 04:24:13: 750,087,247 states generated (16,987,863 s/min), 54,605,348 distinct states found (1,033,091 ds/min), 15,411,613 states left on queue.
+Progress(16) at 2024-03-27 04:25:13: 767,767,139 states generated (17,679,892 s/min), 55,635,119 distinct states found (1,029,771 ds/min), 15,431,789 states left on queue.
+Progress(16) at 2024-03-27 04:26:13: 784,368,898 states generated (16,601,759 s/min), 56,737,556 distinct states found (1,102,437 ds/min), 15,568,221 states left on queue.
+Progress(16) at 2024-03-27 04:27:13: 801,975,128 states generated (17,606,230 s/min), 57,766,386 distinct states found (1,028,830 ds/min), 15,533,747 states left on queue.
+Progress(16) at 2024-03-27 04:28:13: 820,339,129 states generated (18,364,001 s/min), 58,786,825 distinct states found (1,020,439 ds/min), 15,561,038 states left on queue.
+Progress(16) at 2024-03-27 04:29:13: 838,979,674 states generated (18,640,545 s/min), 59,740,850 distinct states found (954,025 ds/min), 15,495,302 states left on queue.
+Progress(17) at 2024-03-27 04:30:13: 857,991,776 states generated (19,012,102 s/min), 60,681,819 distinct states found (940,969 ds/min), 15,360,353 states left on queue.
+Progress(17) at 2024-03-27 04:31:13: 874,028,103 states generated (16,036,327 s/min), 61,816,327 distinct states found (1,134,508 ds/min), 15,632,344 states left on queue.
+Progress(17) at 2024-03-27 04:32:13: 890,992,625 states generated (16,964,522 s/min), 62,880,652 distinct states found (1,064,325 ds/min), 15,742,033 states left on queue.
+Progress(17) at 2024-03-27 04:33:13: 908,139,832 states generated (17,147,207 s/min), 63,953,464 distinct states found (1,072,812 ds/min), 15,862,572 states left on queue.
+Progress(17) at 2024-03-27 04:34:13: 925,105,893 states generated (16,966,061 s/min), 65,012,837 distinct states found (1,059,373 ds/min), 15,945,981 states left on queue.
+Progress(17) at 2024-03-27 04:35:13: 942,821,618 states generated (17,715,725 s/min), 66,022,304 distinct states found (1,009,467 ds/min), 15,937,648 states left on queue.
+Progress(17) at 2024-03-27 04:36:13: 959,242,933 states generated (16,421,315 s/min), 67,091,314 distinct states found (1,069,010 ds/min), 16,087,028 states left on queue.
+Progress(17) at 2024-03-27 04:37:13: 976,247,261 states generated (17,004,328 s/min), 68,098,314 distinct states found (1,007,000 ds/min), 16,087,439 states left on queue.
+Progress(17) at 2024-03-27 04:38:13: 993,705,570 states generated (17,458,309 s/min), 69,099,890 distinct states found (1,001,576 ds/min), 16,106,582 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/states/24-03-27-03-39-09.278
+Checkpointing completed at (2024-03-27 04:39:13)
+Progress(17) at 2024-03-27 04:39:13: 1,011,094,208 states generated (17,388,638 s/min), 70,108,943 distinct states found (1,009,053 ds/min), 16,091,043 states left on queue.
+Progress(17) at 2024-03-27 04:40:13: 1,029,239,975 states generated (18,145,767 s/min), 71,032,672 distinct states found (923,729 ds/min), 15,911,085 states left on queue.
+Progress(17) at 2024-03-27 04:41:13: 1,046,151,759 states generated (16,911,784 s/min), 72,082,666 distinct states found (1,049,994 ds/min), 15,957,451 states left on queue.
+Progress(17) at 2024-03-27 04:42:13: 1,063,352,781 states generated (17,201,022 s/min), 73,085,177 distinct states found (1,002,511 ds/min), 15,894,128 states left on queue.
+Progress(17) at 2024-03-27 04:43:13: 1,081,760,137 states generated (18,407,356 s/min), 74,037,007 distinct states found (951,830 ds/min), 15,762,272 states left on queue.
+Progress(17) at 2024-03-27 04:44:13: 1,100,558,345 states generated (18,798,208 s/min), 74,953,260 distinct states found (916,253 ds/min), 15,635,469 states left on queue.
+Progress(17) at 2024-03-27 04:45:13: 1,120,303,494 states generated (19,745,149 s/min), 75,804,333 distinct states found (851,073 ds/min), 15,357,645 states left on queue.
+Progress(18) at 2024-03-27 04:46:13: 1,136,664,401 states generated (16,360,907 s/min), 76,880,011 distinct states found (1,075,678 ds/min), 15,510,136 states left on queue.
+Progress(18) at 2024-03-27 04:47:13: 1,153,295,936 states generated (16,631,535 s/min), 77,898,441 distinct states found (1,018,430 ds/min), 15,560,937 states left on queue.
+Progress(18) at 2024-03-27 04:48:13: 1,170,874,835 states generated (17,578,899 s/min), 78,882,759 distinct states found (984,318 ds/min), 15,536,514 states left on queue.
+Progress(18) at 2024-03-27 04:49:13: 1,187,907,018 states generated (17,032,183 s/min), 79,894,917 distinct states found (1,012,158 ds/min), 15,553,023 states left on queue.
+Progress(18) at 2024-03-27 04:50:13: 1,205,557,933 states generated (17,650,915 s/min), 80,848,500 distinct states found (953,583 ds/min), 15,429,310 states left on queue.
+Progress(18) at 2024-03-27 04:51:13: 1,222,869,937 states generated (17,312,004 s/min), 81,830,729 distinct states found (982,229 ds/min), 15,419,565 states left on queue.
+Progress(18) at 2024-03-27 04:52:13: 1,239,779,087 states generated (16,909,150 s/min), 82,800,127 distinct states found (969,398 ds/min), 15,388,426 states left on queue.
+Progress(18) at 2024-03-27 04:53:13: 1,257,852,390 states generated (18,073,303 s/min), 83,700,243 distinct states found (900,116 ds/min), 15,190,308 states left on queue.
+Progress(18) at 2024-03-27 04:54:13: 1,275,009,412 states generated (17,157,022 s/min), 84,676,355 distinct states found (976,112 ds/min), 15,145,587 states left on queue.
+Progress(18) at 2024-03-27 04:55:13: 1,292,784,268 states generated (17,774,856 s/min), 85,584,678 distinct states found (908,323 ds/min), 14,934,237 states left on queue.
+Progress(18) at 2024-03-27 04:56:13: 1,310,503,541 states generated (17,719,273 s/min), 86,525,580 distinct states found (940,902 ds/min), 14,798,492 states left on queue.
+Progress(18) at 2024-03-27 04:57:13: 1,328,108,228 states generated (17,604,687 s/min), 87,464,724 distinct states found (939,144 ds/min), 14,613,869 states left on queue.
+Progress(18) at 2024-03-27 04:58:13: 1,346,676,718 states generated (18,568,490 s/min), 88,364,593 distinct states found (899,869 ds/min), 14,377,732 states left on queue.
+Progress(18) at 2024-03-27 04:59:13: 1,365,773,074 states generated (19,096,356 s/min), 89,210,756 distinct states found (846,163 ds/min), 14,125,688 states left on queue.
+Progress(19) at 2024-03-27 05:00:14: 1,384,415,594 states generated (18,642,520 s/min), 90,091,932 distinct states found (881,176 ds/min), 13,912,554 states left on queue.
+Progress(19) at 2024-03-27 05:01:14: 1,401,094,313 states generated (16,678,719 s/min), 91,073,395 distinct states found (981,463 ds/min), 13,921,098 states left on queue.
+Progress(19) at 2024-03-27 05:02:14: 1,418,517,066 states generated (17,422,753 s/min), 92,012,905 distinct states found (939,510 ds/min), 13,796,094 states left on queue.
+Progress(19) at 2024-03-27 05:03:14: 1,436,123,384 states generated (17,606,318 s/min), 92,959,024 distinct states found (946,119 ds/min), 13,707,839 states left on queue.
+Progress(19) at 2024-03-27 05:04:14: 1,453,868,783 states generated (17,745,399 s/min), 93,870,293 distinct states found (911,269 ds/min), 13,519,564 states left on queue.
+Progress(19) at 2024-03-27 05:05:14: 1,471,745,056 states generated (17,876,273 s/min), 94,778,272 distinct states found (907,979 ds/min), 13,334,060 states left on queue.
+Progress(19) at 2024-03-27 05:06:14: 1,488,832,264 states generated (17,087,208 s/min), 95,701,897 distinct states found (923,625 ds/min), 13,219,946 states left on queue.
+Progress(19) at 2024-03-27 05:07:14: 1,506,875,024 states generated (18,042,760 s/min), 96,561,442 distinct states found (859,545 ds/min), 12,948,645 states left on queue.
+Progress(19) at 2024-03-27 05:08:14: 1,524,509,034 states generated (17,634,010 s/min), 97,459,686 distinct states found (898,244 ds/min), 12,758,456 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/states/24-03-27-03-39-09.278
+Checkpointing completed at (2024-03-27 05:09:14)
+Progress(19) at 2024-03-27 05:09:14: 1,543,121,126 states generated (18,612,092 s/min), 98,289,459 distinct states found (829,773 ds/min), 12,385,083 states left on queue.
+Progress(19) at 2024-03-27 05:10:14: 1,560,392,830 states generated (17,271,704 s/min), 99,202,808 distinct states found (913,349 ds/min), 12,193,802 states left on queue.
+Progress(19) at 2024-03-27 05:11:14: 1,579,069,754 states generated (18,676,924 s/min), 100,044,154 distinct states found (841,346 ds/min), 11,822,538 states left on queue.
+Progress(19) at 2024-03-27 05:12:14: 1,598,665,472 states generated (19,595,718 s/min), 100,826,132 distinct states found (781,978 ds/min), 11,436,651 states left on queue.
+Progress(20) at 2024-03-27 05:13:14: 1,616,199,852 states generated (17,534,380 s/min), 101,724,793 distinct states found (898,661 ds/min), 11,290,364 states left on queue.
+Progress(20) at 2024-03-27 05:14:14: 1,633,623,341 states generated (17,423,489 s/min), 102,611,462 distinct states found (886,669 ds/min), 11,095,612 states left on queue.
+Progress(20) at 2024-03-27 05:15:14: 1,651,473,302 states generated (17,849,961 s/min), 103,496,520 distinct states found (885,058 ds/min), 10,877,827 states left on queue.
+Progress(20) at 2024-03-27 05:16:14: 1,669,250,618 states generated (17,777,316 s/min), 104,359,705 distinct states found (863,185 ds/min), 10,618,294 states left on queue.
+Progress(20) at 2024-03-27 05:17:15: 1,687,324,175 states generated (18,073,557 s/min), 105,204,630 distinct states found (844,925 ds/min), 10,316,358 states left on queue.
+Progress(20) at 2024-03-27 05:18:15: 1,704,990,192 states generated (17,666,017 s/min), 106,057,939 distinct states found (853,309 ds/min), 10,045,563 states left on queue.
+Progress(20) at 2024-03-27 05:19:15: 1,723,052,019 states generated (18,061,827 s/min), 106,873,066 distinct states found (815,127 ds/min), 9,702,985 states left on queue.
+Progress(20) at 2024-03-27 05:20:15: 1,741,483,112 states generated (18,431,093 s/min), 107,665,265 distinct states found (792,199 ds/min), 9,273,918 states left on queue.
+Progress(20) at 2024-03-27 05:21:15: 1,759,707,996 states generated (18,224,884 s/min), 108,495,096 distinct states found (829,831 ds/min), 8,871,462 states left on queue.
+Progress(20) at 2024-03-27 05:22:15: 1,779,444,408 states generated (19,736,412 s/min), 109,224,969 distinct states found (729,873 ds/min), 8,370,620 states left on queue.
+Progress(21) at 2024-03-27 05:23:15: 1,797,054,467 states generated (17,610,059 s/min), 110,092,785 distinct states found (867,816 ds/min), 8,148,853 states left on queue.
+Progress(21) at 2024-03-27 05:24:15: 1,815,158,160 states generated (18,103,693 s/min), 110,900,063 distinct states found (807,278 ds/min), 7,785,403 states left on queue.
+Progress(21) at 2024-03-27 05:25:15: 1,833,023,938 states generated (17,865,778 s/min), 111,721,038 distinct states found (820,975 ds/min), 7,454,481 states left on queue.
+Progress(21) at 2024-03-27 05:26:15: 1,851,199,946 states generated (18,176,008 s/min), 112,518,459 distinct states found (797,421 ds/min), 7,062,805 states left on queue.
+Progress(21) at 2024-03-27 05:27:15: 1,869,547,555 states generated (18,347,609 s/min), 113,289,488 distinct states found (771,029 ds/min), 6,617,181 states left on queue.
+Progress(21) at 2024-03-27 05:28:15: 1,888,127,980 states generated (18,580,425 s/min), 114,045,266 distinct states found (755,778 ds/min), 6,106,483 states left on queue.
+Progress(21) at 2024-03-27 05:29:15: 1,907,795,687 states generated (19,667,707 s/min), 114,745,403 distinct states found (700,137 ds/min), 5,492,755 states left on queue.
+Progress(22) at 2024-03-27 05:30:15: 1,925,589,643 states generated (17,793,956 s/min), 115,561,570 distinct states found (816,167 ds/min), 5,161,694 states left on queue.
+Progress(22) at 2024-03-27 05:31:15: 1,943,860,871 states generated (18,271,228 s/min), 116,307,741 distinct states found (746,171 ds/min), 4,684,466 states left on queue.
+Progress(22) at 2024-03-27 05:32:15: 1,962,400,048 states generated (18,539,177 s/min), 117,042,865 distinct states found (735,124 ds/min), 4,159,761 states left on queue.
+Progress(22) at 2024-03-27 05:33:15: 1,981,331,938 states generated (18,931,890 s/min), 117,744,337 distinct states found (701,472 ds/min), 3,532,672 states left on queue.
+Error: Invariant TPConsistent is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ msgs = {}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 2: <RMPrepareOrAbort(n1) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 3: <TMRcvPrepared(n1) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 4: <RMRcvCommitOrAbortMsg(n1) line 184, col 30 to line 185, col 52 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 5: <RMPrepareOrAbort(n2) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 6: <TMRcvPrepared(n2) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 7: <RMPrepareOrAbort(n3) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 8: <TMRcvPrepared(n3) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 9: <RMPrepareOrAbort(n4) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 10: <TMRcvPrepared(n4) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 11: <RMPrepareOrAbort(n5) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 12: <TMRcvPrepared(n5) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 13: <RMPrepareOrAbort(n6) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 14: <TMRcvPrepared(n6) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6}
+
+State 15: <RMPrepareOrAbort(n7) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6}
+
+State 16: <TMRcvPrepared(n7) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "working" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7}
+
+State 17: <RMPrepareOrAbort(n8) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7}
+
+State 18: <TMRcvPrepared(n8) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "working" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8}
+
+State 19: <RMPrepareOrAbort(n9) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8}
+
+State 20: <TMRcvPrepared(n9) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" @@
+  n10 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9}
+
+State 21: <RMPrepareOrAbort(n10) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9],
+  [type |-> "Prepared", rm |-> n10] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" @@
+  n10 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9}
+
+State 22: <TMRcvPrepared(n10) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9],
+  [type |-> "Prepared", rm |-> n10] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" @@
+  n10 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9, n10}
+
+State 23: <TMCommitOrAbort line 178, col 20 to line 179, col 32 of module TwoPhase>
+/\ msgs = { [type |-> "Commit"],
+  [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9],
+  [type |-> "Prepared", rm |-> n10] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" @@
+  n10 :> "prepared" )
+/\ tmState = "committed"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9, n10}
+
+1995520431 states generated, 118262029 distinct states found, 3102753 states left on queue.
+The depth of the complete state graph search is 23.
+Finished in 01h 54min at (2024-03-27 05:33:59)

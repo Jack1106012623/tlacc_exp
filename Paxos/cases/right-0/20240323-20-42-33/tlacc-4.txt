@@ -1,0 +1,147 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 15 and seed 8125330987687681125 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 24893] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10922909260476929300/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10922909260476929300/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10922909260476929300/TLC.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10922909260476929300/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10922909260476929300/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-23 20:46:39)
+set Empty's CCState
+Initialize CC.
+action 1 : Phase1a [b->0, b->0]
+action 2 : Phase2a [v->v1, b->0, v->v1, b->0]
+action 3 : Phase2a [v->v2, b->0, v->v2, b->0]
+action 4 : Phase2a [v->v3, b->0, v->v3, b->0]
+action 5 : Phase1a [b->1, b->1]
+action 6 : Phase2a [v->v1, b->1, v->v1, b->1]
+action 7 : Phase2a [v->v2, b->1, v->v2, b->1]
+action 8 : Phase2a [v->v3, b->1, v->v3, b->1]
+action 9 : Phase1a [b->2, b->2]
+action 10 : Phase2a [v->v1, b->2, v->v1, b->2]
+action 11 : Phase2a [v->v2, b->2, v->v2, b->2]
+action 12 : Phase2a [v->v3, b->2, v->v3, b->2]
+action 13 : Phase1a [b->3, b->3]
+action 14 : Phase2a [v->v1, b->3, v->v1, b->3]
+action 15 : Phase2a [v->v2, b->3, v->v2, b->3]
+action 16 : Phase2a [v->v3, b->3, v->v3, b->3]
+action 17 : Phase1b [a->a1, a->a1]
+action 18 : Phase2b [a->a1, a->a1]
+action 19 : Phase1b [a->a2, a->a2]
+action 20 : Phase2b [a->a2, a->a2]
+action 21 : Phase1b [a->a3, a->a3]
+action 22 : Phase2b [a->a3, a->a3]
+construct Rounds
+Printing rounds...
+round 0: [(S)Phase1a [b->0, b->0], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], ]
+round 1: [(R)Phase2a [v->v1, b->0, v->v1, b->0], (R)Phase2a [v->v2, b->0, v->v2, b->0], (R)Phase2a [v->v3, b->0, v->v3, b->0], ]
+round 2: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], ]
+round 3: [(S)Phase1a [b->1, b->1], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], ]
+round 4: [(R)Phase2a [v->v1, b->1, v->v1, b->1], (R)Phase2a [v->v2, b->1, v->v2, b->1], (R)Phase2a [v->v3, b->1, v->v3, b->1], ]
+round 5: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], ]
+round 6: [(S)Phase1a [b->2, b->2], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], ]
+round 7: [(R)Phase2a [v->v1, b->2, v->v1, b->2], (R)Phase2a [v->v2, b->2, v->v2, b->2], (R)Phase2a [v->v3, b->2, v->v3, b->2], ]
+round 8: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], ]
+round 9: [(S)Phase1a [b->3, b->3], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], ]
+round 10: [(R)Phase2a [v->v1, b->3, v->v1, b->3], (R)Phase2a [v->v2, b->3, v->v2, b->3], (R)Phase2a [v->v3, b->3, v->v3, b->3], ]
+round 11: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, send = 1, nexts=[17, 19, 21, 5], [rn = 0, idx = 1, rcv = 17, nexts=[19, 21, 2, 3, 4, 5], [rn = 0, idx = 2, rcv = 19, nexts=[21, 2, 3, 4, 5], [rn = 0, idx = 3, rcv = 21, nexts=[2, 3, 4, 5]]
+round 1: [[rn = 1, idx = 0, rcv = 2, nexts=[3, 4, 18, 20, 22, 5], [rn = 1, idx = 1, rcv = 3, nexts=[4, 18, 20, 22, 5], [rn = 1, idx = 2, rcv = 4, nexts=[18, 20, 22, 5]]
+round 2: [[rn = 2, idx = 0, rcv = 18, nexts=[20, 22, 5], [rn = 2, idx = 1, rcv = 20, nexts=[22, 5], [rn = 2, idx = 2, rcv = 22, nexts=[5]]
+round 3: [[rn = 3, idx = 0, send = 5, nexts=[17, 19, 21, 9], [rn = 3, idx = 1, rcv = 17, nexts=[19, 21, 6, 7, 8, 9], [rn = 3, idx = 2, rcv = 19, nexts=[21, 6, 7, 8, 9], [rn = 3, idx = 3, rcv = 21, nexts=[6, 7, 8, 9]]
+round 4: [[rn = 4, idx = 0, rcv = 6, nexts=[7, 8, 18, 20, 22, 9], [rn = 4, idx = 1, rcv = 7, nexts=[8, 18, 20, 22, 9], [rn = 4, idx = 2, rcv = 8, nexts=[18, 20, 22, 9]]
+round 5: [[rn = 5, idx = 0, rcv = 18, nexts=[20, 22, 9], [rn = 5, idx = 1, rcv = 20, nexts=[22, 9], [rn = 5, idx = 2, rcv = 22, nexts=[9]]
+round 6: [[rn = 6, idx = 0, send = 9, nexts=[17, 19, 21, 13], [rn = 6, idx = 1, rcv = 17, nexts=[19, 21, 10, 11, 12, 13], [rn = 6, idx = 2, rcv = 19, nexts=[21, 10, 11, 12, 13], [rn = 6, idx = 3, rcv = 21, nexts=[10, 11, 12, 13]]
+round 7: [[rn = 7, idx = 0, rcv = 10, nexts=[11, 12, 18, 20, 22, 13], [rn = 7, idx = 1, rcv = 11, nexts=[12, 18, 20, 22, 13], [rn = 7, idx = 2, rcv = 12, nexts=[18, 20, 22, 13]]
+round 8: [[rn = 8, idx = 0, rcv = 18, nexts=[20, 22, 13], [rn = 8, idx = 1, rcv = 20, nexts=[22, 13], [rn = 8, idx = 2, rcv = 22, nexts=[13]]
+round 9: [[rn = 9, idx = 0, send = 13, nexts=[17, 19, 21], [rn = 9, idx = 1, rcv = 17, nexts=[19, 21, 14, 15, 16], [rn = 9, idx = 2, rcv = 19, nexts=[21, 14, 15, 16], [rn = 9, idx = 3, rcv = 21, nexts=[14, 15, 16]]
+round 10: [[rn = 10, idx = 0, rcv = 14, nexts=[15, 16, 18, 20, 22], [rn = 10, idx = 1, rcv = 15, nexts=[16, 18, 20, 22], [rn = 10, idx = 2, rcv = 16, nexts=[18, 20, 22]]
+round 11: [[rn = 11, idx = 0, rcv = 18, nexts=[20, 22], [rn = 11, idx = 1, rcv = 20, nexts=[22], [rn = 11, idx = 2, rcv = 22, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-23 20:46:39.
+Progress(11) at 2024-03-23 20:46:42: 17,181 states generated (17,181 s/min), 16,530 distinct states found (16,530 ds/min), 10,446 states left on queue.
+Progress(15) at 2024-03-23 20:47:42: 461,283 states generated (444,102 s/min), 435,904 distinct states found (419,374 ds/min), 227,588 states left on queue.
+Progress(16) at 2024-03-23 20:48:42: 864,126 states generated (402,843 s/min), 812,217 distinct states found (376,313 ds/min), 396,858 states left on queue.
+Progress(16) at 2024-03-23 20:49:42: 1,246,356 states generated (382,230 s/min), 1,166,308 distinct states found (354,091 ds/min), 539,469 states left on queue.
+Progress(17) at 2024-03-23 20:50:42: 1,618,249 states generated (371,893 s/min), 1,510,828 distinct states found (344,520 ds/min), 674,863 states left on queue.
+Progress(17) at 2024-03-23 20:51:42: 1,981,228 states generated (362,979 s/min), 1,846,443 distinct states found (335,615 ds/min), 801,042 states left on queue.
+Progress(18) at 2024-03-23 20:52:42: 2,327,079 states generated (345,851 s/min), 2,163,426 distinct states found (316,983 ds/min), 898,513 states left on queue.
+Progress(18) at 2024-03-23 20:53:42: 2,675,378 states generated (348,299 s/min), 2,482,652 distinct states found (319,226 ds/min), 1,010,350 states left on queue.
+Progress(18) at 2024-03-23 20:54:42: 3,016,551 states generated (341,173 s/min), 2,794,611 distinct states found (311,959 ds/min), 1,109,363 states left on queue.
+Progress(18) at 2024-03-23 20:55:42: 3,355,515 states generated (338,964 s/min), 3,103,733 distinct states found (309,122 ds/min), 1,205,567 states left on queue.
+Progress(19) at 2024-03-23 20:56:43: 3,677,095 states generated (321,580 s/min), 3,393,471 distinct states found (289,738 ds/min), 1,267,960 states left on queue.
+Progress(19) at 2024-03-23 20:57:43: 4,008,824 states generated (331,729 s/min), 3,695,292 distinct states found (301,821 ds/min), 1,359,261 states left on queue.
+Progress(19) at 2024-03-23 20:58:43: 4,327,533 states generated (318,709 s/min), 3,984,042 distinct states found (288,750 ds/min), 1,434,127 states left on queue.
+Progress(19) at 2024-03-23 20:59:43: 4,646,593 states generated (319,060 s/min), 4,273,565 distinct states found (289,523 ds/min), 1,511,675 states left on queue.
+Progress(19) at 2024-03-23 21:00:43: 4,963,620 states generated (317,027 s/min), 4,559,021 distinct states found (285,456 ds/min), 1,576,129 states left on queue.
+Progress(19) at 2024-03-23 21:01:43: 5,269,224 states generated (305,604 s/min), 4,831,879 distinct states found (272,858 ds/min), 1,620,870 states left on queue.
+Progress(20) at 2024-03-23 21:02:43: 5,582,753 states generated (313,529 s/min), 5,114,063 distinct states found (282,184 ds/min), 1,678,989 states left on queue.
+Progress(20) at 2024-03-23 21:03:43: 5,889,430 states generated (306,677 s/min), 5,390,501 distinct states found (276,438 ds/min), 1,741,132 states left on queue.
+Progress(20) at 2024-03-23 21:04:43: 6,191,402 states generated (301,972 s/min), 5,661,208 distinct states found (270,707 ds/min), 1,796,170 states left on queue.
+Progress(20) at 2024-03-23 21:05:43: 6,493,754 states generated (302,352 s/min), 5,931,108 distinct states found (269,900 ds/min), 1,843,746 states left on queue.
+Progress(20) at 2024-03-23 21:06:43: 6,790,305 states generated (296,551 s/min), 6,195,168 distinct states found (264,060 ds/min), 1,882,345 states left on queue.
+Progress(20) at 2024-03-23 21:07:43: 7,093,286 states generated (302,981 s/min), 6,466,102 distinct states found (270,934 ds/min), 1,928,320 states left on queue.
+Progress(20) at 2024-03-23 21:08:43: 7,387,022 states generated (293,736 s/min), 6,726,927 distinct states found (260,825 ds/min), 1,957,005 states left on queue.
+Progress(21) at 2024-03-23 21:09:43: 7,679,543 states generated (292,521 s/min), 6,987,305 distinct states found (260,378 ds/min), 1,971,424 states left on queue.
+Progress(21) at 2024-03-23 21:10:43: 7,973,806 states generated (294,263 s/min), 7,250,899 distinct states found (263,594 ds/min), 2,020,051 states left on queue.
+Progress(21) at 2024-03-23 21:11:43: 8,263,361 states generated (289,555 s/min), 7,505,848 distinct states found (254,949 ds/min), 2,051,151 states left on queue.
+Progress(21) at 2024-03-23 21:12:43: 8,546,355 states generated (282,994 s/min), 7,754,942 distinct states found (249,094 ds/min), 2,075,166 states left on queue.
+Progress(21) at 2024-03-23 21:13:43: 8,836,154 states generated (289,799 s/min), 8,010,126 distinct states found (255,184 ds/min), 2,099,917 states left on queue.
+Progress(21) at 2024-03-23 21:14:43: 9,117,220 states generated (281,066 s/min), 8,257,584 distinct states found (247,458 ds/min), 2,124,590 states left on queue.
+Progress(21) at 2024-03-23 21:15:43: 9,402,227 states generated (285,007 s/min), 8,508,841 distinct states found (251,257 ds/min), 2,127,303 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/states/24-03-23-20-46-38.855
+Checkpointing completed at (2024-03-23 21:16:43)
+Progress(21) at 2024-03-23 21:16:43: 9,685,270 states generated (283,043 s/min), 8,758,675 distinct states found (249,834 ds/min), 2,159,188 states left on queue.
+Progress(22) at 2024-03-23 21:17:43: 9,959,514 states generated (274,244 s/min), 9,001,754 distinct states found (243,079 ds/min), 2,121,865 states left on queue.
+Progress(22) at 2024-03-23 21:18:43: 10,243,019 states generated (283,505 s/min), 9,251,290 distinct states found (249,536 ds/min), 2,149,352 states left on queue.
+Progress(22) at 2024-03-23 21:19:43: 10,522,344 states generated (279,325 s/min), 9,496,141 distinct states found (244,851 ds/min), 2,164,088 states left on queue.
+Progress(22) at 2024-03-23 21:20:43: 10,794,642 states generated (272,298 s/min), 9,732,312 distinct states found (236,171 ds/min), 2,169,364 states left on queue.
+Progress(22) at 2024-03-23 21:21:43: 11,067,073 states generated (272,431 s/min), 9,969,903 distinct states found (237,591 ds/min), 2,159,044 states left on queue.
+Progress(22) at 2024-03-23 21:22:43: 11,340,468 states generated (273,395 s/min), 10,206,769 distinct states found (236,866 ds/min), 2,169,584 states left on queue.
+Progress(22) at 2024-03-23 21:23:43: 11,607,624 states generated (267,156 s/min), 10,439,571 distinct states found (232,802 ds/min), 2,157,418 states left on queue.
+Progress(22) at 2024-03-23 21:24:43: 11,884,780 states generated (277,156 s/min), 10,681,549 distinct states found (241,978 ds/min), 2,146,780 states left on queue.
+Progress(22) at 2024-03-23 21:25:43: 12,153,305 states generated (268,525 s/min), 10,914,485 distinct states found (232,936 ds/min), 2,153,474 states left on queue.
+Progress(23) at 2024-03-23 21:26:43: 12,420,207 states generated (266,902 s/min), 11,150,464 distinct states found (235,979 ds/min), 2,101,066 states left on queue.
+Progress(23) at 2024-03-23 21:27:43: 12,690,642 states generated (270,435 s/min), 11,385,233 distinct states found (234,769 ds/min), 2,104,850 states left on queue.
+Progress(23) at 2024-03-23 21:28:43: 12,954,902 states generated (264,260 s/min), 11,614,276 distinct states found (229,043 ds/min), 2,090,683 states left on queue.
+Progress(23) at 2024-03-23 21:29:43: 13,217,689 states generated (262,787 s/min), 11,842,108 distinct states found (227,832 ds/min), 2,063,666 states left on queue.
+Progress(23) at 2024-03-23 21:30:43: 13,477,459 states generated (259,770 s/min), 12,067,509 distinct states found (225,401 ds/min), 2,032,771 states left on queue.
+Progress(23) at 2024-03-23 21:31:43: 13,740,245 states generated (262,786 s/min), 12,295,320 distinct states found (227,811 ds/min), 2,005,792 states left on queue.
+Progress(23) at 2024-03-23 21:32:43: 13,998,368 states generated (258,123 s/min), 12,520,231 distinct states found (224,911 ds/min), 1,963,389 states left on queue.
+Progress(23) at 2024-03-23 21:33:43: 14,260,170 states generated (261,802 s/min), 12,747,217 distinct states found (226,986 ds/min), 1,936,133 states left on queue.
+Progress(24) at 2024-03-23 21:34:43: 14,516,565 states generated (256,395 s/min), 12,971,822 distinct states found (224,605 ds/min), 1,877,107 states left on queue.
+Progress(24) at 2024-03-23 21:35:43: 14,774,841 states generated (258,276 s/min), 13,195,947 distinct states found (224,125 ds/min), 1,848,552 states left on queue.
+Progress(24) at 2024-03-23 21:36:43: 15,028,928 states generated (254,087 s/min), 13,417,053 distinct states found (221,106 ds/min), 1,807,197 states left on queue.
+Progress(24) at 2024-03-23 21:37:43: 15,277,034 states generated (248,106 s/min), 13,634,449 distinct states found (217,396 ds/min), 1,748,339 states left on queue.
+Progress(24) at 2024-03-23 21:38:43: 15,529,879 states generated (252,845 s/min), 13,856,781 distinct states found (222,332 ds/min), 1,678,017 states left on queue.
+Progress(24) at 2024-03-23 21:39:43: 15,778,245 states generated (248,366 s/min), 14,075,814 distinct states found (219,033 ds/min), 1,601,520 states left on queue.
+Progress(24) at 2024-03-23 21:40:43: 16,027,620 states generated (249,375 s/min), 14,294,264 distinct states found (218,450 ds/min), 1,542,666 states left on queue.
+Progress(25) at 2024-03-23 21:41:43: 16,275,286 states generated (247,666 s/min), 14,513,121 distinct states found (218,857 ds/min), 1,458,395 states left on queue.
+Progress(25) at 2024-03-23 21:42:43: 16,515,402 states generated (240,116 s/min), 14,724,781 distinct states found (211,660 ds/min), 1,389,342 states left on queue.
+Progress(25) at 2024-03-23 21:43:43: 16,755,336 states generated (239,934 s/min), 14,940,291 distinct states found (215,510 ds/min), 1,281,128 states left on queue.
+Progress(25) at 2024-03-23 21:44:43: 16,993,197 states generated (237,861 s/min), 15,154,239 distinct states found (213,948 ds/min), 1,166,495 states left on queue.
+Progress(25) at 2024-03-23 21:45:43: 17,233,022 states generated (239,825 s/min), 15,370,018 distinct states found (215,779 ds/min), 1,049,748 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/right-0/states/24-03-23-20-46-38.855
+Checkpointing completed at (2024-03-23 21:46:43)
+Progress(26) at 2024-03-23 21:46:43: 17,470,183 states generated (237,161 s/min), 15,583,771 distinct states found (213,753 ds/min), 928,278 states left on queue.
+Progress(26) at 2024-03-23 21:47:43: 17,699,005 states generated (228,822 s/min), 15,795,610 distinct states found (211,839 ds/min), 749,288 states left on queue.
+Progress(27) at 2024-03-23 21:48:43: 17,925,997 states generated (226,992 s/min), 16,006,556 distinct states found (210,946 ds/min), 560,482 states left on queue.
+Progress(27) at 2024-03-23 21:49:43: 18,146,005 states generated (220,008 s/min), 16,214,564 distinct states found (208,008 ds/min), 312,421 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.7E-6
+  based on the actual fingerprints:  val = 6.5E-6
+18313006 states generated, 16376617 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 33.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 5 and the 95th percentile is 3).
+Finished in 01h 03min at (2024-03-23 21:50:31)

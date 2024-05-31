@@ -1,0 +1,135 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 70 and seed 5922457943728491323 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 55217] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-2/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10081730789664535152/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10081730789664535152/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10081730789664535152/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-2/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-10081730789664535152/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-22 14:33:40)
+set Empty's CCState
+Initialize CC.
+action 1 : Phase1a [b->0, b->0]
+action 2 : Phase2a [v->v1, b->0, v->v1, b->0]
+action 3 : Phase2a [v->v2, b->0, v->v2, b->0]
+action 4 : Phase2a [v->v3, b->0, v->v3, b->0]
+action 5 : Phase1a [b->1, b->1]
+action 6 : Phase2a [v->v1, b->1, v->v1, b->1]
+action 7 : Phase2a [v->v2, b->1, v->v2, b->1]
+action 8 : Phase2a [v->v3, b->1, v->v3, b->1]
+action 9 : Phase1a [b->2, b->2]
+action 10 : Phase2a [v->v1, b->2, v->v1, b->2]
+action 11 : Phase2a [v->v2, b->2, v->v2, b->2]
+action 12 : Phase2a [v->v3, b->2, v->v3, b->2]
+action 13 : Phase1b [a->a1, a->a1]
+action 14 : Phase2b [a->a1, a->a1]
+action 15 : Phase1b [a->a2, a->a2]
+action 16 : Phase2b [a->a2, a->a2]
+action 17 : Phase1b [a->a3, a->a3]
+action 18 : Phase2b [a->a3, a->a3]
+action 19 : Phase1b [a->a4, a->a4]
+action 20 : Phase2b [a->a4, a->a4]
+action 21 : Phase1b [a->a5, a->a5]
+action 22 : Phase2b [a->a5, a->a5]
+construct Rounds
+Printing rounds...
+round 0: [(S)Phase1a [b->0, b->0], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], (R)Phase1b [a->a4, a->a4], (R)Phase1b [a->a5, a->a5], ]
+round 1: [(R)Phase2a [v->v1, b->0, v->v1, b->0], (R)Phase2a [v->v2, b->0, v->v2, b->0], (R)Phase2a [v->v3, b->0, v->v3, b->0], ]
+round 2: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], (R)Phase2b [a->a4, a->a4], (R)Phase2b [a->a5, a->a5], ]
+round 3: [(S)Phase1a [b->1, b->1], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], (R)Phase1b [a->a4, a->a4], (R)Phase1b [a->a5, a->a5], ]
+round 4: [(R)Phase2a [v->v1, b->1, v->v1, b->1], (R)Phase2a [v->v2, b->1, v->v2, b->1], (R)Phase2a [v->v3, b->1, v->v3, b->1], ]
+round 5: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], (R)Phase2b [a->a4, a->a4], (R)Phase2b [a->a5, a->a5], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, send = 1, nexts=[13, 15, 17, 19, 21, 5], [rn = 0, idx = 1, rcv = 13, nexts=[15, 17, 19, 21, 2, 3, 4, 5], [rn = 0, idx = 2, rcv = 15, nexts=[17, 19, 21, 2, 3, 4, 5], [rn = 0, idx = 3, rcv = 17, nexts=[19, 21, 2, 3, 4, 5], [rn = 0, idx = 4, rcv = 19, nexts=[21, 2, 3, 4, 5], [rn = 0, idx = 5, rcv = 21, nexts=[2, 3, 4, 5]]
+round 1: [[rn = 1, idx = 0, rcv = 2, nexts=[3, 4, 14, 16, 18, 20, 22, 5], [rn = 1, idx = 1, rcv = 3, nexts=[4, 14, 16, 18, 20, 22, 5], [rn = 1, idx = 2, rcv = 4, nexts=[14, 16, 18, 20, 22, 5]]
+round 2: [[rn = 2, idx = 0, rcv = 14, nexts=[16, 18, 20, 22, 5], [rn = 2, idx = 1, rcv = 16, nexts=[18, 20, 22, 5], [rn = 2, idx = 2, rcv = 18, nexts=[20, 22, 5], [rn = 2, idx = 3, rcv = 20, nexts=[22, 5], [rn = 2, idx = 4, rcv = 22, nexts=[5]]
+round 3: [[rn = 3, idx = 0, send = 5, nexts=[13, 15, 17, 19, 21], [rn = 3, idx = 1, rcv = 13, nexts=[15, 17, 19, 21, 6, 7, 8], [rn = 3, idx = 2, rcv = 15, nexts=[17, 19, 21, 6, 7, 8], [rn = 3, idx = 3, rcv = 17, nexts=[19, 21, 6, 7, 8], [rn = 3, idx = 4, rcv = 19, nexts=[21, 6, 7, 8], [rn = 3, idx = 5, rcv = 21, nexts=[6, 7, 8]]
+round 4: [[rn = 4, idx = 0, rcv = 6, nexts=[7, 8, 14, 16, 18, 20, 22], [rn = 4, idx = 1, rcv = 7, nexts=[8, 14, 16, 18, 20, 22], [rn = 4, idx = 2, rcv = 8, nexts=[14, 16, 18, 20, 22]]
+round 5: [[rn = 5, idx = 0, rcv = 14, nexts=[16, 18, 20, 22], [rn = 5, idx = 1, rcv = 16, nexts=[18, 20, 22], [rn = 5, idx = 2, rcv = 18, nexts=[20, 22], [rn = 5, idx = 3, rcv = 20, nexts=[22], [rn = 5, idx = 4, rcv = 22, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-22 14:33:40.
+Error: Invariant Inv is violated.
+Error: The behavior up to this point is:
+State 1: <Init line 75, col 9 to line 79, col 23 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = {}
+/\ msgsBak = {}
+/\ maxBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: Initial Action, msgs1 = null, msgs2 = null
+State 2: <Phase1a[b->0, b->0] line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = {[type |-> "1a", bal |-> 0]}
+/\ msgsBak = {[type |-> "1a", bal |-> 0]}
+/\ maxBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 0, idx = 0, send = 1], msgs1 = null, msgs2 = null
+State 3: <Phase1b[a->a1, a->a1] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 0, idx = 1, rcv = 13], msgs1 = null, msgs2 = 1
+State 4: <Phase1b[a->a2, a->a2] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 0, idx = 2, rcv = 15], msgs1 = null, msgs2 = 1
+State 5: <Phase1b[a->a3, a->a3] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 0, idx = 3, rcv = 17], msgs1 = null, msgs2 = 1
+State 6: <Phase2a[v->v1, b->0, v->v1, b->0] line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = { [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 1, idx = 0, rcv = 2], msgs1 = null, msgs2 = 3
+State 7: <Phase2b[a->a1, a->a1] line 156, col 15 to line 162, col 49 of module Paxos>
+/\ maxVal = (a1 :> None @@ a2 :> None @@ a3 :> None @@ a4 :> None @@ a5 :> None)
+/\ maxVBal = (a1 :> 0 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1)
+/\ msgs = { [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> -1 @@ a5 :> -1)
+/\ CCIterator: [rn = 2, idx = 0, rcv = 14], msgs1 = null, msgs2 = 1
+272 states generated, 248 distinct states found, 161 states left on queue.
+The depth of the complete state graph search is 7.
+Finished in 01s at (2024-03-22 14:33:40)

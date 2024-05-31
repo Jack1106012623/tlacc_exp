@@ -1,0 +1,403 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 62 and seed 1798092130326295469 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 49298] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/error1/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-27 03:22:45)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-27 03:22:45.
+Progress(8) at 2024-03-27 03:22:48: 638,873 states generated (638,873 s/min), 94,349 distinct states found (94,349 ds/min), 65,006 states left on queue.
+Progress(11) at 2024-03-27 03:23:48: 17,653,659 states generated (17,014,786 s/min), 1,840,308 distinct states found (1,745,959 ds/min), 924,705 states left on queue.
+Progress(12) at 2024-03-27 03:24:48: 35,537,127 states generated (17,883,468 s/min), 3,415,018 distinct states found (1,574,710 ds/min), 1,507,436 states left on queue.
+Progress(13) at 2024-03-27 03:25:48: 53,863,809 states generated (18,326,682 s/min), 4,884,978 distinct states found (1,469,960 ds/min), 1,935,515 states left on queue.
+Progress(14) at 2024-03-27 03:26:48: 72,784,117 states generated (18,920,308 s/min), 6,271,157 distinct states found (1,386,179 ds/min), 2,198,810 states left on queue.
+Progress(14) at 2024-03-27 03:27:48: 90,933,741 states generated (18,149,624 s/min), 7,670,451 distinct states found (1,399,294 ds/min), 2,520,778 states left on queue.
+Progress(15) at 2024-03-27 03:28:48: 110,170,211 states generated (19,236,470 s/min), 8,958,545 distinct states found (1,288,094 ds/min), 2,629,523 states left on queue.
+Progress(15) at 2024-03-27 03:29:48: 128,685,734 states generated (18,515,523 s/min), 10,267,106 distinct states found (1,308,561 ds/min), 2,798,916 states left on queue.
+Progress(16) at 2024-03-27 03:30:48: 148,445,336 states generated (19,759,602 s/min), 11,450,591 distinct states found (1,183,485 ds/min), 2,711,623 states left on queue.
+Progress(16) at 2024-03-27 03:31:48: 166,886,024 states generated (18,440,688 s/min), 12,703,990 distinct states found (1,253,399 ds/min), 2,800,406 states left on queue.
+Progress(16) at 2024-03-27 03:32:48: 186,434,562 states generated (19,548,538 s/min), 13,852,752 distinct states found (1,148,762 ds/min), 2,646,513 states left on queue.
+Progress(17) at 2024-03-27 03:33:48: 205,771,377 states generated (19,336,815 s/min), 14,992,619 distinct states found (1,139,867 ds/min), 2,522,537 states left on queue.
+Progress(17) at 2024-03-27 03:34:48: 225,396,022 states generated (19,624,645 s/min), 16,072,123 distinct states found (1,079,504 ds/min), 2,249,234 states left on queue.
+Progress(18) at 2024-03-27 03:35:48: 244,851,279 states generated (19,455,257 s/min), 17,135,992 distinct states found (1,063,869 ds/min), 1,993,180 states left on queue.
+Progress(19) at 2024-03-27 03:36:48: 264,875,432 states generated (20,024,153 s/min), 18,129,363 distinct states found (993,371 ds/min), 1,563,896 states left on queue.
+Progress(20) at 2024-03-27 03:37:48: 284,972,736 states generated (20,097,304 s/min), 19,074,708 distinct states found (945,345 ds/min), 1,049,776 states left on queue.
+Error: Invariant TPConsistent is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ msgs = {}
+/\ rmState = ( n1 :> "working" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 2: <RMPrepareOrAbort(n1) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {}
+
+State 3: <TMRcvPrepared(n1) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "prepared" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 4: <RMRcvCommitOrAbortMsg(n1) line 184, col 30 to line 185, col 52 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "working" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 5: <RMPrepareOrAbort(n2) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1}
+
+State 6: <TMRcvPrepared(n2) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = {[type |-> "Prepared", rm |-> n1], [type |-> "Prepared", rm |-> n2]}
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "working" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 7: <RMPrepareOrAbort(n3) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2}
+
+State 8: <TMRcvPrepared(n3) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "working" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 9: <RMPrepareOrAbort(n4) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3}
+
+State 10: <TMRcvPrepared(n4) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "working" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 11: <RMPrepareOrAbort(n5) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4}
+
+State 12: <TMRcvPrepared(n5) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "working" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 13: <RMPrepareOrAbort(n6) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5}
+
+State 14: <TMRcvPrepared(n6) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "working" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6}
+
+State 15: <RMPrepareOrAbort(n7) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6}
+
+State 16: <TMRcvPrepared(n7) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "working" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7}
+
+State 17: <RMPrepareOrAbort(n8) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7}
+
+State 18: <TMRcvPrepared(n8) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "working" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8}
+
+State 19: <RMPrepareOrAbort(n9) line 181, col 25 to line 182, col 49 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8}
+
+State 20: <TMRcvPrepared(n9) line 79, col 3 to line 82, col 41 of module TwoPhase>
+/\ msgs = { [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" )
+/\ tmState = "init"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9}
+
+State 21: <TMCommitOrAbort line 178, col 20 to line 179, col 32 of module TwoPhase>
+/\ msgs = { [type |-> "Commit"],
+  [type |-> "Prepared", rm |-> n1],
+  [type |-> "Prepared", rm |-> n2],
+  [type |-> "Prepared", rm |-> n3],
+  [type |-> "Prepared", rm |-> n4],
+  [type |-> "Prepared", rm |-> n5],
+  [type |-> "Prepared", rm |-> n6],
+  [type |-> "Prepared", rm |-> n7],
+  [type |-> "Prepared", rm |-> n8],
+  [type |-> "Prepared", rm |-> n9] }
+/\ rmState = ( n1 :> "aborted" @@
+  n2 :> "prepared" @@
+  n3 :> "prepared" @@
+  n4 :> "prepared" @@
+  n5 :> "prepared" @@
+  n6 :> "prepared" @@
+  n7 :> "prepared" @@
+  n8 :> "prepared" @@
+  n9 :> "prepared" )
+/\ tmState = "committed"
+/\ tmPrepared = {n1, n2, n3, n4, n5, n6, n7, n8, n9}
+
+298020505 states generated, 19634016 distinct states found, 626806 states left on queue.
+The depth of the complete state graph search is 21.
+Finished in 15min 42s at (2024-03-27 03:38:27)

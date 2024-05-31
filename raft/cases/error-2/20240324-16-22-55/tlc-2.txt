@@ -1,0 +1,1096 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: 069738e)
+Running breadth-first search Model-Checking with fp 63 and seed -5671608008541568936 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 18995] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/raft/cases/error-2/raft.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-3590646816176406225/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-3590646816176406225/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-3590646816176406225/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-3590646816176406225/TLC.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module raft
+Starting... (2024-03-24 16:23:02)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-24 16:23:02.
+Progress(10) at 2024-03-24 16:23:05: 212,532 states generated (212,532 s/min), 89,482 distinct states found (89,482 ds/min), 64,641 states left on queue.
+Progress(13) at 2024-03-24 16:24:05: 7,376,100 states generated (7,163,568 s/min), 2,887,261 distinct states found (2,797,779 ds/min), 2,072,412 states left on queue.
+Progress(14) at 2024-03-24 16:25:05: 14,454,720 states generated (7,078,620 s/min), 5,601,818 distinct states found (2,714,557 ds/min), 4,018,764 states left on queue.
+Progress(14) at 2024-03-24 16:26:05: 21,565,183 states generated (7,110,463 s/min), 8,314,912 distinct states found (2,713,094 ds/min), 5,961,136 states left on queue.
+Progress(14) at 2024-03-24 16:27:05: 28,309,481 states generated (6,744,298 s/min), 10,750,487 distinct states found (2,435,575 ds/min), 7,704,945 states left on queue.
+Progress(14) at 2024-03-24 16:28:05: 35,084,978 states generated (6,775,497 s/min), 13,218,404 distinct states found (2,467,917 ds/min), 9,464,486 states left on queue.
+Progress(14) at 2024-03-24 16:29:05: 41,970,544 states generated (6,885,566 s/min), 15,849,114 distinct states found (2,630,710 ds/min), 11,355,047 states left on queue.
+Progress(15) at 2024-03-24 16:30:06: 48,820,721 states generated (6,850,177 s/min), 18,455,651 distinct states found (2,606,537 ds/min), 13,226,925 states left on queue.
+Progress(15) at 2024-03-24 16:31:06: 55,960,642 states generated (7,139,921 s/min), 21,207,629 distinct states found (2,751,978 ds/min), 15,196,390 states left on queue.
+Progress(15) at 2024-03-24 16:32:06: 62,704,538 states generated (6,743,896 s/min), 23,658,414 distinct states found (2,450,785 ds/min), 16,948,878 states left on queue.
+Progress(15) at 2024-03-24 16:33:06: 69,497,833 states generated (6,793,295 s/min), 26,200,038 distinct states found (2,541,624 ds/min), 18,766,644 states left on queue.
+Progress(15) at 2024-03-24 16:34:06: 76,429,563 states generated (6,931,730 s/min), 28,806,140 distinct states found (2,606,102 ds/min), 20,628,624 states left on queue.
+Progress(15) at 2024-03-24 16:35:06: 83,232,910 states generated (6,803,347 s/min), 31,270,066 distinct states found (2,463,926 ds/min), 22,383,522 states left on queue.
+Progress(15) at 2024-03-24 16:36:06: 89,798,528 states generated (6,565,618 s/min), 33,677,684 distinct states found (2,407,618 ds/min), 24,092,796 states left on queue.
+Progress(15) at 2024-03-24 16:37:06: 96,215,233 states generated (6,416,705 s/min), 35,929,790 distinct states found (2,252,106 ds/min), 25,716,863 states left on queue.
+Progress(15) at 2024-03-24 16:38:06: 102,642,458 states generated (6,427,225 s/min), 38,122,011 distinct states found (2,192,221 ds/min), 27,284,982 states left on queue.
+Progress(15) at 2024-03-24 16:39:06: 109,157,509 states generated (6,515,051 s/min), 40,396,570 distinct states found (2,274,559 ds/min), 28,906,730 states left on queue.
+Progress(15) at 2024-03-24 16:40:06: 115,876,556 states generated (6,719,047 s/min), 42,689,917 distinct states found (2,293,347 ds/min), 30,523,756 states left on queue.
+Progress(15) at 2024-03-24 16:41:06: 122,339,043 states generated (6,462,487 s/min), 45,198,127 distinct states found (2,508,210 ds/min), 32,327,330 states left on queue.
+Progress(15) at 2024-03-24 16:42:06: 128,673,210 states generated (6,334,167 s/min), 47,493,790 distinct states found (2,295,663 ds/min), 33,976,785 states left on queue.
+Progress(15) at 2024-03-24 16:43:06: 135,201,278 states generated (6,528,068 s/min), 49,871,653 distinct states found (2,377,863 ds/min), 35,687,522 states left on queue.
+Progress(15) at 2024-03-24 16:44:06: 141,939,572 states generated (6,738,294 s/min), 52,376,351 distinct states found (2,504,698 ds/min), 37,480,815 states left on queue.
+Progress(15) at 2024-03-24 16:45:06: 148,672,113 states generated (6,732,541 s/min), 54,925,594 distinct states found (2,549,243 ds/min), 39,312,970 states left on queue.
+Progress(15) at 2024-03-24 16:46:06: 155,216,025 states generated (6,543,912 s/min), 57,377,723 distinct states found (2,452,129 ds/min), 41,079,834 states left on queue.
+Progress(15) at 2024-03-24 16:47:06: 161,920,666 states generated (6,704,641 s/min), 59,835,487 distinct states found (2,457,764 ds/min), 42,837,867 states left on queue.
+Progress(15) at 2024-03-24 16:48:06: 168,338,057 states generated (6,417,391 s/min), 62,146,252 distinct states found (2,310,765 ds/min), 44,498,390 states left on queue.
+Progress(16) at 2024-03-24 16:49:06: 174,975,383 states generated (6,637,326 s/min), 64,725,390 distinct states found (2,579,138 ds/min), 46,349,667 states left on queue.
+Progress(16) at 2024-03-24 16:50:06: 182,114,143 states generated (7,138,760 s/min), 67,471,765 distinct states found (2,746,375 ds/min), 48,314,006 states left on queue.
+Progress(16) at 2024-03-24 16:51:06: 188,875,288 states generated (6,761,145 s/min), 69,979,005 distinct states found (2,507,240 ds/min), 50,104,961 states left on queue.
+Progress(16) at 2024-03-24 16:52:06: 195,618,677 states generated (6,743,389 s/min), 72,528,408 distinct states found (2,549,403 ds/min), 51,933,503 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 16:53:06)
+Progress(16) at 2024-03-24 16:53:06: 202,492,498 states generated (6,873,821 s/min), 75,091,902 distinct states found (2,563,494 ds/min), 53,760,890 states left on queue.
+Progress(16) at 2024-03-24 16:54:06: 209,141,217 states generated (6,648,719 s/min), 77,413,161 distinct states found (2,321,259 ds/min), 55,423,460 states left on queue.
+Progress(16) at 2024-03-24 16:55:06: 215,820,333 states generated (6,679,116 s/min), 79,891,875 distinct states found (2,478,714 ds/min), 57,173,156 states left on queue.
+Progress(16) at 2024-03-24 16:56:07: 222,156,571 states generated (6,336,238 s/min), 82,172,362 distinct states found (2,280,487 ds/min), 58,816,548 states left on queue.
+Progress(16) at 2024-03-24 16:57:07: 228,748,290 states generated (6,591,719 s/min), 84,497,983 distinct states found (2,325,621 ds/min), 60,476,305 states left on queue.
+Progress(16) at 2024-03-24 16:58:07: 235,299,814 states generated (6,551,524 s/min), 86,843,577 distinct states found (2,345,594 ds/min), 62,151,615 states left on queue.
+Progress(16) at 2024-03-24 16:59:07: 241,931,286 states generated (6,631,472 s/min), 89,340,121 distinct states found (2,496,544 ds/min), 63,932,059 states left on queue.
+Progress(16) at 2024-03-24 17:00:07: 248,382,066 states generated (6,450,780 s/min), 91,684,806 distinct states found (2,344,685 ds/min), 65,616,425 states left on queue.
+Progress(16) at 2024-03-24 17:01:07: 254,852,761 states generated (6,470,695 s/min), 94,082,321 distinct states found (2,397,515 ds/min), 67,346,700 states left on queue.
+Progress(16) at 2024-03-24 17:02:07: 261,656,794 states generated (6,804,033 s/min), 96,545,622 distinct states found (2,463,301 ds/min), 69,103,609 states left on queue.
+Progress(16) at 2024-03-24 17:03:07: 268,487,258 states generated (6,830,464 s/min), 99,104,709 distinct states found (2,559,087 ds/min), 70,933,458 states left on queue.
+Progress(16) at 2024-03-24 17:04:07: 275,061,657 states generated (6,574,399 s/min), 101,497,709 distinct states found (2,393,000 ds/min), 72,623,369 states left on queue.
+Progress(16) at 2024-03-24 17:05:07: 281,562,731 states generated (6,501,074 s/min), 103,865,256 distinct states found (2,367,547 ds/min), 74,324,396 states left on queue.
+Progress(16) at 2024-03-24 17:06:07: 287,857,548 states generated (6,294,817 s/min), 106,110,729 distinct states found (2,245,473 ds/min), 75,935,250 states left on queue.
+Progress(16) at 2024-03-24 17:07:07: 294,386,507 states generated (6,528,959 s/min), 108,426,052 distinct states found (2,315,323 ds/min), 77,584,717 states left on queue.
+Progress(16) at 2024-03-24 17:08:07: 301,031,223 states generated (6,644,716 s/min), 110,794,716 distinct states found (2,368,664 ds/min), 79,217,171 states left on queue.
+Progress(16) at 2024-03-24 17:09:07: 307,134,705 states generated (6,103,482 s/min), 113,039,082 distinct states found (2,244,366 ds/min), 80,823,445 states left on queue.
+Progress(16) at 2024-03-24 17:10:07: 313,472,031 states generated (6,337,326 s/min), 115,303,992 distinct states found (2,264,910 ds/min), 82,422,391 states left on queue.
+Progress(16) at 2024-03-24 17:11:07: 319,926,188 states generated (6,454,157 s/min), 117,599,322 distinct states found (2,295,330 ds/min), 84,065,253 states left on queue.
+Progress(16) at 2024-03-24 17:12:07: 325,960,230 states generated (6,034,042 s/min), 119,686,474 distinct states found (2,087,152 ds/min), 85,568,858 states left on queue.
+Progress(16) at 2024-03-24 17:13:08: 332,208,560 states generated (6,248,330 s/min), 121,872,280 distinct states found (2,185,806 ds/min), 87,139,405 states left on queue.
+Progress(16) at 2024-03-24 17:14:08: 337,937,028 states generated (5,728,468 s/min), 123,847,981 distinct states found (1,975,701 ds/min), 88,551,924 states left on queue.
+Progress(16) at 2024-03-24 17:15:08: 342,847,795 states generated (4,910,767 s/min), 125,559,558 distinct states found (1,711,577 ds/min), 89,788,898 states left on queue.
+Progress(16) at 2024-03-24 17:16:08: 347,956,877 states generated (5,109,082 s/min), 127,267,889 distinct states found (1,708,331 ds/min), 91,023,155 states left on queue.
+Progress(16) at 2024-03-24 17:17:08: 353,096,854 states generated (5,139,977 s/min), 129,019,347 distinct states found (1,751,458 ds/min), 92,277,640 states left on queue.
+Progress(16) at 2024-03-24 17:18:08: 358,403,691 states generated (5,306,837 s/min), 130,813,394 distinct states found (1,794,047 ds/min), 93,555,410 states left on queue.
+Progress(16) at 2024-03-24 17:19:08: 364,101,164 states generated (5,697,473 s/min), 132,754,866 distinct states found (1,941,472 ds/min), 94,945,350 states left on queue.
+Progress(16) at 2024-03-24 17:20:08: 368,488,780 states generated (4,387,616 s/min), 134,217,414 distinct states found (1,462,548 ds/min), 95,975,885 states left on queue.
+Progress(16) at 2024-03-24 17:21:08: 372,315,303 states generated (3,826,523 s/min), 135,503,938 distinct states found (1,286,524 ds/min), 96,879,704 states left on queue.
+Progress(16) at 2024-03-24 17:22:08: 377,809,319 states generated (5,494,016 s/min), 137,431,301 distinct states found (1,927,363 ds/min), 98,250,773 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 17:23:08)
+Progress(16) at 2024-03-24 17:23:08: 383,138,861 states generated (5,329,542 s/min), 139,290,062 distinct states found (1,858,761 ds/min), 99,587,915 states left on queue.
+Progress(16) at 2024-03-24 17:24:08: 388,436,007 states generated (5,297,146 s/min), 141,135,416 distinct states found (1,845,354 ds/min), 100,903,385 states left on queue.
+Progress(16) at 2024-03-24 17:25:08: 394,013,054 states generated (5,577,047 s/min), 142,910,484 distinct states found (1,775,068 ds/min), 102,159,563 states left on queue.
+Progress(16) at 2024-03-24 17:26:08: 399,388,431 states generated (5,375,377 s/min), 144,740,925 distinct states found (1,830,441 ds/min), 103,465,364 states left on queue.
+Progress(16) at 2024-03-24 17:27:08: 404,906,013 states generated (5,517,582 s/min), 146,604,824 distinct states found (1,863,899 ds/min), 104,784,781 states left on queue.
+Progress(16) at 2024-03-24 17:28:08: 410,658,947 states generated (5,752,934 s/min), 148,636,760 distinct states found (2,031,936 ds/min), 106,223,886 states left on queue.
+Progress(16) at 2024-03-24 17:29:09: 416,274,292 states generated (5,615,345 s/min), 150,707,148 distinct states found (2,070,388 ds/min), 107,687,207 states left on queue.
+Progress(16) at 2024-03-24 17:30:09: 421,664,411 states generated (5,390,119 s/min), 152,729,128 distinct states found (2,021,980 ds/min), 109,139,829 states left on queue.
+Progress(16) at 2024-03-24 17:31:09: 427,196,786 states generated (5,532,375 s/min), 154,882,557 distinct states found (2,153,429 ds/min), 110,687,957 states left on queue.
+Progress(16) at 2024-03-24 17:32:09: 432,699,666 states generated (5,502,880 s/min), 156,875,683 distinct states found (1,993,126 ds/min), 112,120,076 states left on queue.
+Progress(16) at 2024-03-24 17:33:09: 438,051,107 states generated (5,351,441 s/min), 158,870,529 distinct states found (1,994,846 ds/min), 113,556,765 states left on queue.
+Progress(16) at 2024-03-24 17:34:09: 443,353,414 states generated (5,302,307 s/min), 160,764,311 distinct states found (1,893,782 ds/min), 114,908,522 states left on queue.
+Progress(16) at 2024-03-24 17:35:09: 448,822,387 states generated (5,468,973 s/min), 162,684,840 distinct states found (1,920,529 ds/min), 116,293,609 states left on queue.
+Progress(16) at 2024-03-24 17:36:09: 454,216,123 states generated (5,393,736 s/min), 164,527,646 distinct states found (1,842,806 ds/min), 117,614,458 states left on queue.
+Progress(16) at 2024-03-24 17:37:09: 459,834,658 states generated (5,618,535 s/min), 166,582,553 distinct states found (2,054,907 ds/min), 119,091,692 states left on queue.
+Progress(16) at 2024-03-24 17:38:09: 465,388,562 states generated (5,553,904 s/min), 168,616,109 distinct states found (2,033,556 ds/min), 120,555,576 states left on queue.
+Progress(16) at 2024-03-24 17:39:09: 470,844,999 states generated (5,456,437 s/min), 170,617,410 distinct states found (2,001,301 ds/min), 121,992,874 states left on queue.
+Progress(16) at 2024-03-24 17:40:09: 476,294,081 states generated (5,449,082 s/min), 172,515,458 distinct states found (1,898,048 ds/min), 123,363,187 states left on queue.
+Progress(16) at 2024-03-24 17:41:09: 481,799,321 states generated (5,505,240 s/min), 174,474,889 distinct states found (1,959,431 ds/min), 124,770,885 states left on queue.
+Progress(16) at 2024-03-24 17:42:09: 487,312,173 states generated (5,512,852 s/min), 176,407,994 distinct states found (1,933,105 ds/min), 126,137,666 states left on queue.
+Progress(16) at 2024-03-24 17:43:09: 492,843,525 states generated (5,531,352 s/min), 178,399,108 distinct states found (1,991,114 ds/min), 127,564,497 states left on queue.
+Progress(16) at 2024-03-24 17:44:09: 498,489,334 states generated (5,645,809 s/min), 180,399,179 distinct states found (2,000,071 ds/min), 128,997,984 states left on queue.
+Progress(16) at 2024-03-24 17:45:09: 504,034,776 states generated (5,545,442 s/min), 182,416,928 distinct states found (2,017,749 ds/min), 130,445,061 states left on queue.
+Progress(16) at 2024-03-24 17:46:09: 509,628,998 states generated (5,594,222 s/min), 184,526,169 distinct states found (2,109,241 ds/min), 131,960,829 states left on queue.
+Progress(16) at 2024-03-24 17:47:09: 515,200,992 states generated (5,571,994 s/min), 186,646,929 distinct states found (2,120,760 ds/min), 133,487,488 states left on queue.
+Progress(16) at 2024-03-24 17:48:09: 520,765,748 states generated (5,564,756 s/min), 188,664,741 distinct states found (2,017,812 ds/min), 134,931,661 states left on queue.
+Progress(16) at 2024-03-24 17:49:09: 526,289,846 states generated (5,524,098 s/min), 190,723,235 distinct states found (2,058,494 ds/min), 136,409,985 states left on queue.
+Progress(16) at 2024-03-24 17:50:09: 531,791,935 states generated (5,502,089 s/min), 192,711,470 distinct states found (1,988,235 ds/min), 137,839,426 states left on queue.
+Progress(16) at 2024-03-24 17:51:10: 537,369,663 states generated (5,577,728 s/min), 194,875,933 distinct states found (2,164,463 ds/min), 139,395,463 states left on queue.
+Progress(16) at 2024-03-24 17:52:10: 542,963,101 states generated (5,593,438 s/min), 196,908,179 distinct states found (2,032,246 ds/min), 140,851,193 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 17:53:10)
+Progress(16) at 2024-03-24 17:53:10: 548,390,848 states generated (5,427,747 s/min), 198,865,735 distinct states found (1,957,556 ds/min), 142,262,223 states left on queue.
+Progress(16) at 2024-03-24 17:54:10: 553,610,442 states generated (5,219,594 s/min), 200,706,658 distinct states found (1,840,923 ds/min), 143,591,603 states left on queue.
+Progress(16) at 2024-03-24 17:55:10: 559,077,376 states generated (5,466,934 s/min), 202,665,388 distinct states found (1,958,730 ds/min), 144,997,463 states left on queue.
+Progress(16) at 2024-03-24 17:56:10: 564,632,310 states generated (5,554,934 s/min), 204,610,136 distinct states found (1,944,748 ds/min), 146,375,235 states left on queue.
+Progress(16) at 2024-03-24 17:57:10: 570,184,893 states generated (5,552,583 s/min), 206,621,337 distinct states found (2,011,201 ds/min), 147,815,564 states left on queue.
+Progress(16) at 2024-03-24 17:58:10: 575,591,377 states generated (5,406,484 s/min), 208,634,474 distinct states found (2,013,137 ds/min), 149,261,586 states left on queue.
+Progress(16) at 2024-03-24 17:59:10: 581,033,294 states generated (5,441,917 s/min), 210,577,618 distinct states found (1,943,144 ds/min), 150,657,130 states left on queue.
+Progress(16) at 2024-03-24 18:00:10: 586,248,550 states generated (5,215,256 s/min), 212,490,219 distinct states found (1,912,601 ds/min), 152,034,871 states left on queue.
+Progress(16) at 2024-03-24 18:01:10: 591,545,713 states generated (5,297,163 s/min), 214,372,449 distinct states found (1,882,230 ds/min), 153,379,142 states left on queue.
+Progress(16) at 2024-03-24 18:02:11: 596,884,085 states generated (5,338,372 s/min), 216,170,409 distinct states found (1,797,960 ds/min), 154,672,593 states left on queue.
+Progress(16) at 2024-03-24 18:03:11: 602,240,633 states generated (5,356,548 s/min), 218,046,464 distinct states found (1,876,055 ds/min), 156,017,959 states left on queue.
+Progress(16) at 2024-03-24 18:04:11: 607,695,639 states generated (5,455,006 s/min), 220,022,956 distinct states found (1,976,492 ds/min), 157,435,822 states left on queue.
+Progress(16) at 2024-03-24 18:05:11: 612,850,379 states generated (5,154,740 s/min), 221,978,474 distinct states found (1,955,518 ds/min), 158,841,591 states left on queue.
+Progress(16) at 2024-03-24 18:06:11: 618,123,358 states generated (5,272,979 s/min), 224,043,814 distinct states found (2,065,340 ds/min), 160,325,148 states left on queue.
+Progress(16) at 2024-03-24 18:07:11: 623,569,957 states generated (5,446,599 s/min), 226,065,711 distinct states found (2,021,897 ds/min), 161,778,176 states left on queue.
+Progress(17) at 2024-03-24 18:08:11: 629,201,256 states generated (5,631,299 s/min), 228,212,930 distinct states found (2,147,219 ds/min), 163,313,895 states left on queue.
+Progress(17) at 2024-03-24 18:09:11: 634,914,994 states generated (5,713,738 s/min), 230,392,726 distinct states found (2,179,796 ds/min), 164,875,815 states left on queue.
+Progress(17) at 2024-03-24 18:10:11: 640,487,374 states generated (5,572,380 s/min), 232,468,529 distinct states found (2,075,803 ds/min), 166,353,396 states left on queue.
+Progress(17) at 2024-03-24 18:11:11: 646,023,753 states generated (5,536,379 s/min), 234,572,554 distinct states found (2,104,025 ds/min), 167,862,376 states left on queue.
+Progress(17) at 2024-03-24 18:12:11: 651,670,089 states generated (5,646,336 s/min), 236,661,944 distinct states found (2,089,390 ds/min), 169,360,440 states left on queue.
+Progress(17) at 2024-03-24 18:13:11: 657,292,874 states generated (5,622,785 s/min), 238,715,557 distinct states found (2,053,613 ds/min), 170,825,162 states left on queue.
+Progress(17) at 2024-03-24 18:14:11: 662,835,398 states generated (5,542,524 s/min), 240,769,901 distinct states found (2,054,344 ds/min), 172,275,462 states left on queue.
+Progress(17) at 2024-03-24 18:15:11: 668,306,592 states generated (5,471,194 s/min), 242,777,842 distinct states found (2,007,941 ds/min), 173,710,439 states left on queue.
+Progress(17) at 2024-03-24 18:16:11: 673,685,089 states generated (5,378,497 s/min), 244,675,614 distinct states found (1,897,772 ds/min), 175,075,069 states left on queue.
+Progress(17) at 2024-03-24 18:17:11: 679,231,735 states generated (5,546,646 s/min), 246,709,796 distinct states found (2,034,182 ds/min), 176,524,417 states left on queue.
+Progress(17) at 2024-03-24 18:18:11: 684,815,137 states generated (5,583,402 s/min), 248,685,470 distinct states found (1,975,674 ds/min), 177,927,739 states left on queue.
+Progress(17) at 2024-03-24 18:19:11: 689,691,180 states generated (4,876,043 s/min), 250,608,334 distinct states found (1,922,864 ds/min), 179,309,965 states left on queue.
+Progress(17) at 2024-03-24 18:20:11: 694,435,259 states generated (4,744,079 s/min), 252,355,334 distinct states found (1,747,000 ds/min), 180,565,344 states left on queue.
+Progress(17) at 2024-03-24 18:21:12: 699,473,173 states generated (5,037,914 s/min), 254,194,329 distinct states found (1,838,995 ds/min), 181,887,069 states left on queue.
+Progress(17) at 2024-03-24 18:22:12: 704,484,796 states generated (5,011,623 s/min), 255,997,218 distinct states found (1,802,889 ds/min), 183,182,695 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 18:23:12)
+Progress(17) at 2024-03-24 18:23:12: 709,193,078 states generated (4,708,282 s/min), 257,721,028 distinct states found (1,723,810 ds/min), 184,417,074 states left on queue.
+Progress(17) at 2024-03-24 18:24:12: 714,362,897 states generated (5,169,819 s/min), 259,663,831 distinct states found (1,942,803 ds/min), 185,801,255 states left on queue.
+Progress(17) at 2024-03-24 18:25:12: 719,355,793 states generated (4,992,896 s/min), 261,474,791 distinct states found (1,810,960 ds/min), 187,098,197 states left on queue.
+Progress(17) at 2024-03-24 18:26:12: 724,206,292 states generated (4,850,499 s/min), 263,249,605 distinct states found (1,774,814 ds/min), 188,343,509 states left on queue.
+Progress(17) at 2024-03-24 18:27:13: 729,545,251 states generated (5,338,959 s/min), 265,153,336 distinct states found (1,903,731 ds/min), 189,714,032 states left on queue.
+Progress(17) at 2024-03-24 18:28:13: 734,722,434 states generated (5,177,183 s/min), 266,944,240 distinct states found (1,790,904 ds/min), 191,006,646 states left on queue.
+Progress(17) at 2024-03-24 18:29:13: 739,087,926 states generated (4,365,492 s/min), 268,432,163 distinct states found (1,487,923 ds/min), 192,066,432 states left on queue.
+Progress(17) at 2024-03-24 18:30:13: 741,150,359 states generated (2,062,433 s/min), 269,143,935 distinct states found (711,772 ds/min), 192,568,092 states left on queue.
+Progress(17) at 2024-03-24 18:31:13: 746,581,717 states generated (5,431,358 s/min), 271,043,135 distinct states found (1,899,200 ds/min), 193,928,201 states left on queue.
+Progress(17) at 2024-03-24 18:32:13: 752,091,071 states generated (5,509,354 s/min), 272,915,710 distinct states found (1,872,575 ds/min), 195,247,938 states left on queue.
+Progress(17) at 2024-03-24 18:33:13: 757,342,843 states generated (5,251,772 s/min), 274,850,252 distinct states found (1,934,542 ds/min), 196,580,143 states left on queue.
+Progress(17) at 2024-03-24 18:34:13: 762,346,799 states generated (5,003,956 s/min), 276,705,077 distinct states found (1,854,825 ds/min), 197,909,026 states left on queue.
+Progress(17) at 2024-03-24 18:35:13: 767,611,964 states generated (5,265,165 s/min), 278,615,090 distinct states found (1,910,013 ds/min), 199,255,008 states left on queue.
+Progress(17) at 2024-03-24 18:36:13: 773,024,242 states generated (5,412,278 s/min), 280,586,887 distinct states found (1,971,797 ds/min), 200,668,002 states left on queue.
+Progress(17) at 2024-03-24 18:37:13: 778,372,168 states generated (5,347,926 s/min), 282,478,441 distinct states found (1,891,554 ds/min), 202,029,017 states left on queue.
+Progress(17) at 2024-03-24 18:38:13: 783,543,427 states generated (5,171,259 s/min), 284,296,387 distinct states found (1,817,946 ds/min), 203,333,021 states left on queue.
+Progress(17) at 2024-03-24 18:39:13: 788,697,559 states generated (5,154,132 s/min), 286,170,376 distinct states found (1,873,989 ds/min), 204,685,363 states left on queue.
+Progress(17) at 2024-03-24 18:40:13: 793,930,796 states generated (5,233,237 s/min), 287,996,846 distinct states found (1,826,470 ds/min), 206,000,848 states left on queue.
+Progress(17) at 2024-03-24 18:41:13: 799,100,994 states generated (5,170,198 s/min), 289,767,204 distinct states found (1,770,358 ds/min), 207,268,174 states left on queue.
+Progress(17) at 2024-03-24 18:42:13: 804,481,359 states generated (5,380,365 s/min), 291,602,033 distinct states found (1,834,829 ds/min), 208,584,008 states left on queue.
+Progress(17) at 2024-03-24 18:43:13: 809,883,971 states generated (5,402,612 s/min), 293,432,561 distinct states found (1,830,528 ds/min), 209,879,416 states left on queue.
+Progress(17) at 2024-03-24 18:44:13: 815,245,696 states generated (5,361,725 s/min), 295,358,471 distinct states found (1,925,910 ds/min), 211,245,978 states left on queue.
+Progress(17) at 2024-03-24 18:45:13: 820,483,889 states generated (5,238,193 s/min), 297,278,176 distinct states found (1,919,705 ds/min), 212,629,657 states left on queue.
+Progress(17) at 2024-03-24 18:46:13: 825,805,687 states generated (5,321,798 s/min), 299,135,349 distinct states found (1,857,173 ds/min), 213,940,708 states left on queue.
+Progress(17) at 2024-03-24 18:47:13: 831,155,158 states generated (5,349,471 s/min), 301,031,332 distinct states found (1,895,983 ds/min), 215,303,003 states left on queue.
+Progress(17) at 2024-03-24 18:48:13: 836,492,965 states generated (5,337,807 s/min), 302,882,278 distinct states found (1,850,946 ds/min), 216,617,678 states left on queue.
+Progress(17) at 2024-03-24 18:49:13: 841,974,229 states generated (5,481,264 s/min), 304,835,367 distinct states found (1,953,089 ds/min), 218,012,841 states left on queue.
+Progress(17) at 2024-03-24 18:50:13: 847,563,201 states generated (5,588,972 s/min), 306,684,983 distinct states found (1,849,616 ds/min), 219,299,072 states left on queue.
+Progress(17) at 2024-03-24 18:51:13: 852,771,557 states generated (5,208,356 s/min), 308,695,912 distinct states found (2,010,929 ds/min), 220,744,917 states left on queue.
+Progress(17) at 2024-03-24 18:52:13: 858,044,533 states generated (5,272,976 s/min), 310,712,375 distinct states found (2,016,463 ds/min), 222,193,005 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 18:53:14)
+Progress(17) at 2024-03-24 18:53:14: 863,419,258 states generated (5,374,725 s/min), 312,754,962 distinct states found (2,042,587 ds/min), 223,661,011 states left on queue.
+Progress(17) at 2024-03-24 18:54:14: 868,791,378 states generated (5,372,120 s/min), 314,711,528 distinct states found (1,956,566 ds/min), 225,067,050 states left on queue.
+Progress(17) at 2024-03-24 18:55:14: 873,887,832 states generated (5,096,454 s/min), 316,580,988 distinct states found (1,869,460 ds/min), 226,416,262 states left on queue.
+Progress(17) at 2024-03-24 18:56:14: 879,153,317 states generated (5,265,485 s/min), 318,462,035 distinct states found (1,881,047 ds/min), 227,757,983 states left on queue.
+Progress(17) at 2024-03-24 18:57:14: 884,455,196 states generated (5,301,879 s/min), 320,284,968 distinct states found (1,822,933 ds/min), 229,070,863 states left on queue.
+Progress(17) at 2024-03-24 18:58:14: 889,693,212 states generated (5,238,016 s/min), 322,111,127 distinct states found (1,826,159 ds/min), 230,380,654 states left on queue.
+Progress(17) at 2024-03-24 18:59:14: 895,109,808 states generated (5,416,596 s/min), 324,106,549 distinct states found (1,995,422 ds/min), 231,814,424 states left on queue.
+Progress(17) at 2024-03-24 19:00:14: 900,453,613 states generated (5,343,805 s/min), 326,057,871 distinct states found (1,951,322 ds/min), 233,214,531 states left on queue.
+Progress(17) at 2024-03-24 19:01:14: 905,698,358 states generated (5,244,745 s/min), 327,964,018 distinct states found (1,906,147 ds/min), 234,587,386 states left on queue.
+Progress(17) at 2024-03-24 19:02:14: 911,007,140 states generated (5,308,782 s/min), 329,823,043 distinct states found (1,859,025 ds/min), 235,930,073 states left on queue.
+Progress(17) at 2024-03-24 19:03:14: 916,384,883 states generated (5,377,743 s/min), 331,710,791 distinct states found (1,887,748 ds/min), 237,286,146 states left on queue.
+Progress(17) at 2024-03-24 19:04:14: 921,803,267 states generated (5,418,384 s/min), 333,633,037 distinct states found (1,922,246 ds/min), 238,647,198 states left on queue.
+Progress(17) at 2024-03-24 19:05:14: 927,313,767 states generated (5,510,500 s/min), 335,624,859 distinct states found (1,991,822 ds/min), 240,073,229 states left on queue.
+Progress(17) at 2024-03-24 19:06:14: 932,860,816 states generated (5,547,049 s/min), 337,571,181 distinct states found (1,946,322 ds/min), 241,467,805 states left on queue.
+Progress(17) at 2024-03-24 19:07:14: 938,484,379 states generated (5,623,563 s/min), 339,614,831 distinct states found (2,043,650 ds/min), 242,927,598 states left on queue.
+Progress(17) at 2024-03-24 19:08:14: 944,022,084 states generated (5,537,705 s/min), 341,682,330 distinct states found (2,067,499 ds/min), 244,404,817 states left on queue.
+Progress(17) at 2024-03-24 19:09:14: 949,454,185 states generated (5,432,101 s/min), 343,673,907 distinct states found (1,991,577 ds/min), 245,803,411 states left on queue.
+Progress(17) at 2024-03-24 19:10:14: 954,915,984 states generated (5,461,799 s/min), 345,701,845 distinct states found (2,027,938 ds/min), 247,266,527 states left on queue.
+Progress(17) at 2024-03-24 19:11:14: 960,264,321 states generated (5,348,337 s/min), 347,622,954 distinct states found (1,921,109 ds/min), 248,644,917 states left on queue.
+Progress(17) at 2024-03-24 19:12:14: 965,638,366 states generated (5,374,045 s/min), 349,554,052 distinct states found (1,931,098 ds/min), 250,024,253 states left on queue.
+Progress(17) at 2024-03-24 19:13:14: 970,904,379 states generated (5,266,013 s/min), 351,404,561 distinct states found (1,850,509 ds/min), 251,315,948 states left on queue.
+Progress(17) at 2024-03-24 19:14:14: 976,061,862 states generated (5,157,483 s/min), 353,337,089 distinct states found (1,932,528 ds/min), 252,664,156 states left on queue.
+Progress(17) at 2024-03-24 19:15:14: 981,225,714 states generated (5,163,852 s/min), 355,159,470 distinct states found (1,822,381 ds/min), 253,970,350 states left on queue.
+Progress(17) at 2024-03-24 19:16:14: 986,419,908 states generated (5,194,194 s/min), 356,977,406 distinct states found (1,817,936 ds/min), 255,250,559 states left on queue.
+Progress(17) at 2024-03-24 19:17:14: 991,802,522 states generated (5,382,614 s/min), 358,924,262 distinct states found (1,946,856 ds/min), 256,643,261 states left on queue.
+Progress(17) at 2024-03-24 19:18:15: 997,038,545 states generated (5,236,023 s/min), 360,815,588 distinct states found (1,891,326 ds/min), 258,006,240 states left on queue.
+Progress(17) at 2024-03-24 19:19:15: 1,002,279,261 states generated (5,240,716 s/min), 362,646,959 distinct states found (1,831,371 ds/min), 259,315,723 states left on queue.
+Progress(17) at 2024-03-24 19:20:15: 1,007,477,244 states generated (5,197,983 s/min), 364,519,880 distinct states found (1,872,921 ds/min), 260,673,495 states left on queue.
+Progress(17) at 2024-03-24 19:21:15: 1,012,396,877 states generated (4,919,633 s/min), 366,271,677 distinct states found (1,751,797 ds/min), 261,927,985 states left on queue.
+Progress(17) at 2024-03-24 19:22:15: 1,016,409,256 states generated (4,012,379 s/min), 367,686,357 distinct states found (1,414,680 ds/min), 262,947,966 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 19:23:16)
+Progress(17) at 2024-03-24 19:23:16: 1,020,696,792 states generated (4,287,536 s/min), 369,157,554 distinct states found (1,471,197 ds/min), 264,008,039 states left on queue.
+Progress(17) at 2024-03-24 19:24:16: 1,025,070,982 states generated (4,374,190 s/min), 370,690,311 distinct states found (1,532,757 ds/min), 265,095,403 states left on queue.
+Progress(17) at 2024-03-24 19:25:16: 1,029,429,365 states generated (4,358,383 s/min), 372,226,101 distinct states found (1,535,790 ds/min), 266,194,235 states left on queue.
+Progress(17) at 2024-03-24 19:26:16: 1,034,354,761 states generated (4,925,396 s/min), 373,864,929 distinct states found (1,638,828 ds/min), 267,358,761 states left on queue.
+Progress(17) at 2024-03-24 19:27:16: 1,039,138,995 states generated (4,784,234 s/min), 375,548,118 distinct states found (1,683,189 ds/min), 268,552,956 states left on queue.
+Progress(17) at 2024-03-24 19:28:16: 1,044,165,737 states generated (5,026,742 s/min), 377,370,197 distinct states found (1,822,079 ds/min), 269,855,335 states left on queue.
+Progress(17) at 2024-03-24 19:29:16: 1,049,036,899 states generated (4,871,162 s/min), 379,106,529 distinct states found (1,736,332 ds/min), 271,099,661 states left on queue.
+Progress(17) at 2024-03-24 19:30:16: 1,054,041,727 states generated (5,004,828 s/min), 380,854,409 distinct states found (1,747,880 ds/min), 272,338,972 states left on queue.
+Progress(17) at 2024-03-24 19:31:16: 1,058,820,797 states generated (4,779,070 s/min), 382,530,268 distinct states found (1,675,859 ds/min), 273,523,244 states left on queue.
+Progress(17) at 2024-03-24 19:32:16: 1,063,401,358 states generated (4,580,561 s/min), 384,126,114 distinct states found (1,595,846 ds/min), 274,640,465 states left on queue.
+Progress(17) at 2024-03-24 19:33:16: 1,067,395,911 states generated (3,994,553 s/min), 385,444,985 distinct states found (1,318,871 ds/min), 275,507,373 states left on queue.
+Progress(17) at 2024-03-24 19:34:16: 1,071,630,445 states generated (4,234,534 s/min), 386,933,510 distinct states found (1,488,525 ds/min), 276,508,594 states left on queue.
+Progress(17) at 2024-03-24 19:35:16: 1,076,041,916 states generated (4,411,471 s/min), 388,593,009 distinct states found (1,659,499 ds/min), 277,695,663 states left on queue.
+Progress(17) at 2024-03-24 19:36:16: 1,080,295,695 states generated (4,253,779 s/min), 390,140,018 distinct states found (1,547,009 ds/min), 278,794,458 states left on queue.
+Progress(17) at 2024-03-24 19:37:16: 1,084,150,358 states generated (3,854,663 s/min), 391,594,092 distinct states found (1,454,074 ds/min), 279,826,499 states left on queue.
+Progress(17) at 2024-03-24 19:38:16: 1,087,671,161 states generated (3,520,803 s/min), 392,874,075 distinct states found (1,279,983 ds/min), 280,746,913 states left on queue.
+Progress(17) at 2024-03-24 19:39:16: 1,091,222,310 states generated (3,551,149 s/min), 394,158,294 distinct states found (1,284,219 ds/min), 281,674,091 states left on queue.
+Progress(17) at 2024-03-24 19:40:16: 1,095,074,650 states generated (3,852,340 s/min), 395,475,602 distinct states found (1,317,308 ds/min), 282,616,681 states left on queue.
+Progress(17) at 2024-03-24 19:41:17: 1,098,965,165 states generated (3,890,515 s/min), 396,903,174 distinct states found (1,427,572 ds/min), 283,637,199 states left on queue.
+Progress(17) at 2024-03-24 19:42:17: 1,102,477,582 states generated (3,512,417 s/min), 398,156,077 distinct states found (1,252,903 ds/min), 284,532,796 states left on queue.
+Progress(17) at 2024-03-24 19:43:17: 1,106,507,657 states generated (4,030,075 s/min), 399,516,105 distinct states found (1,360,028 ds/min), 285,483,649 states left on queue.
+Progress(17) at 2024-03-24 19:44:17: 1,110,296,563 states generated (3,788,906 s/min), 400,704,315 distinct states found (1,188,210 ds/min), 286,280,796 states left on queue.
+Progress(17) at 2024-03-24 19:45:17: 1,114,089,248 states generated (3,792,685 s/min), 402,140,713 distinct states found (1,436,398 ds/min), 287,306,942 states left on queue.
+Progress(17) at 2024-03-24 19:46:17: 1,115,488,850 states generated (1,399,602 s/min), 402,651,635 distinct states found (510,922 ds/min), 287,675,950 states left on queue.
+Progress(17) at 2024-03-24 19:47:17: 1,115,488,850 states generated (0 s/min), 402,651,635 distinct states found (0 ds/min), 287,675,950 states left on queue.
+Progress(17) at 2024-03-24 19:48:17: 1,115,497,369 states generated (8,519 s/min), 402,654,801 distinct states found (3,166 ds/min), 287,678,304 states left on queue.
+Progress(17) at 2024-03-24 19:49:17: 1,116,606,905 states generated (1,109,536 s/min), 403,040,191 distinct states found (385,390 ds/min), 287,953,784 states left on queue.
+Progress(17) at 2024-03-24 19:50:17: 1,120,316,476 states generated (3,709,571 s/min), 404,324,105 distinct states found (1,283,914 ds/min), 288,855,095 states left on queue.
+Progress(17) at 2024-03-24 19:51:17: 1,124,034,539 states generated (3,718,063 s/min), 405,680,862 distinct states found (1,356,757 ds/min), 289,813,220 states left on queue.
+Progress(17) at 2024-03-24 19:52:17: 1,127,904,288 states generated (3,869,749 s/min), 407,074,044 distinct states found (1,393,182 ds/min), 290,815,964 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/raft/cases/error-2/states/24-03-24-16-23-02.206
+Checkpointing completed at (2024-03-24 19:53:18)
+Progress(17) at 2024-03-24 19:53:18: 1,131,810,467 states generated (3,906,179 s/min), 408,448,101 distinct states found (1,374,057 ds/min), 291,804,070 states left on queue.
+Progress(17) at 2024-03-24 19:54:18: 1,135,706,152 states generated (3,895,685 s/min), 409,784,980 distinct states found (1,336,879 ds/min), 292,768,044 states left on queue.
+Progress(17) at 2024-03-24 19:55:18: 1,139,559,103 states generated (3,852,951 s/min), 411,105,470 distinct states found (1,320,490 ds/min), 293,710,572 states left on queue.
+Progress(17) at 2024-03-24 19:56:18: 1,144,066,324 states generated (4,507,221 s/min), 412,691,053 distinct states found (1,585,583 ds/min), 294,855,609 states left on queue.
+Progress(17) at 2024-03-24 19:57:18: 1,148,689,861 states generated (4,623,537 s/min), 414,290,897 distinct states found (1,599,844 ds/min), 295,999,743 states left on queue.
+Progress(17) at 2024-03-24 19:58:18: 1,153,331,613 states generated (4,641,752 s/min), 415,887,984 distinct states found (1,597,087 ds/min), 297,147,950 states left on queue.
+Progress(17) at 2024-03-24 19:59:18: 1,157,916,731 states generated (4,585,118 s/min), 417,416,784 distinct states found (1,528,800 ds/min), 298,252,712 states left on queue.
+Progress(17) at 2024-03-24 20:00:18: 1,162,468,098 states generated (4,551,367 s/min), 418,966,571 distinct states found (1,549,787 ds/min), 299,363,934 states left on queue.
+Progress(17) at 2024-03-24 20:01:18: 1,166,716,902 states generated (4,248,804 s/min), 420,405,131 distinct states found (1,438,560 ds/min), 300,383,410 states left on queue.
+Progress(17) at 2024-03-24 20:02:18: 1,170,954,205 states generated (4,237,303 s/min), 421,834,888 distinct states found (1,429,757 ds/min), 301,405,911 states left on queue.
+Progress(17) at 2024-03-24 20:03:18: 1,175,485,164 states generated (4,530,959 s/min), 423,365,232 distinct states found (1,530,344 ds/min), 302,501,580 states left on queue.
+Progress(17) at 2024-03-24 20:04:18: 1,179,370,148 states generated (3,884,984 s/min), 424,746,220 distinct states found (1,380,988 ds/min), 303,498,763 states left on queue.
+Progress(17) at 2024-03-24 20:05:18: 1,182,897,950 states generated (3,527,802 s/min), 425,988,685 distinct states found (1,242,465 ds/min), 304,395,713 states left on queue.
+Progress(17) at 2024-03-24 20:06:18: 1,186,360,334 states generated (3,462,384 s/min), 427,198,932 distinct states found (1,210,247 ds/min), 305,268,665 states left on queue.
+Progress(17) at 2024-03-24 20:07:18: 1,190,037,070 states generated (3,676,736 s/min), 428,441,852 distinct states found (1,242,920 ds/min), 306,168,099 states left on queue.
+Progress(17) at 2024-03-24 20:08:18: 1,193,602,631 states generated (3,565,561 s/min), 429,663,743 distinct states found (1,221,891 ds/min), 307,039,993 states left on queue.
+Progress(17) at 2024-03-24 20:09:19: 1,197,313,946 states generated (3,711,315 s/min), 430,833,267 distinct states found (1,169,524 ds/min), 307,852,906 states left on queue.
+Progress(17) at 2024-03-24 20:10:19: 1,200,552,155 states generated (3,238,209 s/min), 432,000,762 distinct states found (1,167,495 ds/min), 308,694,523 states left on queue.
+Progress(17) at 2024-03-24 20:11:19: 1,204,267,945 states generated (3,715,790 s/min), 433,264,742 distinct states found (1,263,980 ds/min), 309,594,505 states left on queue.
+Progress(17) at 2024-03-24 20:12:19: 1,207,757,059 states generated (3,489,114 s/min), 434,496,701 distinct states found (1,231,959 ds/min), 310,483,255 states left on queue.
+Progress(17) at 2024-03-24 20:13:19: 1,211,009,863 states generated (3,252,804 s/min), 435,627,990 distinct states found (1,131,289 ds/min), 311,301,147 states left on queue.
+Progress(17) at 2024-03-24 20:14:19: 1,213,869,224 states generated (2,859,361 s/min), 436,572,185 distinct states found (944,195 ds/min), 311,980,316 states left on queue.
+Progress(17) at 2024-03-24 20:15:19: 1,217,748,431 states generated (3,879,207 s/min), 437,879,619 distinct states found (1,307,434 ds/min), 312,923,073 states left on queue.
+Progress(17) at 2024-03-24 20:16:19: 1,221,713,764 states generated (3,965,333 s/min), 439,278,507 distinct states found (1,398,888 ds/min), 313,930,323 states left on queue.
+Progress(17) at 2024-03-24 20:17:19: 1,225,241,448 states generated (3,527,684 s/min), 440,478,095 distinct states found (1,199,588 ds/min), 314,783,987 states left on queue.
+Progress(17) at 2024-03-24 20:18:19: 1,228,583,380 states generated (3,341,932 s/min), 441,587,910 distinct states found (1,109,815 ds/min), 315,582,320 states left on queue.
+Progress(17) at 2024-03-24 20:19:19: 1,232,221,014 states generated (3,637,634 s/min), 442,799,639 distinct states found (1,211,729 ds/min), 316,455,606 states left on queue.
+Error: Invariant ElectionSafety is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Follower @@ n2 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 1 @@ n2 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 2: <Timeout(n1) line 180, col 15 to line 189, col 60 of module raft>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 3: <Timeout(n2) line 180, col 15 to line 189, col 60 of module raft>
+/\ elections = {}
+/\ messages = <<>>
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 4: <RequestVote(n1,n1) line 193, col 5 to line 201, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 5: <RequestVote(n2,n1) line 193, col 5 to line 201, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 6: <RequestVote(n1,n2) line 193, col 5 to line 201, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 7: <RequestVote(n2,n2) line 193, col 5 to line 201, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 8: <CCHandleRequestVoteRequest(n1,n1) line 556, col 5 to line 563, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 9: <CCHandleRequestVoteRequest(n2,n1) line 556, col 5 to line 563, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 10: <CCHandleRequestVoteRequest(n1,n2) line 556, col 5 to line 563, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 11: <CCHandleRequestVoteRequest(n2,n2) line 556, col 5 to line 563, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {} @@ n2 :> {})
+/\ voterLog = (n1 :> <<>> @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 12: <CCHandleRequestVoteResponse(n1,n1) line 566, col 5 to line 575, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> <<>>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 13: <CCHandleRequestVoteResponse(n2,n1) line 566, col 5 to line 575, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {n1})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {n1})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> (n1 :> <<>>))
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 14: <CCHandleRequestVoteResponse(n1,n2) line 566, col 5 to line 575, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n1})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n1})
+/\ voterLog = (n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@ n2 :> (n1 :> <<>>))
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 15: <CCHandleRequestVoteResponse(n2,n2) line 566, col 5 to line 575, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ voterLog = (n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@ n2 :> (n1 :> <<>> @@ n2 :> <<>>))
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 16: <BecomeLeader(n1) line 232, col 5 to line 245, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1, n2},
+    evoterLog |-> (n1 :> <<>> @@ n2 :> <<>>) ] }
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Candidate)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ voterLog = (n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@ n2 :> (n1 :> <<>> @@ n2 :> <<>>))
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+State 17: <BecomeLeader(n2) line 232, col 5 to line 245, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1, n2},
+    evoterLog |-> (n1 :> <<>> @@ n2 :> <<>>) ],
+  [ eterm |-> 2,
+    eleader |-> n2,
+    elog |-> <<>>,
+    evotes |-> {n1, n2},
+    evoterLog |-> (n1 :> <<>> @@ n2 :> <<>>) ] }
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = (n1 :> (n1 :> 0 @@ n2 :> 0) @@ n2 :> (n1 :> 0 @@ n2 :> 0))
+/\ log = (n1 :> <<>> @@ n2 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Leader)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ nextIndex = (n1 :> (n1 :> 1 @@ n2 :> 1) @@ n2 :> (n1 :> 1 @@ n2 :> 1))
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n1, n2})
+/\ voterLog = (n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@ n2 :> (n1 :> <<>> @@ n2 :> <<>>))
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil)
+
+1233770567 states generated, 443289482 distinct states found, 316812186 states left on queue.
+The depth of the complete state graph search is 17.
+Finished in 03h 56min at (2024-03-24 20:19:46)

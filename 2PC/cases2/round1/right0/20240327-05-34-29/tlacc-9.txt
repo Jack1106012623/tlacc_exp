@@ -1,0 +1,56 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 56 and seed -6276576398729162785 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 51652] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/right0/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round1/right0/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-03-27 05:34:29)
+set Empty's CCState
+Initialize CC.
+action 1 : TMCommitOrAbort []
+action 2 : RMPrepareOrAbort [rm->n1, rm->n1]
+action 3 : TMRcvPrepared [rm->n1, rm->n1]
+action 4 : RMRcvCommitOrAbortMsg [rm->n1, rm->n1]
+action 5 : RMPrepareOrAbort [rm->n2, rm->n2]
+action 6 : TMRcvPrepared [rm->n2, rm->n2]
+action 7 : RMRcvCommitOrAbortMsg [rm->n2, rm->n2]
+action 8 : RMPrepareOrAbort [rm->n3, rm->n3]
+action 9 : TMRcvPrepared [rm->n3, rm->n3]
+action 10 : RMRcvCommitOrAbortMsg [rm->n3, rm->n3]
+action 11 : RMPrepareOrAbort [rm->n4, rm->n4]
+action 12 : TMRcvPrepared [rm->n4, rm->n4]
+action 13 : RMRcvCommitOrAbortMsg [rm->n4, rm->n4]
+action 14 : RMPrepareOrAbort [rm->n5, rm->n5]
+action 15 : TMRcvPrepared [rm->n5, rm->n5]
+action 16 : RMRcvCommitOrAbortMsg [rm->n5, rm->n5]
+action 17 : RMPrepareOrAbort [rm->n6, rm->n6]
+action 18 : TMRcvPrepared [rm->n6, rm->n6]
+action 19 : RMRcvCommitOrAbortMsg [rm->n6, rm->n6]
+action 20 : RMPrepareOrAbort [rm->n7, rm->n7]
+action 21 : TMRcvPrepared [rm->n7, rm->n7]
+action 22 : RMRcvCommitOrAbortMsg [rm->n7, rm->n7]
+action 23 : RMPrepareOrAbort [rm->n8, rm->n8]
+action 24 : TMRcvPrepared [rm->n8, rm->n8]
+action 25 : RMRcvCommitOrAbortMsg [rm->n8, rm->n8]
+action 26 : RMPrepareOrAbort [rm->n9, rm->n9]
+action 27 : TMRcvPrepared [rm->n9, rm->n9]
+action 28 : RMRcvCommitOrAbortMsg [rm->n9, rm->n9]
+construct Rounds
+Printing rounds...
+round 0: [(S)RMPrepareOrAbort [rm->n1, rm->n1], (S)RMPrepareOrAbort [rm->n2, rm->n2], (S)RMPrepareOrAbort [rm->n3, rm->n3], (S)RMPrepareOrAbort [rm->n4, rm->n4], (S)RMPrepareOrAbort [rm->n5, rm->n5], (S)RMPrepareOrAbort [rm->n6, rm->n6], (S)RMPrepareOrAbort [rm->n7, rm->n7], (S)RMPrepareOrAbort [rm->n8, rm->n8], (S)RMPrepareOrAbort [rm->n9, rm->n9], (R)TMRcvPrepared [rm->n1, rm->n1], (R)TMRcvPrepared [rm->n2, rm->n2], (R)TMRcvPrepared [rm->n3, rm->n3], (R)TMRcvPrepared [rm->n4, rm->n4], (R)TMRcvPrepared [rm->n5, rm->n5], (R)TMRcvPrepared [rm->n6, rm->n6], (R)TMRcvPrepared [rm->n7, rm->n7], (R)TMRcvPrepared [rm->n8, rm->n8], (R)TMRcvPrepared [rm->n9, rm->n9], ]
+round 1: [(S)TMCommitOrAbort [], (R)RMRcvCommitOrAbortMsg [rm->n1, rm->n1], (R)RMRcvCommitOrAbortMsg [rm->n2, rm->n2], (R)RMRcvCommitOrAbortMsg [rm->n3, rm->n3], (R)RMRcvCommitOrAbortMsg [rm->n4, rm->n4], (R)RMRcvCommitOrAbortMsg [rm->n5, rm->n5], (R)RMRcvCommitOrAbortMsg [rm->n6, rm->n6], (R)RMRcvCommitOrAbortMsg [rm->n7, rm->n7], (R)RMRcvCommitOrAbortMsg [rm->n8, rm->n8], (R)RMRcvCommitOrAbortMsg [rm->n9, rm->n9], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, send = 2, nexts=[5], [rn = 0, idx = 1, send = 5, nexts=[8], [rn = 0, idx = 2, send = 8, nexts=[11], [rn = 0, idx = 3, send = 11, nexts=[14], [rn = 0, idx = 4, send = 14, nexts=[17], [rn = 0, idx = 5, send = 17, nexts=[20], [rn = 0, idx = 6, send = 20, nexts=[23], [rn = 0, idx = 7, send = 23, nexts=[26], [rn = 0, idx = 8, send = 26, nexts=[3, 6, 9, 12, 15, 18, 21, 24, 27, 1], [rn = 0, idx = 9, rcv = 3, nexts=[6, 9, 12, 15, 18, 21, 24, 27, 1], [rn = 0, idx = 10, rcv = 6, nexts=[9, 12, 15, 18, 21, 24, 27, 1], [rn = 0, idx = 11, rcv = 9, nexts=[12, 15, 18, 21, 24, 27, 1], [rn = 0, idx = 12, rcv = 12, nexts=[15, 18, 21, 24, 27, 1], [rn = 0, idx = 13, rcv = 15, nexts=[18, 21, 24, 27, 1], [rn = 0, idx = 14, rcv = 18, nexts=[21, 24, 27, 1], [rn = 0, idx = 15, rcv = 21, nexts=[24, 27, 1], [rn = 0, idx = 16, rcv = 24, nexts=[27, 1], [rn = 0, idx = 17, rcv = 27, nexts=[1]]
+round 1: [[rn = 1, idx = 0, send = 1, nexts=[4, 7, 10, 13, 16, 19, 22, 25, 28], [rn = 1, idx = 1, rcv = 4, nexts=[7, 10, 13, 16, 19, 22, 25, 28], [rn = 1, idx = 2, rcv = 7, nexts=[10, 13, 16, 19, 22, 25, 28], [rn = 1, idx = 3, rcv = 10, nexts=[13, 16, 19, 22, 25, 28], [rn = 1, idx = 4, rcv = 13, nexts=[16, 19, 22, 25, 28], [rn = 1, idx = 5, rcv = 16, nexts=[19, 22, 25, 28], [rn = 1, idx = 6, rcv = 19, nexts=[22, 25, 28], [rn = 1, idx = 7, rcv = 22, nexts=[25, 28], [rn = 1, idx = 8, rcv = 25, nexts=[28], [rn = 1, idx = 9, rcv = 28, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-27 05:34:29.
+Progress(17) at 2024-03-27 05:34:32: 317,022 states generated (317,022 s/min), 105,475 distinct states found (105,475 ds/min), 35,785 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 7.4E-9
+  based on the actual fingerprints:  val = 1.2E-9
+767772 states generated, 282850 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 29.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 10 and the 95th percentile is 4).
+Finished in 07s at (2024-03-27 05:34:37)

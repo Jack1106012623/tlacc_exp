@@ -1,0 +1,1 @@
+from [Paxos](https://github.com/tlaplus/Examples/tree/master/specifications/Paxos)

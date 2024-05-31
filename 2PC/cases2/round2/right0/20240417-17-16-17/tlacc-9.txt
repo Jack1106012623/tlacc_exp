@@ -1,0 +1,79 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 88 and seed 1182433932006303492 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 98200] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/right0/TwoPhase.tla
+Parsing file /Users/admin/tmp/tla/tlacc/2PC/cases2/round2/right0/TCommit.tla
+Semantic processing of module TCommit
+Semantic processing of module TwoPhase
+Starting... (2024-04-17 17:16:17)
+set Empty's CCState
+Initialize CC.
+action 1 : TMCommit []
+action 2 : TMAbort []
+action 3 : TMRcvPrepared [rm->n1, rm->n1]
+action 4 : RMPrepare [rm->n1, rm->n1]
+action 5 : RMChooseToAbort [rm->n1, rm->n1]
+action 6 : RMRcvCommitMsg [rm->n1, rm->n1]
+action 7 : RMRcvAbortMsg [rm->n1, rm->n1]
+action 8 : TMRcvPrepared [rm->n2, rm->n2]
+action 9 : RMPrepare [rm->n2, rm->n2]
+action 10 : RMChooseToAbort [rm->n2, rm->n2]
+action 11 : RMRcvCommitMsg [rm->n2, rm->n2]
+action 12 : RMRcvAbortMsg [rm->n2, rm->n2]
+action 13 : TMRcvPrepared [rm->n3, rm->n3]
+action 14 : RMPrepare [rm->n3, rm->n3]
+action 15 : RMChooseToAbort [rm->n3, rm->n3]
+action 16 : RMRcvCommitMsg [rm->n3, rm->n3]
+action 17 : RMRcvAbortMsg [rm->n3, rm->n3]
+action 18 : TMRcvPrepared [rm->n4, rm->n4]
+action 19 : RMPrepare [rm->n4, rm->n4]
+action 20 : RMChooseToAbort [rm->n4, rm->n4]
+action 21 : RMRcvCommitMsg [rm->n4, rm->n4]
+action 22 : RMRcvAbortMsg [rm->n4, rm->n4]
+action 23 : TMRcvPrepared [rm->n5, rm->n5]
+action 24 : RMPrepare [rm->n5, rm->n5]
+action 25 : RMChooseToAbort [rm->n5, rm->n5]
+action 26 : RMRcvCommitMsg [rm->n5, rm->n5]
+action 27 : RMRcvAbortMsg [rm->n5, rm->n5]
+action 28 : TMRcvPrepared [rm->n6, rm->n6]
+action 29 : RMPrepare [rm->n6, rm->n6]
+action 30 : RMChooseToAbort [rm->n6, rm->n6]
+action 31 : RMRcvCommitMsg [rm->n6, rm->n6]
+action 32 : RMRcvAbortMsg [rm->n6, rm->n6]
+action 33 : TMRcvPrepared [rm->n7, rm->n7]
+action 34 : RMPrepare [rm->n7, rm->n7]
+action 35 : RMChooseToAbort [rm->n7, rm->n7]
+action 36 : RMRcvCommitMsg [rm->n7, rm->n7]
+action 37 : RMRcvAbortMsg [rm->n7, rm->n7]
+action 38 : TMRcvPrepared [rm->n8, rm->n8]
+action 39 : RMPrepare [rm->n8, rm->n8]
+action 40 : RMChooseToAbort [rm->n8, rm->n8]
+action 41 : RMRcvCommitMsg [rm->n8, rm->n8]
+action 42 : RMRcvAbortMsg [rm->n8, rm->n8]
+action 43 : TMRcvPrepared [rm->n9, rm->n9]
+action 44 : RMPrepare [rm->n9, rm->n9]
+action 45 : RMChooseToAbort [rm->n9, rm->n9]
+action 46 : RMRcvCommitMsg [rm->n9, rm->n9]
+action 47 : RMRcvAbortMsg [rm->n9, rm->n9]
+construct Rounds
+Printing rounds...
+round 0: [(R)RMPrepare [rm->n1, rm->n1], (R)RMPrepare [rm->n2, rm->n2], (R)RMPrepare [rm->n3, rm->n3], (R)RMPrepare [rm->n4, rm->n4], (R)RMPrepare [rm->n5, rm->n5], (R)RMPrepare [rm->n6, rm->n6], (R)RMPrepare [rm->n7, rm->n7], (R)RMPrepare [rm->n8, rm->n8], (R)RMPrepare [rm->n9, rm->n9], (R)RMChooseToAbort [rm->n1, rm->n1], (R)RMChooseToAbort [rm->n2, rm->n2], (R)RMChooseToAbort [rm->n3, rm->n3], (R)RMChooseToAbort [rm->n4, rm->n4], (R)RMChooseToAbort [rm->n5, rm->n5], (R)RMChooseToAbort [rm->n6, rm->n6], (R)RMChooseToAbort [rm->n7, rm->n7], (R)RMChooseToAbort [rm->n8, rm->n8], (R)RMChooseToAbort [rm->n9, rm->n9], ]
+round 1: [(R)TMRcvPrepared [rm->n1, rm->n1], (R)TMRcvPrepared [rm->n2, rm->n2], (R)TMRcvPrepared [rm->n3, rm->n3], (R)TMRcvPrepared [rm->n4, rm->n4], (R)TMRcvPrepared [rm->n5, rm->n5], (R)TMRcvPrepared [rm->n6, rm->n6], (R)TMRcvPrepared [rm->n7, rm->n7], (R)TMRcvPrepared [rm->n8, rm->n8], (R)TMRcvPrepared [rm->n9, rm->n9], ]
+round 2: [(R)TMCommit [], (R)TMAbort [], ]
+round 3: [(R)RMRcvCommitMsg [rm->n1, rm->n1], (R)RMRcvCommitMsg [rm->n2, rm->n2], (R)RMRcvCommitMsg [rm->n3, rm->n3], (R)RMRcvCommitMsg [rm->n4, rm->n4], (R)RMRcvCommitMsg [rm->n5, rm->n5], (R)RMRcvCommitMsg [rm->n6, rm->n6], (R)RMRcvCommitMsg [rm->n7, rm->n7], (R)RMRcvCommitMsg [rm->n8, rm->n8], (R)RMRcvCommitMsg [rm->n9, rm->n9], (R)RMRcvAbortMsg [rm->n1, rm->n1], (R)RMRcvAbortMsg [rm->n2, rm->n2], (R)RMRcvAbortMsg [rm->n3, rm->n3], (R)RMRcvAbortMsg [rm->n4, rm->n4], (R)RMRcvAbortMsg [rm->n5, rm->n5], (R)RMRcvAbortMsg [rm->n6, rm->n6], (R)RMRcvAbortMsg [rm->n7, rm->n7], (R)RMRcvAbortMsg [rm->n8, rm->n8], (R)RMRcvAbortMsg [rm->n9, rm->n9], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, rcv = 4, nexts=[9, 14, 19, 24, 29, 34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 1, rcv = 9, nexts=[14, 19, 24, 29, 34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 2, rcv = 14, nexts=[19, 24, 29, 34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 3, rcv = 19, nexts=[24, 29, 34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 4, rcv = 24, nexts=[29, 34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 5, rcv = 29, nexts=[34, 39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 6, rcv = 34, nexts=[39, 44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 7, rcv = 39, nexts=[44, 5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 8, rcv = 44, nexts=[5, 10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 9, rcv = 5, nexts=[10, 15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 10, rcv = 10, nexts=[15, 20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 11, rcv = 15, nexts=[20, 25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 12, rcv = 20, nexts=[25, 30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 13, rcv = 25, nexts=[30, 35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 14, rcv = 30, nexts=[35, 40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 15, rcv = 35, nexts=[40, 45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 16, rcv = 40, nexts=[45, 3, 8, 13, 18, 23, 28, 33, 38, 43], [rn = 0, idx = 17, rcv = 45, nexts=[3, 8, 13, 18, 23, 28, 33, 38, 43]]
+round 1: [[rn = 1, idx = 0, rcv = 3, nexts=[8, 13, 18, 23, 28, 33, 38, 43, 1, 2], [rn = 1, idx = 1, rcv = 8, nexts=[13, 18, 23, 28, 33, 38, 43, 1, 2], [rn = 1, idx = 2, rcv = 13, nexts=[18, 23, 28, 33, 38, 43, 1, 2], [rn = 1, idx = 3, rcv = 18, nexts=[23, 28, 33, 38, 43, 1, 2], [rn = 1, idx = 4, rcv = 23, nexts=[28, 33, 38, 43, 1, 2], [rn = 1, idx = 5, rcv = 28, nexts=[33, 38, 43, 1, 2], [rn = 1, idx = 6, rcv = 33, nexts=[38, 43, 1, 2], [rn = 1, idx = 7, rcv = 38, nexts=[43, 1, 2], [rn = 1, idx = 8, rcv = 43, nexts=[1, 2]]
+round 2: [[rn = 2, idx = 0, rcv = 1, nexts=[2, 6, 11, 16, 21, 26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 2, idx = 1, rcv = 2, nexts=[6, 11, 16, 21, 26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47]]
+round 3: [[rn = 3, idx = 0, rcv = 6, nexts=[11, 16, 21, 26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 1, rcv = 11, nexts=[16, 21, 26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 2, rcv = 16, nexts=[21, 26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 3, rcv = 21, nexts=[26, 31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 4, rcv = 26, nexts=[31, 36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 5, rcv = 31, nexts=[36, 41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 6, rcv = 36, nexts=[41, 46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 7, rcv = 41, nexts=[46, 7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 8, rcv = 46, nexts=[7, 12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 9, rcv = 7, nexts=[12, 17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 10, rcv = 12, nexts=[17, 22, 27, 32, 37, 42, 47], [rn = 3, idx = 11, rcv = 17, nexts=[22, 27, 32, 37, 42, 47], [rn = 3, idx = 12, rcv = 22, nexts=[27, 32, 37, 42, 47], [rn = 3, idx = 13, rcv = 27, nexts=[32, 37, 42, 47], [rn = 3, idx = 14, rcv = 32, nexts=[37, 42, 47], [rn = 3, idx = 15, rcv = 37, nexts=[42, 47], [rn = 3, idx = 16, rcv = 42, nexts=[47], [rn = 3, idx = 17, rcv = 47, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-04-17 17:16:17.
+Progress(9) at 2024-04-17 17:16:20: 150,412 states generated (150,412 s/min), 95,762 distinct states found (95,762 ds/min), 54,700 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 5.8E-7
+  based on the actual fingerprints:  val = 1.7E-7
+7091894 states generated, 2196098 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 29.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 18 and the 95th percentile is 3).
+Finished in 59s at (2024-04-17 17:17:16)

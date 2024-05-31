@@ -1,0 +1,1269 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 120 and seed -4436010305129058844 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 57386] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/raft/cases/error-1/raft.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-15194043205671452009/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools-v2.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-15194043205671452009/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools-v2.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-15194043205671452009/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools-v2.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-15194043205671452009/TLC.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools-v2.jar!/tla2sany/StandardModules/TLC.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module raft
+Starting... (2024-03-27 16:30:15)
+set Empty's CCState
+Initialize CC.
+action 1 : Timeout [i->n1, i->n1]
+action 2 : Timeout [i->n2, i->n2]
+action 3 : Timeout [i->n3, i->n3]
+action 4 : Timeout [i->n4, i->n4]
+action 5 : Restart [i->n1, i->n1]
+action 6 : Restart [i->n2, i->n2]
+action 7 : Restart [i->n3, i->n3]
+action 8 : Restart [i->n4, i->n4]
+action 9 : RequestVote [j->n1, i->n1, j->n1, i->n1]
+action 10 : RequestVote [j->n1, i->n2, j->n1, i->n2]
+action 11 : RequestVote [j->n1, i->n3, j->n1, i->n3]
+action 12 : RequestVote [j->n1, i->n4, j->n1, i->n4]
+action 13 : RequestVote [j->n2, i->n1, j->n2, i->n1]
+action 14 : RequestVote [j->n2, i->n2, j->n2, i->n2]
+action 15 : RequestVote [j->n2, i->n3, j->n2, i->n3]
+action 16 : RequestVote [j->n2, i->n4, j->n2, i->n4]
+action 17 : RequestVote [j->n3, i->n1, j->n3, i->n1]
+action 18 : RequestVote [j->n3, i->n2, j->n3, i->n2]
+action 19 : RequestVote [j->n3, i->n3, j->n3, i->n3]
+action 20 : RequestVote [j->n3, i->n4, j->n3, i->n4]
+action 21 : RequestVote [j->n4, i->n1, j->n4, i->n1]
+action 22 : RequestVote [j->n4, i->n2, j->n4, i->n2]
+action 23 : RequestVote [j->n4, i->n3, j->n4, i->n3]
+action 24 : RequestVote [j->n4, i->n4, j->n4, i->n4]
+action 25 : CCHandleRequestVoteRequest [j->n1, i->n1, j->n1, i->n1]
+action 26 : CCHandleRequestVoteRequest [j->n1, i->n2, j->n1, i->n2]
+action 27 : CCHandleRequestVoteRequest [j->n1, i->n3, j->n1, i->n3]
+action 28 : CCHandleRequestVoteRequest [j->n1, i->n4, j->n1, i->n4]
+action 29 : CCHandleRequestVoteRequest [j->n2, i->n1, j->n2, i->n1]
+action 30 : CCHandleRequestVoteRequest [j->n2, i->n2, j->n2, i->n2]
+action 31 : CCHandleRequestVoteRequest [j->n2, i->n3, j->n2, i->n3]
+action 32 : CCHandleRequestVoteRequest [j->n2, i->n4, j->n2, i->n4]
+action 33 : CCHandleRequestVoteRequest [j->n3, i->n1, j->n3, i->n1]
+action 34 : CCHandleRequestVoteRequest [j->n3, i->n2, j->n3, i->n2]
+action 35 : CCHandleRequestVoteRequest [j->n3, i->n3, j->n3, i->n3]
+action 36 : CCHandleRequestVoteRequest [j->n3, i->n4, j->n3, i->n4]
+action 37 : CCHandleRequestVoteRequest [j->n4, i->n1, j->n4, i->n1]
+action 38 : CCHandleRequestVoteRequest [j->n4, i->n2, j->n4, i->n2]
+action 39 : CCHandleRequestVoteRequest [j->n4, i->n3, j->n4, i->n3]
+action 40 : CCHandleRequestVoteRequest [j->n4, i->n4, j->n4, i->n4]
+action 41 : CCHandleRequestVoteResponse [j->n1, i->n1, j->n1, i->n1]
+action 42 : CCHandleRequestVoteResponse [j->n1, i->n2, j->n1, i->n2]
+action 43 : CCHandleRequestVoteResponse [j->n1, i->n3, j->n1, i->n3]
+action 44 : CCHandleRequestVoteResponse [j->n1, i->n4, j->n1, i->n4]
+action 45 : CCHandleRequestVoteResponse [j->n2, i->n1, j->n2, i->n1]
+action 46 : CCHandleRequestVoteResponse [j->n2, i->n2, j->n2, i->n2]
+action 47 : CCHandleRequestVoteResponse [j->n2, i->n3, j->n2, i->n3]
+action 48 : CCHandleRequestVoteResponse [j->n2, i->n4, j->n2, i->n4]
+action 49 : CCHandleRequestVoteResponse [j->n3, i->n1, j->n3, i->n1]
+action 50 : CCHandleRequestVoteResponse [j->n3, i->n2, j->n3, i->n2]
+action 51 : CCHandleRequestVoteResponse [j->n3, i->n3, j->n3, i->n3]
+action 52 : CCHandleRequestVoteResponse [j->n3, i->n4, j->n3, i->n4]
+action 53 : CCHandleRequestVoteResponse [j->n4, i->n1, j->n4, i->n1]
+action 54 : CCHandleRequestVoteResponse [j->n4, i->n2, j->n4, i->n2]
+action 55 : CCHandleRequestVoteResponse [j->n4, i->n3, j->n4, i->n3]
+action 56 : CCHandleRequestVoteResponse [j->n4, i->n4, j->n4, i->n4]
+action 57 : BecomeLeader [i->n1, i->n1]
+action 58 : BecomeLeader [i->n2, i->n2]
+action 59 : BecomeLeader [i->n3, i->n3]
+action 60 : BecomeLeader [i->n4, i->n4]
+action 61 : ClientRequest [v->v1, i->n1, v->v1, i->n1]
+action 62 : ClientRequest [v->v1, i->n2, v->v1, i->n2]
+action 63 : ClientRequest [v->v1, i->n3, v->v1, i->n3]
+action 64 : ClientRequest [v->v1, i->n4, v->v1, i->n4]
+action 65 : ClientRequest [v->v2, i->n1, v->v2, i->n1]
+action 66 : ClientRequest [v->v2, i->n2, v->v2, i->n2]
+action 67 : ClientRequest [v->v2, i->n3, v->v2, i->n3]
+action 68 : ClientRequest [v->v2, i->n4, v->v2, i->n4]
+action 69 : AppendEntries [j->n1, i->n1, j->n1, i->n1]
+action 70 : AppendEntries [j->n1, i->n2, j->n1, i->n2]
+action 71 : AppendEntries [j->n1, i->n3, j->n1, i->n3]
+action 72 : AppendEntries [j->n1, i->n4, j->n1, i->n4]
+action 73 : AppendEntries [j->n2, i->n1, j->n2, i->n1]
+action 74 : AppendEntries [j->n2, i->n2, j->n2, i->n2]
+action 75 : AppendEntries [j->n2, i->n3, j->n2, i->n3]
+action 76 : AppendEntries [j->n2, i->n4, j->n2, i->n4]
+action 77 : AppendEntries [j->n3, i->n1, j->n3, i->n1]
+action 78 : AppendEntries [j->n3, i->n2, j->n3, i->n2]
+action 79 : AppendEntries [j->n3, i->n3, j->n3, i->n3]
+action 80 : AppendEntries [j->n3, i->n4, j->n3, i->n4]
+action 81 : AppendEntries [j->n4, i->n1, j->n4, i->n1]
+action 82 : AppendEntries [j->n4, i->n2, j->n4, i->n2]
+action 83 : AppendEntries [j->n4, i->n3, j->n4, i->n3]
+action 84 : AppendEntries [j->n4, i->n4, j->n4, i->n4]
+action 85 : CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1]
+action 86 : CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2]
+action 87 : CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3]
+action 88 : CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4]
+action 89 : CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1]
+action 90 : CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2]
+action 91 : CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3]
+action 92 : CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4]
+action 93 : CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1]
+action 94 : CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2]
+action 95 : CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3]
+action 96 : CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4]
+action 97 : CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1]
+action 98 : CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2]
+action 99 : CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3]
+action 100 : CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4]
+action 101 : CCHandleAppendEntriesResponse [j->n1, i->n1, j->n1, i->n1]
+action 102 : CCHandleAppendEntriesResponse [j->n1, i->n2, j->n1, i->n2]
+action 103 : CCHandleAppendEntriesResponse [j->n1, i->n3, j->n1, i->n3]
+action 104 : CCHandleAppendEntriesResponse [j->n1, i->n4, j->n1, i->n4]
+action 105 : CCHandleAppendEntriesResponse [j->n2, i->n1, j->n2, i->n1]
+action 106 : CCHandleAppendEntriesResponse [j->n2, i->n2, j->n2, i->n2]
+action 107 : CCHandleAppendEntriesResponse [j->n2, i->n3, j->n2, i->n3]
+action 108 : CCHandleAppendEntriesResponse [j->n2, i->n4, j->n2, i->n4]
+action 109 : CCHandleAppendEntriesResponse [j->n3, i->n1, j->n3, i->n1]
+action 110 : CCHandleAppendEntriesResponse [j->n3, i->n2, j->n3, i->n2]
+action 111 : CCHandleAppendEntriesResponse [j->n3, i->n3, j->n3, i->n3]
+action 112 : CCHandleAppendEntriesResponse [j->n3, i->n4, j->n3, i->n4]
+action 113 : CCHandleAppendEntriesResponse [j->n4, i->n1, j->n4, i->n1]
+action 114 : CCHandleAppendEntriesResponse [j->n4, i->n2, j->n4, i->n2]
+action 115 : CCHandleAppendEntriesResponse [j->n4, i->n3, j->n4, i->n3]
+action 116 : CCHandleAppendEntriesResponse [j->n4, i->n4, j->n4, i->n4]
+action 117 : AdvanceCommitIndex [i->n1, i->n1]
+action 118 : AdvanceCommitIndex [i->n2, i->n2]
+action 119 : AdvanceCommitIndex [i->n3, i->n3]
+action 120 : AdvanceCommitIndex [i->n4, i->n4]
+construct Rounds
+Printing rounds...
+round 0: [(S)AdvanceCommitIndex [i->n1, i->n1], (S)AdvanceCommitIndex [i->n2, i->n2], (S)AdvanceCommitIndex [i->n3, i->n3], (S)AdvanceCommitIndex [i->n4, i->n4], (R)Restart [i->n1, i->n1], (R)Restart [i->n2, i->n2], (R)Restart [i->n3, i->n3], (R)Restart [i->n4, i->n4], (R)Timeout [i->n1, i->n1], (R)Timeout [i->n2, i->n2], (R)Timeout [i->n3, i->n3], (R)Timeout [i->n4, i->n4], ]
+round 1: [(S)RequestVote [j->n1, i->n1, j->n1, i->n1], (S)RequestVote [j->n1, i->n2, j->n1, i->n2], (S)RequestVote [j->n1, i->n3, j->n1, i->n3], (S)RequestVote [j->n1, i->n4, j->n1, i->n4], (S)RequestVote [j->n2, i->n1, j->n2, i->n1], (S)RequestVote [j->n2, i->n2, j->n2, i->n2], (S)RequestVote [j->n2, i->n3, j->n2, i->n3], (S)RequestVote [j->n2, i->n4, j->n2, i->n4], (S)RequestVote [j->n3, i->n1, j->n3, i->n1], (S)RequestVote [j->n3, i->n2, j->n3, i->n2], (S)RequestVote [j->n3, i->n3, j->n3, i->n3], (S)RequestVote [j->n3, i->n4, j->n3, i->n4], (S)RequestVote [j->n4, i->n1, j->n4, i->n1], (S)RequestVote [j->n4, i->n2, j->n4, i->n2], (S)RequestVote [j->n4, i->n3, j->n4, i->n3], (S)RequestVote [j->n4, i->n4, j->n4, i->n4], (R)CCHandleRequestVoteRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 2: [(R)CCHandleRequestVoteResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteResponse [j->n4, i->n4, j->n4, i->n4], ]
+round 3: [(S)BecomeLeader [i->n1, i->n1], (S)BecomeLeader [i->n2, i->n2], (S)BecomeLeader [i->n3, i->n3], (S)BecomeLeader [i->n4, i->n4], (R)ClientRequest [v->v1, i->n1, v->v1, i->n1], (R)ClientRequest [v->v1, i->n2, v->v1, i->n2], (R)ClientRequest [v->v1, i->n3, v->v1, i->n3], (R)ClientRequest [v->v1, i->n4, v->v1, i->n4], (R)ClientRequest [v->v2, i->n1, v->v2, i->n1], (R)ClientRequest [v->v2, i->n2, v->v2, i->n2], (R)ClientRequest [v->v2, i->n3, v->v2, i->n3], (R)ClientRequest [v->v2, i->n4, v->v2, i->n4], ]
+round 4: [(S)AppendEntries [j->n1, i->n1, j->n1, i->n1], (S)AppendEntries [j->n1, i->n2, j->n1, i->n2], (S)AppendEntries [j->n1, i->n3, j->n1, i->n3], (S)AppendEntries [j->n1, i->n4, j->n1, i->n4], (S)AppendEntries [j->n2, i->n1, j->n2, i->n1], (S)AppendEntries [j->n2, i->n2, j->n2, i->n2], (S)AppendEntries [j->n2, i->n3, j->n2, i->n3], (S)AppendEntries [j->n2, i->n4, j->n2, i->n4], (S)AppendEntries [j->n3, i->n1, j->n3, i->n1], (S)AppendEntries [j->n3, i->n2, j->n3, i->n2], (S)AppendEntries [j->n3, i->n3, j->n3, i->n3], (S)AppendEntries [j->n3, i->n4, j->n3, i->n4], (S)AppendEntries [j->n4, i->n1, j->n4, i->n1], (S)AppendEntries [j->n4, i->n2, j->n4, i->n2], (S)AppendEntries [j->n4, i->n3, j->n4, i->n3], (S)AppendEntries [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 5: [(R)CCHandleAppendEntriesResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesResponse [j->n4, i->n4, j->n4, i->n4], ]
+round 6: [(S)AdvanceCommitIndex [i->n1, i->n1], (S)AdvanceCommitIndex [i->n2, i->n2], (S)AdvanceCommitIndex [i->n3, i->n3], (S)AdvanceCommitIndex [i->n4, i->n4], (R)Restart [i->n1, i->n1], (R)Restart [i->n2, i->n2], (R)Restart [i->n3, i->n3], (R)Restart [i->n4, i->n4], (R)Timeout [i->n1, i->n1], (R)Timeout [i->n2, i->n2], (R)Timeout [i->n3, i->n3], (R)Timeout [i->n4, i->n4], ]
+round 7: [(S)RequestVote [j->n1, i->n1, j->n1, i->n1], (S)RequestVote [j->n1, i->n2, j->n1, i->n2], (S)RequestVote [j->n1, i->n3, j->n1, i->n3], (S)RequestVote [j->n1, i->n4, j->n1, i->n4], (S)RequestVote [j->n2, i->n1, j->n2, i->n1], (S)RequestVote [j->n2, i->n2, j->n2, i->n2], (S)RequestVote [j->n2, i->n3, j->n2, i->n3], (S)RequestVote [j->n2, i->n4, j->n2, i->n4], (S)RequestVote [j->n3, i->n1, j->n3, i->n1], (S)RequestVote [j->n3, i->n2, j->n3, i->n2], (S)RequestVote [j->n3, i->n3, j->n3, i->n3], (S)RequestVote [j->n3, i->n4, j->n3, i->n4], (S)RequestVote [j->n4, i->n1, j->n4, i->n1], (S)RequestVote [j->n4, i->n2, j->n4, i->n2], (S)RequestVote [j->n4, i->n3, j->n4, i->n3], (S)RequestVote [j->n4, i->n4, j->n4, i->n4], (R)CCHandleRequestVoteRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 8: [(R)CCHandleRequestVoteResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteResponse [j->n4, i->n4, j->n4, i->n4], ]
+round 9: [(S)BecomeLeader [i->n1, i->n1], (S)BecomeLeader [i->n2, i->n2], (S)BecomeLeader [i->n3, i->n3], (S)BecomeLeader [i->n4, i->n4], (R)ClientRequest [v->v1, i->n1, v->v1, i->n1], (R)ClientRequest [v->v1, i->n2, v->v1, i->n2], (R)ClientRequest [v->v1, i->n3, v->v1, i->n3], (R)ClientRequest [v->v1, i->n4, v->v1, i->n4], (R)ClientRequest [v->v2, i->n1, v->v2, i->n1], (R)ClientRequest [v->v2, i->n2, v->v2, i->n2], (R)ClientRequest [v->v2, i->n3, v->v2, i->n3], (R)ClientRequest [v->v2, i->n4, v->v2, i->n4], ]
+round 10: [(S)AppendEntries [j->n1, i->n1, j->n1, i->n1], (S)AppendEntries [j->n1, i->n2, j->n1, i->n2], (S)AppendEntries [j->n1, i->n3, j->n1, i->n3], (S)AppendEntries [j->n1, i->n4, j->n1, i->n4], (S)AppendEntries [j->n2, i->n1, j->n2, i->n1], (S)AppendEntries [j->n2, i->n2, j->n2, i->n2], (S)AppendEntries [j->n2, i->n3, j->n2, i->n3], (S)AppendEntries [j->n2, i->n4, j->n2, i->n4], (S)AppendEntries [j->n3, i->n1, j->n3, i->n1], (S)AppendEntries [j->n3, i->n2, j->n3, i->n2], (S)AppendEntries [j->n3, i->n3, j->n3, i->n3], (S)AppendEntries [j->n3, i->n4, j->n3, i->n4], (S)AppendEntries [j->n4, i->n1, j->n4, i->n1], (S)AppendEntries [j->n4, i->n2, j->n4, i->n2], (S)AppendEntries [j->n4, i->n3, j->n4, i->n3], (S)AppendEntries [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 11: [(R)CCHandleAppendEntriesResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesResponse [j->n4, i->n4, j->n4, i->n4], ]
+round 12: [(S)AdvanceCommitIndex [i->n1, i->n1], (S)AdvanceCommitIndex [i->n2, i->n2], (S)AdvanceCommitIndex [i->n3, i->n3], (S)AdvanceCommitIndex [i->n4, i->n4], (R)Restart [i->n1, i->n1], (R)Restart [i->n2, i->n2], (R)Restart [i->n3, i->n3], (R)Restart [i->n4, i->n4], (R)Timeout [i->n1, i->n1], (R)Timeout [i->n2, i->n2], (R)Timeout [i->n3, i->n3], (R)Timeout [i->n4, i->n4], ]
+round 13: [(S)RequestVote [j->n1, i->n1, j->n1, i->n1], (S)RequestVote [j->n1, i->n2, j->n1, i->n2], (S)RequestVote [j->n1, i->n3, j->n1, i->n3], (S)RequestVote [j->n1, i->n4, j->n1, i->n4], (S)RequestVote [j->n2, i->n1, j->n2, i->n1], (S)RequestVote [j->n2, i->n2, j->n2, i->n2], (S)RequestVote [j->n2, i->n3, j->n2, i->n3], (S)RequestVote [j->n2, i->n4, j->n2, i->n4], (S)RequestVote [j->n3, i->n1, j->n3, i->n1], (S)RequestVote [j->n3, i->n2, j->n3, i->n2], (S)RequestVote [j->n3, i->n3, j->n3, i->n3], (S)RequestVote [j->n3, i->n4, j->n3, i->n4], (S)RequestVote [j->n4, i->n1, j->n4, i->n1], (S)RequestVote [j->n4, i->n2, j->n4, i->n2], (S)RequestVote [j->n4, i->n3, j->n4, i->n3], (S)RequestVote [j->n4, i->n4, j->n4, i->n4], (R)CCHandleRequestVoteRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 14: [(R)CCHandleRequestVoteResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleRequestVoteResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleRequestVoteResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleRequestVoteResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleRequestVoteResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleRequestVoteResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleRequestVoteResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleRequestVoteResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleRequestVoteResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleRequestVoteResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleRequestVoteResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleRequestVoteResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleRequestVoteResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleRequestVoteResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleRequestVoteResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleRequestVoteResponse [j->n4, i->n4, j->n4, i->n4], ]
+round 15: [(S)BecomeLeader [i->n1, i->n1], (S)BecomeLeader [i->n2, i->n2], (S)BecomeLeader [i->n3, i->n3], (S)BecomeLeader [i->n4, i->n4], (R)ClientRequest [v->v1, i->n1, v->v1, i->n1], (R)ClientRequest [v->v1, i->n2, v->v1, i->n2], (R)ClientRequest [v->v1, i->n3, v->v1, i->n3], (R)ClientRequest [v->v1, i->n4, v->v1, i->n4], (R)ClientRequest [v->v2, i->n1, v->v2, i->n1], (R)ClientRequest [v->v2, i->n2, v->v2, i->n2], (R)ClientRequest [v->v2, i->n3, v->v2, i->n3], (R)ClientRequest [v->v2, i->n4, v->v2, i->n4], ]
+round 16: [(S)AppendEntries [j->n1, i->n1, j->n1, i->n1], (S)AppendEntries [j->n1, i->n2, j->n1, i->n2], (S)AppendEntries [j->n1, i->n3, j->n1, i->n3], (S)AppendEntries [j->n1, i->n4, j->n1, i->n4], (S)AppendEntries [j->n2, i->n1, j->n2, i->n1], (S)AppendEntries [j->n2, i->n2, j->n2, i->n2], (S)AppendEntries [j->n2, i->n3, j->n2, i->n3], (S)AppendEntries [j->n2, i->n4, j->n2, i->n4], (S)AppendEntries [j->n3, i->n1, j->n3, i->n1], (S)AppendEntries [j->n3, i->n2, j->n3, i->n2], (S)AppendEntries [j->n3, i->n3, j->n3, i->n3], (S)AppendEntries [j->n3, i->n4, j->n3, i->n4], (S)AppendEntries [j->n4, i->n1, j->n4, i->n1], (S)AppendEntries [j->n4, i->n2, j->n4, i->n2], (S)AppendEntries [j->n4, i->n3, j->n4, i->n3], (S)AppendEntries [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], (R)CCHandleAppendEntriesRequest [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesRequest [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesRequest [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesRequest [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesRequest [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesRequest [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesRequest [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesRequest [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesRequest [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesRequest [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesRequest [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesRequest [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesRequest [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesRequest [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesRequest [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesRequest [j->n4, i->n4, j->n4, i->n4], ]
+round 17: [(R)CCHandleAppendEntriesResponse [j->n1, i->n1, j->n1, i->n1], (R)CCHandleAppendEntriesResponse [j->n1, i->n2, j->n1, i->n2], (R)CCHandleAppendEntriesResponse [j->n1, i->n3, j->n1, i->n3], (R)CCHandleAppendEntriesResponse [j->n1, i->n4, j->n1, i->n4], (R)CCHandleAppendEntriesResponse [j->n2, i->n1, j->n2, i->n1], (R)CCHandleAppendEntriesResponse [j->n2, i->n2, j->n2, i->n2], (R)CCHandleAppendEntriesResponse [j->n2, i->n3, j->n2, i->n3], (R)CCHandleAppendEntriesResponse [j->n2, i->n4, j->n2, i->n4], (R)CCHandleAppendEntriesResponse [j->n3, i->n1, j->n3, i->n1], (R)CCHandleAppendEntriesResponse [j->n3, i->n2, j->n3, i->n2], (R)CCHandleAppendEntriesResponse [j->n3, i->n3, j->n3, i->n3], (R)CCHandleAppendEntriesResponse [j->n3, i->n4, j->n3, i->n4], (R)CCHandleAppendEntriesResponse [j->n4, i->n1, j->n4, i->n1], (R)CCHandleAppendEntriesResponse [j->n4, i->n2, j->n4, i->n2], (R)CCHandleAppendEntriesResponse [j->n4, i->n3, j->n4, i->n3], (R)CCHandleAppendEntriesResponse [j->n4, i->n4, j->n4, i->n4], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, send = 117, nexts=[118], [rn = 0, idx = 1, send = 118, nexts=[119], [rn = 0, idx = 2, send = 119, nexts=[120], [rn = 0, idx = 3, send = 120, nexts=[5, 6, 7, 8, 1, 2, 3, 4, 9], [rn = 0, idx = 4, rcv = 5, nexts=[6, 7, 8, 1, 2, 3, 4, 9], [rn = 0, idx = 5, rcv = 6, nexts=[7, 8, 1, 2, 3, 4, 9], [rn = 0, idx = 6, rcv = 7, nexts=[8, 1, 2, 3, 4, 9], [rn = 0, idx = 7, rcv = 8, nexts=[1, 2, 3, 4, 9], [rn = 0, idx = 8, rcv = 1, nexts=[2, 3, 4, 9], [rn = 0, idx = 9, rcv = 2, nexts=[3, 4, 9], [rn = 0, idx = 10, rcv = 3, nexts=[4, 9], [rn = 0, idx = 11, rcv = 4, nexts=[9]]
+round 1: [[rn = 1, idx = 0, send = 9, nexts=[10], [rn = 1, idx = 1, send = 10, nexts=[11], [rn = 1, idx = 2, send = 11, nexts=[12], [rn = 1, idx = 3, send = 12, nexts=[13], [rn = 1, idx = 4, send = 13, nexts=[14], [rn = 1, idx = 5, send = 14, nexts=[15], [rn = 1, idx = 6, send = 15, nexts=[16], [rn = 1, idx = 7, send = 16, nexts=[17], [rn = 1, idx = 8, send = 17, nexts=[18], [rn = 1, idx = 9, send = 18, nexts=[19], [rn = 1, idx = 10, send = 19, nexts=[20], [rn = 1, idx = 11, send = 20, nexts=[21], [rn = 1, idx = 12, send = 21, nexts=[22], [rn = 1, idx = 13, send = 22, nexts=[23], [rn = 1, idx = 14, send = 23, nexts=[24], [rn = 1, idx = 15, send = 24, nexts=[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 57], [rn = 1, idx = 16, rcv = 25, nexts=[26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 17, rcv = 26, nexts=[27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 18, rcv = 27, nexts=[28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 19, rcv = 28, nexts=[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 20, rcv = 29, nexts=[30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 21, rcv = 30, nexts=[31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 22, rcv = 31, nexts=[32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 23, rcv = 32, nexts=[33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 24, rcv = 33, nexts=[34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 25, rcv = 34, nexts=[35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 26, rcv = 35, nexts=[36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 27, rcv = 36, nexts=[37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 28, rcv = 37, nexts=[38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 29, rcv = 38, nexts=[39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 30, rcv = 39, nexts=[40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 1, idx = 31, rcv = 40, nexts=[41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]]
+round 2: [[rn = 2, idx = 0, rcv = 41, nexts=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 1, rcv = 42, nexts=[43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 2, rcv = 43, nexts=[44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 3, rcv = 44, nexts=[45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 4, rcv = 45, nexts=[46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 5, rcv = 46, nexts=[47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 6, rcv = 47, nexts=[48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 7, rcv = 48, nexts=[49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 8, rcv = 49, nexts=[50, 51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 9, rcv = 50, nexts=[51, 52, 53, 54, 55, 56, 57], [rn = 2, idx = 10, rcv = 51, nexts=[52, 53, 54, 55, 56, 57], [rn = 2, idx = 11, rcv = 52, nexts=[53, 54, 55, 56, 57], [rn = 2, idx = 12, rcv = 53, nexts=[54, 55, 56, 57], [rn = 2, idx = 13, rcv = 54, nexts=[55, 56, 57], [rn = 2, idx = 14, rcv = 55, nexts=[56, 57], [rn = 2, idx = 15, rcv = 56, nexts=[57]]
+round 3: [[rn = 3, idx = 0, send = 57, nexts=[58], [rn = 3, idx = 1, send = 58, nexts=[59], [rn = 3, idx = 2, send = 59, nexts=[60], [rn = 3, idx = 3, send = 60, nexts=[61, 62, 63, 64, 65, 66, 67, 68, 69], [rn = 3, idx = 4, rcv = 61, nexts=[62, 63, 64, 65, 66, 67, 68, 69], [rn = 3, idx = 5, rcv = 62, nexts=[63, 64, 65, 66, 67, 68, 69], [rn = 3, idx = 6, rcv = 63, nexts=[64, 65, 66, 67, 68, 69], [rn = 3, idx = 7, rcv = 64, nexts=[65, 66, 67, 68, 69], [rn = 3, idx = 8, rcv = 65, nexts=[66, 67, 68, 69], [rn = 3, idx = 9, rcv = 66, nexts=[67, 68, 69], [rn = 3, idx = 10, rcv = 67, nexts=[68, 69], [rn = 3, idx = 11, rcv = 68, nexts=[69]]
+round 4: [[rn = 4, idx = 0, send = 69, nexts=[70], [rn = 4, idx = 1, send = 70, nexts=[71], [rn = 4, idx = 2, send = 71, nexts=[72], [rn = 4, idx = 3, send = 72, nexts=[73], [rn = 4, idx = 4, send = 73, nexts=[74], [rn = 4, idx = 5, send = 74, nexts=[75], [rn = 4, idx = 6, send = 75, nexts=[76], [rn = 4, idx = 7, send = 76, nexts=[77], [rn = 4, idx = 8, send = 77, nexts=[78], [rn = 4, idx = 9, send = 78, nexts=[79], [rn = 4, idx = 10, send = 79, nexts=[80], [rn = 4, idx = 11, send = 80, nexts=[81], [rn = 4, idx = 12, send = 81, nexts=[82], [rn = 4, idx = 13, send = 82, nexts=[83], [rn = 4, idx = 14, send = 83, nexts=[84], [rn = 4, idx = 15, send = 84, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 117], [rn = 4, idx = 16, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 17, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 18, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 19, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 20, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 21, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 22, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 23, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 24, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 25, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 26, rcv = 95, nexts=[96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 27, rcv = 96, nexts=[97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 28, rcv = 97, nexts=[98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 29, rcv = 98, nexts=[99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 30, rcv = 99, nexts=[100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 31, rcv = 100, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 32, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 33, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 34, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 35, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 36, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 37, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 38, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 39, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 40, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 41, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 42, rcv = 95, nexts=[96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 43, rcv = 96, nexts=[97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 44, rcv = 97, nexts=[98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 45, rcv = 98, nexts=[99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 46, rcv = 99, nexts=[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 4, idx = 47, rcv = 100, nexts=[101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]]
+round 5: [[rn = 5, idx = 0, rcv = 101, nexts=[102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 1, rcv = 102, nexts=[103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 2, rcv = 103, nexts=[104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 3, rcv = 104, nexts=[105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 4, rcv = 105, nexts=[106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 5, rcv = 106, nexts=[107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 6, rcv = 107, nexts=[108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 7, rcv = 108, nexts=[109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 8, rcv = 109, nexts=[110, 111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 9, rcv = 110, nexts=[111, 112, 113, 114, 115, 116, 117], [rn = 5, idx = 10, rcv = 111, nexts=[112, 113, 114, 115, 116, 117], [rn = 5, idx = 11, rcv = 112, nexts=[113, 114, 115, 116, 117], [rn = 5, idx = 12, rcv = 113, nexts=[114, 115, 116, 117], [rn = 5, idx = 13, rcv = 114, nexts=[115, 116, 117], [rn = 5, idx = 14, rcv = 115, nexts=[116, 117], [rn = 5, idx = 15, rcv = 116, nexts=[117]]
+round 6: [[rn = 6, idx = 0, send = 117, nexts=[118], [rn = 6, idx = 1, send = 118, nexts=[119], [rn = 6, idx = 2, send = 119, nexts=[120], [rn = 6, idx = 3, send = 120, nexts=[5, 6, 7, 8, 1, 2, 3, 4, 9], [rn = 6, idx = 4, rcv = 5, nexts=[6, 7, 8, 1, 2, 3, 4, 9], [rn = 6, idx = 5, rcv = 6, nexts=[7, 8, 1, 2, 3, 4, 9], [rn = 6, idx = 6, rcv = 7, nexts=[8, 1, 2, 3, 4, 9], [rn = 6, idx = 7, rcv = 8, nexts=[1, 2, 3, 4, 9], [rn = 6, idx = 8, rcv = 1, nexts=[2, 3, 4, 9], [rn = 6, idx = 9, rcv = 2, nexts=[3, 4, 9], [rn = 6, idx = 10, rcv = 3, nexts=[4, 9], [rn = 6, idx = 11, rcv = 4, nexts=[9]]
+round 7: [[rn = 7, idx = 0, send = 9, nexts=[10], [rn = 7, idx = 1, send = 10, nexts=[11], [rn = 7, idx = 2, send = 11, nexts=[12], [rn = 7, idx = 3, send = 12, nexts=[13], [rn = 7, idx = 4, send = 13, nexts=[14], [rn = 7, idx = 5, send = 14, nexts=[15], [rn = 7, idx = 6, send = 15, nexts=[16], [rn = 7, idx = 7, send = 16, nexts=[17], [rn = 7, idx = 8, send = 17, nexts=[18], [rn = 7, idx = 9, send = 18, nexts=[19], [rn = 7, idx = 10, send = 19, nexts=[20], [rn = 7, idx = 11, send = 20, nexts=[21], [rn = 7, idx = 12, send = 21, nexts=[22], [rn = 7, idx = 13, send = 22, nexts=[23], [rn = 7, idx = 14, send = 23, nexts=[24], [rn = 7, idx = 15, send = 24, nexts=[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 57], [rn = 7, idx = 16, rcv = 25, nexts=[26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 17, rcv = 26, nexts=[27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 18, rcv = 27, nexts=[28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 19, rcv = 28, nexts=[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 20, rcv = 29, nexts=[30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 21, rcv = 30, nexts=[31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 22, rcv = 31, nexts=[32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 23, rcv = 32, nexts=[33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 24, rcv = 33, nexts=[34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 25, rcv = 34, nexts=[35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 26, rcv = 35, nexts=[36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 27, rcv = 36, nexts=[37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 28, rcv = 37, nexts=[38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 29, rcv = 38, nexts=[39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 30, rcv = 39, nexts=[40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 7, idx = 31, rcv = 40, nexts=[41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]]
+round 8: [[rn = 8, idx = 0, rcv = 41, nexts=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 1, rcv = 42, nexts=[43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 2, rcv = 43, nexts=[44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 3, rcv = 44, nexts=[45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 4, rcv = 45, nexts=[46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 5, rcv = 46, nexts=[47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 6, rcv = 47, nexts=[48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 7, rcv = 48, nexts=[49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 8, rcv = 49, nexts=[50, 51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 9, rcv = 50, nexts=[51, 52, 53, 54, 55, 56, 57], [rn = 8, idx = 10, rcv = 51, nexts=[52, 53, 54, 55, 56, 57], [rn = 8, idx = 11, rcv = 52, nexts=[53, 54, 55, 56, 57], [rn = 8, idx = 12, rcv = 53, nexts=[54, 55, 56, 57], [rn = 8, idx = 13, rcv = 54, nexts=[55, 56, 57], [rn = 8, idx = 14, rcv = 55, nexts=[56, 57], [rn = 8, idx = 15, rcv = 56, nexts=[57]]
+round 9: [[rn = 9, idx = 0, send = 57, nexts=[58], [rn = 9, idx = 1, send = 58, nexts=[59], [rn = 9, idx = 2, send = 59, nexts=[60], [rn = 9, idx = 3, send = 60, nexts=[61, 62, 63, 64, 65, 66, 67, 68, 69], [rn = 9, idx = 4, rcv = 61, nexts=[62, 63, 64, 65, 66, 67, 68, 69], [rn = 9, idx = 5, rcv = 62, nexts=[63, 64, 65, 66, 67, 68, 69], [rn = 9, idx = 6, rcv = 63, nexts=[64, 65, 66, 67, 68, 69], [rn = 9, idx = 7, rcv = 64, nexts=[65, 66, 67, 68, 69], [rn = 9, idx = 8, rcv = 65, nexts=[66, 67, 68, 69], [rn = 9, idx = 9, rcv = 66, nexts=[67, 68, 69], [rn = 9, idx = 10, rcv = 67, nexts=[68, 69], [rn = 9, idx = 11, rcv = 68, nexts=[69]]
+round 10: [[rn = 10, idx = 0, send = 69, nexts=[70], [rn = 10, idx = 1, send = 70, nexts=[71], [rn = 10, idx = 2, send = 71, nexts=[72], [rn = 10, idx = 3, send = 72, nexts=[73], [rn = 10, idx = 4, send = 73, nexts=[74], [rn = 10, idx = 5, send = 74, nexts=[75], [rn = 10, idx = 6, send = 75, nexts=[76], [rn = 10, idx = 7, send = 76, nexts=[77], [rn = 10, idx = 8, send = 77, nexts=[78], [rn = 10, idx = 9, send = 78, nexts=[79], [rn = 10, idx = 10, send = 79, nexts=[80], [rn = 10, idx = 11, send = 80, nexts=[81], [rn = 10, idx = 12, send = 81, nexts=[82], [rn = 10, idx = 13, send = 82, nexts=[83], [rn = 10, idx = 14, send = 83, nexts=[84], [rn = 10, idx = 15, send = 84, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 117], [rn = 10, idx = 16, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 17, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 18, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 19, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 20, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 21, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 22, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 23, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 24, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 25, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 26, rcv = 95, nexts=[96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 27, rcv = 96, nexts=[97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 28, rcv = 97, nexts=[98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 29, rcv = 98, nexts=[99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 30, rcv = 99, nexts=[100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 31, rcv = 100, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 32, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 33, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 34, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 35, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 36, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 37, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 38, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 39, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 40, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 41, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 42, rcv = 95, nexts=[96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 43, rcv = 96, nexts=[97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 44, rcv = 97, nexts=[98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 45, rcv = 98, nexts=[99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 46, rcv = 99, nexts=[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 10, idx = 47, rcv = 100, nexts=[101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]]
+round 11: [[rn = 11, idx = 0, rcv = 101, nexts=[102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 1, rcv = 102, nexts=[103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 2, rcv = 103, nexts=[104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 3, rcv = 104, nexts=[105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 4, rcv = 105, nexts=[106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 5, rcv = 106, nexts=[107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 6, rcv = 107, nexts=[108, 109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 7, rcv = 108, nexts=[109, 110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 8, rcv = 109, nexts=[110, 111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 9, rcv = 110, nexts=[111, 112, 113, 114, 115, 116, 117], [rn = 11, idx = 10, rcv = 111, nexts=[112, 113, 114, 115, 116, 117], [rn = 11, idx = 11, rcv = 112, nexts=[113, 114, 115, 116, 117], [rn = 11, idx = 12, rcv = 113, nexts=[114, 115, 116, 117], [rn = 11, idx = 13, rcv = 114, nexts=[115, 116, 117], [rn = 11, idx = 14, rcv = 115, nexts=[116, 117], [rn = 11, idx = 15, rcv = 116, nexts=[117]]
+round 12: [[rn = 12, idx = 0, send = 117, nexts=[118], [rn = 12, idx = 1, send = 118, nexts=[119], [rn = 12, idx = 2, send = 119, nexts=[120], [rn = 12, idx = 3, send = 120, nexts=[5, 6, 7, 8, 1, 2, 3, 4, 9], [rn = 12, idx = 4, rcv = 5, nexts=[6, 7, 8, 1, 2, 3, 4, 9], [rn = 12, idx = 5, rcv = 6, nexts=[7, 8, 1, 2, 3, 4, 9], [rn = 12, idx = 6, rcv = 7, nexts=[8, 1, 2, 3, 4, 9], [rn = 12, idx = 7, rcv = 8, nexts=[1, 2, 3, 4, 9], [rn = 12, idx = 8, rcv = 1, nexts=[2, 3, 4, 9], [rn = 12, idx = 9, rcv = 2, nexts=[3, 4, 9], [rn = 12, idx = 10, rcv = 3, nexts=[4, 9], [rn = 12, idx = 11, rcv = 4, nexts=[9]]
+round 13: [[rn = 13, idx = 0, send = 9, nexts=[10], [rn = 13, idx = 1, send = 10, nexts=[11], [rn = 13, idx = 2, send = 11, nexts=[12], [rn = 13, idx = 3, send = 12, nexts=[13], [rn = 13, idx = 4, send = 13, nexts=[14], [rn = 13, idx = 5, send = 14, nexts=[15], [rn = 13, idx = 6, send = 15, nexts=[16], [rn = 13, idx = 7, send = 16, nexts=[17], [rn = 13, idx = 8, send = 17, nexts=[18], [rn = 13, idx = 9, send = 18, nexts=[19], [rn = 13, idx = 10, send = 19, nexts=[20], [rn = 13, idx = 11, send = 20, nexts=[21], [rn = 13, idx = 12, send = 21, nexts=[22], [rn = 13, idx = 13, send = 22, nexts=[23], [rn = 13, idx = 14, send = 23, nexts=[24], [rn = 13, idx = 15, send = 24, nexts=[25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 57], [rn = 13, idx = 16, rcv = 25, nexts=[26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 17, rcv = 26, nexts=[27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 18, rcv = 27, nexts=[28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 19, rcv = 28, nexts=[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 20, rcv = 29, nexts=[30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 21, rcv = 30, nexts=[31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 22, rcv = 31, nexts=[32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 23, rcv = 32, nexts=[33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 24, rcv = 33, nexts=[34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 25, rcv = 34, nexts=[35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 26, rcv = 35, nexts=[36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 27, rcv = 36, nexts=[37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 28, rcv = 37, nexts=[38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 29, rcv = 38, nexts=[39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 30, rcv = 39, nexts=[40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 13, idx = 31, rcv = 40, nexts=[41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]]
+round 14: [[rn = 14, idx = 0, rcv = 41, nexts=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 1, rcv = 42, nexts=[43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 2, rcv = 43, nexts=[44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 3, rcv = 44, nexts=[45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 4, rcv = 45, nexts=[46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 5, rcv = 46, nexts=[47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 6, rcv = 47, nexts=[48, 49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 7, rcv = 48, nexts=[49, 50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 8, rcv = 49, nexts=[50, 51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 9, rcv = 50, nexts=[51, 52, 53, 54, 55, 56, 57], [rn = 14, idx = 10, rcv = 51, nexts=[52, 53, 54, 55, 56, 57], [rn = 14, idx = 11, rcv = 52, nexts=[53, 54, 55, 56, 57], [rn = 14, idx = 12, rcv = 53, nexts=[54, 55, 56, 57], [rn = 14, idx = 13, rcv = 54, nexts=[55, 56, 57], [rn = 14, idx = 14, rcv = 55, nexts=[56, 57], [rn = 14, idx = 15, rcv = 56, nexts=[57]]
+round 15: [[rn = 15, idx = 0, send = 57, nexts=[58], [rn = 15, idx = 1, send = 58, nexts=[59], [rn = 15, idx = 2, send = 59, nexts=[60], [rn = 15, idx = 3, send = 60, nexts=[61, 62, 63, 64, 65, 66, 67, 68, 69], [rn = 15, idx = 4, rcv = 61, nexts=[62, 63, 64, 65, 66, 67, 68, 69], [rn = 15, idx = 5, rcv = 62, nexts=[63, 64, 65, 66, 67, 68, 69], [rn = 15, idx = 6, rcv = 63, nexts=[64, 65, 66, 67, 68, 69], [rn = 15, idx = 7, rcv = 64, nexts=[65, 66, 67, 68, 69], [rn = 15, idx = 8, rcv = 65, nexts=[66, 67, 68, 69], [rn = 15, idx = 9, rcv = 66, nexts=[67, 68, 69], [rn = 15, idx = 10, rcv = 67, nexts=[68, 69], [rn = 15, idx = 11, rcv = 68, nexts=[69]]
+round 16: [[rn = 16, idx = 0, send = 69, nexts=[70], [rn = 16, idx = 1, send = 70, nexts=[71], [rn = 16, idx = 2, send = 71, nexts=[72], [rn = 16, idx = 3, send = 72, nexts=[73], [rn = 16, idx = 4, send = 73, nexts=[74], [rn = 16, idx = 5, send = 74, nexts=[75], [rn = 16, idx = 6, send = 75, nexts=[76], [rn = 16, idx = 7, send = 76, nexts=[77], [rn = 16, idx = 8, send = 77, nexts=[78], [rn = 16, idx = 9, send = 78, nexts=[79], [rn = 16, idx = 10, send = 79, nexts=[80], [rn = 16, idx = 11, send = 80, nexts=[81], [rn = 16, idx = 12, send = 81, nexts=[82], [rn = 16, idx = 13, send = 82, nexts=[83], [rn = 16, idx = 14, send = 83, nexts=[84], [rn = 16, idx = 15, send = 84, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100], [rn = 16, idx = 16, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 17, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 18, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 19, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 20, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 21, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 22, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 23, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 24, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 25, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 26, rcv = 95, nexts=[96, 97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 27, rcv = 96, nexts=[97, 98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 28, rcv = 97, nexts=[98, 99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 29, rcv = 98, nexts=[99, 100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 30, rcv = 99, nexts=[100, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 31, rcv = 100, nexts=[85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 32, rcv = 85, nexts=[86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 33, rcv = 86, nexts=[87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 34, rcv = 87, nexts=[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 35, rcv = 88, nexts=[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 36, rcv = 89, nexts=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 37, rcv = 90, nexts=[91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 38, rcv = 91, nexts=[92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 39, rcv = 92, nexts=[93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 40, rcv = 93, nexts=[94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 41, rcv = 94, nexts=[95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 42, rcv = 95, nexts=[96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 43, rcv = 96, nexts=[97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 44, rcv = 97, nexts=[98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 45, rcv = 98, nexts=[99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 46, rcv = 99, nexts=[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 16, idx = 47, rcv = 100, nexts=[101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116]]
+round 17: [[rn = 17, idx = 0, rcv = 101, nexts=[102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 1, rcv = 102, nexts=[103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 2, rcv = 103, nexts=[104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 3, rcv = 104, nexts=[105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 4, rcv = 105, nexts=[106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 5, rcv = 106, nexts=[107, 108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 6, rcv = 107, nexts=[108, 109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 7, rcv = 108, nexts=[109, 110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 8, rcv = 109, nexts=[110, 111, 112, 113, 114, 115, 116], [rn = 17, idx = 9, rcv = 110, nexts=[111, 112, 113, 114, 115, 116], [rn = 17, idx = 10, rcv = 111, nexts=[112, 113, 114, 115, 116], [rn = 17, idx = 11, rcv = 112, nexts=[113, 114, 115, 116], [rn = 17, idx = 12, rcv = 113, nexts=[114, 115, 116], [rn = 17, idx = 13, rcv = 114, nexts=[115, 116], [rn = 17, idx = 14, rcv = 115, nexts=[116], [rn = 17, idx = 15, rcv = 116, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-27 16:30:15.
+Progress(18) at 2024-03-27 16:30:18: 241,562 states generated (241,562 s/min), 107,705 distinct states found (107,705 ds/min), 45,517 states left on queue.
+Error: Invariant ElectionSafety is violated.
+Error: The behavior up to this point is:
+State 1: <Init line 159, col 9 to line 164, col 22 of module raft>
+/\ elections = {}
+/\ messages = << >>
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Follower @@ n2 :> Follower @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: Initial Action, msgs1 = null, msgs2 = null
+State 2: <Timeout[i->n1, i->n1] line 182, col 15 to line 191, col 60 of module raft>
+/\ elections = {}
+/\ messages = << >>
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Follower @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 0, idx = 8, rcv = 1], msgs1 = null, msgs2 = null
+State 3: <Timeout[i->n2, i->n2] line 182, col 15 to line 191, col 60 of module raft>
+/\ elections = {}
+/\ messages = << >>
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 0, idx = 9, rcv = 2], msgs1 = null, msgs2 = null
+State 4: <RequestVote[j->n1, i->n1, j->n1, i->n1] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 0, send = 9], msgs1 = null, msgs2 = 0
+State 5: <RequestVote[j->n1, i->n2, j->n1, i->n2] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 1, send = 10], msgs1 = null, msgs2 = 1
+State 6: <RequestVote[j->n2, i->n1, j->n2, i->n1] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 4, send = 13], msgs1 = null, msgs2 = 2
+State 7: <RequestVote[j->n2, i->n2, j->n2, i->n2] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 5, send = 14], msgs1 = null, msgs2 = 3
+State 8: <RequestVote[j->n3, i->n1, j->n3, i->n1] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 8, send = 17], msgs1 = null, msgs2 = 4
+State 9: <RequestVote[j->n3, i->n2, j->n3, i->n2] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 9, send = 18], msgs1 = null, msgs2 = 5
+State 10: <RequestVote[j->n4, i->n1, j->n4, i->n1] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 12, send = 21], msgs1 = null, msgs2 = 6
+State 11: <RequestVote[j->n4, i->n2, j->n4, i->n2] line 195, col 5 to line 203, col 67 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n4 ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> Nil @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 13, send = 22], msgs1 = null, msgs2 = 7
+State 12: <CCHandleRequestVoteRequest[j->n1, i->n1, j->n1, i->n1] line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> Nil @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 16, rcv = 25], msgs1 = null, msgs2 = 8
+State 13: <CCHandleRequestVoteRequest[j->n1, i->n2, j->n1, i->n2] line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 1 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> Nil @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 17, rcv = 26], msgs1 = null, msgs2 = 8
+State 14: <CCHandleRequestVoteRequest[j->n2, i->n3, j->n2, i->n3] line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 1)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> Nil)
+/\ CCIterator: [rn = 1, idx = 22, rcv = 31], msgs1 = null, msgs2 = 8
+State 15: <CCHandleRequestVoteRequest[j->n2, i->n4, j->n2, i->n4] line 557, col 5 to line 564, col 64 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n1 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n2 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n3 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n1,
+    mdest |-> n4 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n1 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n2 ] :>
+      1 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n3 ] :>
+      0 @@
+  [ mtype |-> RequestVoteRequest,
+    mterm |-> 2,
+    mlastLogTerm |-> 0,
+    mlastLogIndex |-> 0,
+    msource |-> n2,
+    mdest |-> n4 ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n4,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> << >> @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 1, idx = 23, rcv = 32], msgs1 = null, msgs2 = 8
+State 16: <CCHandleRequestVoteResponse[j->n1, i->n1, j->n1, i->n1] line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n4,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> (n1 :> <<>>) @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 2, idx = 0, rcv = 41], msgs1 = null, msgs2 = 4
+State 17: <CCHandleRequestVoteResponse[j->n2, i->n1, j->n2, i->n1] line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n4,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = (n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@ n2 :> << >> @@ n3 :> << >> @@ n4 :> << >>)
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 2, idx = 4, rcv = 45], msgs1 = null, msgs2 = 4
+State 18: <CCHandleRequestVoteResponse[j->n3, i->n2, j->n3, i->n2] line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n4,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      1 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n3} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n3} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = ( n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@
+  n2 :> (n3 :> <<>>) @@
+  n3 :> << >> @@
+  n4 :> << >> )
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 2, idx = 9, rcv = 50], msgs1 = null, msgs2 = 4
+State 19: <CCHandleRequestVoteResponse[j->n4, i->n2, j->n4, i->n2] line 567, col 5 to line 576, col 65 of module raft>
+/\ elections = {}
+/\ messages = ( [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n1,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n2,
+    mdest |-> n1,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n3,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 @@
+  [ mtype |-> RequestVoteResponse,
+    mterm |-> 2,
+    msource |-> n4,
+    mdest |-> n2,
+    mlog |-> <<>>,
+    mvoteGranted |-> TRUE ] :>
+      0 )
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Candidate @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = ( n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@
+  n2 :> (n3 :> <<>> @@ n4 :> <<>>) @@
+  n3 :> << >> @@
+  n4 :> << >> )
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 2, idx = 13, rcv = 54], msgs1 = null, msgs2 = 4
+State 20: <BecomeLeader[i->n1, i->n1] line 234, col 5 to line 247, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1, n2},
+    evoterLog |-> (n1 :> <<>> @@ n2 :> <<>>) ] }
+/\ messages = << >>
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Candidate @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = ( n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@
+  n2 :> (n3 :> <<>> @@ n4 :> <<>>) @@
+  n3 :> << >> @@
+  n4 :> << >> )
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 3, idx = 0, send = 57], msgs1 = null, msgs2 = 0
+State 21: <BecomeLeader[i->n2, i->n2] line 234, col 5 to line 247, col 76 of module raft>
+/\ elections = { [ eterm |-> 2,
+    eleader |-> n1,
+    elog |-> <<>>,
+    evotes |-> {n1, n2},
+    evoterLog |-> (n1 :> <<>> @@ n2 :> <<>>) ],
+  [ eterm |-> 2,
+    eleader |-> n2,
+    elog |-> <<>>,
+    evotes |-> {n3, n4},
+    evoterLog |-> (n3 :> <<>> @@ n4 :> <<>>) ] }
+/\ messages = << >>
+/\ matchIndex = ( n1 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n2 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n3 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) @@
+  n4 :> (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0) )
+/\ log = (n1 :> <<>> @@ n2 :> <<>> @@ n3 :> <<>> @@ n4 :> <<>>)
+/\ state = (n1 :> Leader @@ n2 :> Leader @@ n3 :> Follower @@ n4 :> Follower)
+/\ commitIndex = (n1 :> 0 @@ n2 :> 0 @@ n3 :> 0 @@ n4 :> 0)
+/\ currentTerm = (n1 :> 2 @@ n2 :> 2 @@ n3 :> 2 @@ n4 :> 2)
+/\ votesResponded = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ nextIndex = ( n1 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n2 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n3 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) @@
+  n4 :> (n1 :> 1 @@ n2 :> 1 @@ n3 :> 1 @@ n4 :> 1) )
+/\ votesGranted = (n1 :> {n1, n2} @@ n2 :> {n3, n4} @@ n3 :> {} @@ n4 :> {})
+/\ voterLog = ( n1 :> (n1 :> <<>> @@ n2 :> <<>>) @@
+  n2 :> (n3 :> <<>> @@ n4 :> <<>>) @@
+  n3 :> << >> @@
+  n4 :> << >> )
+/\ votedFor = (n1 :> n1 @@ n2 :> n1 @@ n3 :> n2 @@ n4 :> n2)
+/\ CCIterator: [rn = 3, idx = 1, send = 58], msgs1 = null, msgs2 = 0
+1010862 states generated, 428235 distinct states found, 175213 states left on queue.
+The depth of the complete state graph search is 21.
+Finished in 09s at (2024-03-27 16:30:24)

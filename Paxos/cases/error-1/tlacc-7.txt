@@ -1,0 +1,546 @@
+TLC2 Version 2.18 of Day Month 20?? (rev: ${git.shortRevision})
+Running breadth-first search Model-Checking with fp 28 and seed -8136371582947670088 with 1 worker on 8 cores with 7282MB heap and 64MB offheap memory [pid: 5098] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/Paxos.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16579792844159755807/Integers.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16579792844159755807/FiniteSets.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16579792844159755807/Naturals.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/Voting.tla
+Parsing file /private/var/folders/fx/hbby4t0j3jv_lr50s25_wh500000gn/T/tlc-16579792844159755807/Sequences.tla (jar:file:/Users/admin/tmp/tla/tlacc/scripts/tlacctools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Voting
+Semantic processing of module Paxos
+Starting... (2024-03-21 23:07:39)
+set Empty's CCState
+Initialize CC.
+action 1 : Phase1a [b->0, b->0]
+action 2 : Phase2a [v->v1, b->0, v->v1, b->0]
+action 3 : Phase2a [v->v2, b->0, v->v2, b->0]
+action 4 : Phase2a [v->v3, b->0, v->v3, b->0]
+action 5 : Phase1a [b->1, b->1]
+action 6 : Phase2a [v->v1, b->1, v->v1, b->1]
+action 7 : Phase2a [v->v2, b->1, v->v2, b->1]
+action 8 : Phase2a [v->v3, b->1, v->v3, b->1]
+action 9 : Phase1a [b->2, b->2]
+action 10 : Phase2a [v->v1, b->2, v->v1, b->2]
+action 11 : Phase2a [v->v2, b->2, v->v2, b->2]
+action 12 : Phase2a [v->v3, b->2, v->v3, b->2]
+action 13 : Phase1b [a->a1, a->a1]
+action 14 : Phase2b [a->a1, a->a1]
+action 15 : Phase1b [a->a2, a->a2]
+action 16 : Phase2b [a->a2, a->a2]
+action 17 : Phase1b [a->a3, a->a3]
+action 18 : Phase2b [a->a3, a->a3]
+action 19 : Phase1b [a->a4, a->a4]
+action 20 : Phase2b [a->a4, a->a4]
+action 21 : Phase1b [a->a5, a->a5]
+action 22 : Phase2b [a->a5, a->a5]
+action 23 : Phase1b [a->a6, a->a6]
+action 24 : Phase2b [a->a6, a->a6]
+action 25 : Phase1b [a->a7, a->a7]
+action 26 : Phase2b [a->a7, a->a7]
+construct Rounds
+Printing rounds...
+round 0: [(S)Phase1a [b->0, b->0], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], (R)Phase1b [a->a4, a->a4], (R)Phase1b [a->a5, a->a5], (R)Phase1b [a->a6, a->a6], (R)Phase1b [a->a7, a->a7], ]
+round 1: [(R)Phase2a [v->v1, b->0, v->v1, b->0], (R)Phase2a [v->v2, b->0, v->v2, b->0], (R)Phase2a [v->v3, b->0, v->v3, b->0], ]
+round 2: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], (R)Phase2b [a->a4, a->a4], (R)Phase2b [a->a5, a->a5], (R)Phase2b [a->a6, a->a6], (R)Phase2b [a->a7, a->a7], ]
+round 3: [(S)Phase1a [b->1, b->1], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], (R)Phase1b [a->a4, a->a4], (R)Phase1b [a->a5, a->a5], (R)Phase1b [a->a6, a->a6], (R)Phase1b [a->a7, a->a7], ]
+round 4: [(R)Phase2a [v->v1, b->1, v->v1, b->1], (R)Phase2a [v->v2, b->1, v->v2, b->1], (R)Phase2a [v->v3, b->1, v->v3, b->1], ]
+round 5: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], (R)Phase2b [a->a4, a->a4], (R)Phase2b [a->a5, a->a5], (R)Phase2b [a->a6, a->a6], (R)Phase2b [a->a7, a->a7], ]
+round 6: [(S)Phase1a [b->2, b->2], (R)Phase1b [a->a1, a->a1], (R)Phase1b [a->a2, a->a2], (R)Phase1b [a->a3, a->a3], (R)Phase1b [a->a4, a->a4], (R)Phase1b [a->a5, a->a5], (R)Phase1b [a->a6, a->a6], (R)Phase1b [a->a7, a->a7], ]
+round 7: [(R)Phase2a [v->v1, b->2, v->v1, b->2], (R)Phase2a [v->v2, b->2, v->v2, b->2], (R)Phase2a [v->v3, b->2, v->v3, b->2], ]
+round 8: [(R)Phase2b [a->a1, a->a1], (R)Phase2b [a->a2, a->a2], (R)Phase2b [a->a3, a->a3], (R)Phase2b [a->a4, a->a4], (R)Phase2b [a->a5, a->a5], (R)Phase2b [a->a6, a->a6], (R)Phase2b [a->a7, a->a7], ]
+Printing next actions...
+round 0: [[rn = 0, idx = 0, send = 1, nexts=[13, 15, 17, 19, 21, 23, 25, 5], [rn = 0, idx = 1, rcv = 13, nexts=[15, 17, 19, 21, 23, 25, 2, 3, 4, 5], [rn = 0, idx = 2, rcv = 15, nexts=[17, 19, 21, 23, 25, 2, 3, 4, 5], [rn = 0, idx = 3, rcv = 17, nexts=[19, 21, 23, 25, 2, 3, 4, 5], [rn = 0, idx = 4, rcv = 19, nexts=[21, 23, 25, 2, 3, 4, 5], [rn = 0, idx = 5, rcv = 21, nexts=[23, 25, 2, 3, 4, 5], [rn = 0, idx = 6, rcv = 23, nexts=[25, 2, 3, 4, 5], [rn = 0, idx = 7, rcv = 25, nexts=[2, 3, 4, 5]]
+round 1: [[rn = 1, idx = 0, rcv = 2, nexts=[3, 4, 14, 16, 18, 20, 22, 24, 26, 5], [rn = 1, idx = 1, rcv = 3, nexts=[4, 14, 16, 18, 20, 22, 24, 26, 5], [rn = 1, idx = 2, rcv = 4, nexts=[14, 16, 18, 20, 22, 24, 26, 5]]
+round 2: [[rn = 2, idx = 0, rcv = 14, nexts=[16, 18, 20, 22, 24, 26, 5], [rn = 2, idx = 1, rcv = 16, nexts=[18, 20, 22, 24, 26, 5], [rn = 2, idx = 2, rcv = 18, nexts=[20, 22, 24, 26, 5], [rn = 2, idx = 3, rcv = 20, nexts=[22, 24, 26, 5], [rn = 2, idx = 4, rcv = 22, nexts=[24, 26, 5], [rn = 2, idx = 5, rcv = 24, nexts=[26, 5], [rn = 2, idx = 6, rcv = 26, nexts=[5]]
+round 3: [[rn = 3, idx = 0, send = 5, nexts=[13, 15, 17, 19, 21, 23, 25, 9], [rn = 3, idx = 1, rcv = 13, nexts=[15, 17, 19, 21, 23, 25, 6, 7, 8, 9], [rn = 3, idx = 2, rcv = 15, nexts=[17, 19, 21, 23, 25, 6, 7, 8, 9], [rn = 3, idx = 3, rcv = 17, nexts=[19, 21, 23, 25, 6, 7, 8, 9], [rn = 3, idx = 4, rcv = 19, nexts=[21, 23, 25, 6, 7, 8, 9], [rn = 3, idx = 5, rcv = 21, nexts=[23, 25, 6, 7, 8, 9], [rn = 3, idx = 6, rcv = 23, nexts=[25, 6, 7, 8, 9], [rn = 3, idx = 7, rcv = 25, nexts=[6, 7, 8, 9]]
+round 4: [[rn = 4, idx = 0, rcv = 6, nexts=[7, 8, 14, 16, 18, 20, 22, 24, 26, 9], [rn = 4, idx = 1, rcv = 7, nexts=[8, 14, 16, 18, 20, 22, 24, 26, 9], [rn = 4, idx = 2, rcv = 8, nexts=[14, 16, 18, 20, 22, 24, 26, 9]]
+round 5: [[rn = 5, idx = 0, rcv = 14, nexts=[16, 18, 20, 22, 24, 26, 9], [rn = 5, idx = 1, rcv = 16, nexts=[18, 20, 22, 24, 26, 9], [rn = 5, idx = 2, rcv = 18, nexts=[20, 22, 24, 26, 9], [rn = 5, idx = 3, rcv = 20, nexts=[22, 24, 26, 9], [rn = 5, idx = 4, rcv = 22, nexts=[24, 26, 9], [rn = 5, idx = 5, rcv = 24, nexts=[26, 9], [rn = 5, idx = 6, rcv = 26, nexts=[9]]
+round 6: [[rn = 6, idx = 0, send = 9, nexts=[13, 15, 17, 19, 21, 23, 25], [rn = 6, idx = 1, rcv = 13, nexts=[15, 17, 19, 21, 23, 25, 10, 11, 12], [rn = 6, idx = 2, rcv = 15, nexts=[17, 19, 21, 23, 25, 10, 11, 12], [rn = 6, idx = 3, rcv = 17, nexts=[19, 21, 23, 25, 10, 11, 12], [rn = 6, idx = 4, rcv = 19, nexts=[21, 23, 25, 10, 11, 12], [rn = 6, idx = 5, rcv = 21, nexts=[23, 25, 10, 11, 12], [rn = 6, idx = 6, rcv = 23, nexts=[25, 10, 11, 12], [rn = 6, idx = 7, rcv = 25, nexts=[10, 11, 12]]
+round 7: [[rn = 7, idx = 0, rcv = 10, nexts=[11, 12, 14, 16, 18, 20, 22, 24, 26], [rn = 7, idx = 1, rcv = 11, nexts=[12, 14, 16, 18, 20, 22, 24, 26], [rn = 7, idx = 2, rcv = 12, nexts=[14, 16, 18, 20, 22, 24, 26]]
+round 8: [[rn = 8, idx = 0, rcv = 14, nexts=[16, 18, 20, 22, 24, 26], [rn = 8, idx = 1, rcv = 16, nexts=[18, 20, 22, 24, 26], [rn = 8, idx = 2, rcv = 18, nexts=[20, 22, 24, 26], [rn = 8, idx = 3, rcv = 20, nexts=[22, 24, 26], [rn = 8, idx = 4, rcv = 22, nexts=[24, 26], [rn = 8, idx = 5, rcv = 24, nexts=[26], [rn = 8, idx = 6, rcv = 26, nexts=[]]
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2024-03-21 23:07:39.
+Progress(7) at 2024-03-21 23:07:42: 1,374 states generated (1,374 s/min), 1,374 distinct states found (1,374 ds/min), 1,058 states left on queue.
+Progress(9) at 2024-03-21 23:08:43: 25,882 states generated (24,508 s/min), 25,126 distinct states found (23,752 ds/min), 18,400 states left on queue.
+Progress(10) at 2024-03-21 23:09:43: 45,723 states generated (19,841 s/min), 44,463 distinct states found (19,337 ds/min), 31,535 states left on queue.
+Progress(10) at 2024-03-21 23:10:43: 90,921 states generated (45,198 s/min), 89,045 distinct states found (44,582 ds/min), 62,619 states left on queue.
+Progress(10) at 2024-03-21 23:11:43: 134,898 states generated (43,977 s/min), 130,992 distinct states found (41,947 ds/min), 89,620 states left on queue.
+Progress(11) at 2024-03-21 23:12:43: 184,282 states generated (49,384 s/min), 179,746 distinct states found (48,754 ds/min), 125,000 states left on queue.
+Progress(11) at 2024-03-21 23:13:43: 231,920 states generated (47,638 s/min), 225,368 distinct states found (45,622 ds/min), 155,957 states left on queue.
+Progress(11) at 2024-03-21 23:14:43: 279,490 states generated (47,570 s/min), 271,813 distinct states found (46,445 ds/min), 188,333 states left on queue.
+Progress(11) at 2024-03-21 23:15:43: 327,276 states generated (47,786 s/min), 316,863 distinct states found (45,050 ds/min), 218,131 states left on queue.
+Progress(11) at 2024-03-21 23:16:43: 374,753 states generated (47,477 s/min), 360,830 distinct states found (43,967 ds/min), 246,665 states left on queue.
+Progress(11) at 2024-03-21 23:17:43: 419,904 states generated (45,151 s/min), 403,272 distinct states found (42,442 ds/min), 274,704 states left on queue.
+Progress(12) at 2024-03-21 23:18:43: 468,478 states generated (48,574 s/min), 449,515 distinct states found (46,243 ds/min), 308,627 states left on queue.
+Progress(12) at 2024-03-21 23:19:43: 517,815 states generated (49,337 s/min), 498,536 distinct states found (49,021 ds/min), 344,214 states left on queue.
+Progress(12) at 2024-03-21 23:20:43: 566,399 states generated (48,584 s/min), 545,420 distinct states found (46,884 ds/min), 376,577 states left on queue.
+Progress(12) at 2024-03-21 23:21:43: 615,565 states generated (49,166 s/min), 593,955 distinct states found (48,535 ds/min), 411,646 states left on queue.
+Progress(12) at 2024-03-21 23:22:43: 664,331 states generated (48,766 s/min), 641,021 distinct states found (47,066 ds/min), 444,417 states left on queue.
+Progress(12) at 2024-03-21 23:23:43: 714,642 states generated (50,311 s/min), 688,613 distinct states found (47,592 ds/min), 476,792 states left on queue.
+Progress(12) at 2024-03-21 23:24:43: 765,153 states generated (50,511 s/min), 736,110 distinct states found (47,497 ds/min), 508,188 states left on queue.
+Progress(12) at 2024-03-21 23:25:43: 819,902 states generated (54,749 s/min), 788,528 distinct states found (52,418 ds/min), 546,571 states left on queue.
+Progress(12) at 2024-03-21 23:26:43: 879,126 states generated (59,224 s/min), 845,736 distinct states found (57,208 ds/min), 586,304 states left on queue.
+Progress(12) at 2024-03-21 23:27:43: 946,419 states generated (67,293 s/min), 908,745 distinct states found (63,009 ds/min), 628,345 states left on queue.
+Progress(12) at 2024-03-21 23:28:43: 1,014,625 states generated (68,206 s/min), 973,171 distinct states found (64,426 ds/min), 673,911 states left on queue.
+Progress(12) at 2024-03-21 23:29:43: 1,082,472 states generated (67,847 s/min), 1,036,545 distinct states found (63,374 ds/min), 715,802 states left on queue.
+Progress(12) at 2024-03-21 23:30:43: 1,150,321 states generated (67,849 s/min), 1,098,849 distinct states found (62,304 ds/min), 758,221 states left on queue.
+Progress(12) at 2024-03-21 23:31:43: 1,216,414 states generated (66,093 s/min), 1,159,777 distinct states found (60,928 ds/min), 799,624 states left on queue.
+Progress(12) at 2024-03-21 23:32:43: 1,282,847 states generated (66,433 s/min), 1,219,847 distinct states found (60,070 ds/min), 841,545 states left on queue.
+Progress(12) at 2024-03-21 23:33:43: 1,346,393 states generated (63,546 s/min), 1,280,054 distinct states found (60,207 ds/min), 883,335 states left on queue.
+Progress(12) at 2024-03-21 23:34:43: 1,412,777 states generated (66,384 s/min), 1,337,870 distinct states found (57,816 ds/min), 925,282 states left on queue.
+Progress(13) at 2024-03-21 23:35:43: 1,480,480 states generated (67,703 s/min), 1,404,610 distinct states found (66,740 ds/min), 972,124 states left on queue.
+Progress(13) at 2024-03-21 23:36:43: 1,549,443 states generated (68,963 s/min), 1,473,213 distinct states found (68,603 ds/min), 1,020,922 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-21-23-07-39.007
+Checkpointing completed at (2024-03-21 23:37:43)
+Progress(13) at 2024-03-21 23:37:43: 1,617,612 states generated (68,169 s/min), 1,539,996 distinct states found (66,783 ds/min), 1,067,666 states left on queue.
+Progress(13) at 2024-03-21 23:38:43: 1,686,277 states generated (68,665 s/min), 1,608,031 distinct states found (68,035 ds/min), 1,115,622 states left on queue.
+Progress(13) at 2024-03-21 23:39:43: 1,755,317 states generated (69,040 s/min), 1,675,685 distinct states found (67,654 ds/min), 1,162,924 states left on queue.
+Progress(13) at 2024-03-21 23:40:43: 1,823,374 states generated (68,057 s/min), 1,741,978 distinct states found (66,293 ds/min), 1,208,811 states left on queue.
+Progress(13) at 2024-03-21 23:41:43: 1,889,959 states generated (66,585 s/min), 1,804,594 distinct states found (62,616 ds/min), 1,252,533 states left on queue.
+Progress(13) at 2024-03-21 23:42:43: 1,958,134 states generated (68,175 s/min), 1,872,139 distinct states found (67,545 ds/min), 1,300,125 states left on queue.
+Progress(13) at 2024-03-21 23:43:43: 2,026,117 states generated (67,983 s/min), 1,938,751 distinct states found (66,612 ds/min), 1,346,738 states left on queue.
+Progress(13) at 2024-03-21 23:44:43: 2,094,315 states generated (68,198 s/min), 2,005,170 distinct states found (66,419 ds/min), 1,392,645 states left on queue.
+Progress(13) at 2024-03-21 23:45:43: 2,160,391 states generated (66,076 s/min), 2,067,277 distinct states found (62,107 ds/min), 1,435,740 states left on queue.
+Progress(13) at 2024-03-21 23:46:43: 2,228,360 states generated (67,969 s/min), 2,133,859 distinct states found (66,582 ds/min), 1,482,070 states left on queue.
+Progress(13) at 2024-03-21 23:47:43: 2,295,638 states generated (67,278 s/min), 2,196,476 distinct states found (62,617 ds/min), 1,525,040 states left on queue.
+Progress(13) at 2024-03-21 23:48:43: 2,361,524 states generated (65,886 s/min), 2,259,746 distinct states found (63,270 ds/min), 1,568,256 states left on queue.
+Progress(13) at 2024-03-21 23:49:43: 2,427,645 states generated (66,121 s/min), 2,320,040 distinct states found (60,294 ds/min), 1,610,296 states left on queue.
+Progress(13) at 2024-03-21 23:50:43: 2,492,880 states generated (65,235 s/min), 2,380,299 distinct states found (60,259 ds/min), 1,652,736 states left on queue.
+Progress(13) at 2024-03-21 23:51:43: 2,556,596 states generated (63,716 s/min), 2,436,455 distinct states found (56,156 ds/min), 1,692,049 states left on queue.
+Progress(13) at 2024-03-21 23:52:43: 2,625,509 states generated (68,913 s/min), 2,505,053 distinct states found (68,598 ds/min), 1,741,062 states left on queue.
+Progress(13) at 2024-03-21 23:53:43: 2,693,779 states generated (68,270 s/min), 2,571,937 distinct states found (66,884 ds/min), 1,787,675 states left on queue.
+Progress(13) at 2024-03-21 23:54:43: 2,761,119 states generated (67,340 s/min), 2,637,891 distinct states found (65,954 ds/min), 1,833,532 states left on queue.
+Progress(13) at 2024-03-21 23:55:43: 2,827,857 states generated (66,738 s/min), 2,699,967 distinct states found (62,076 ds/min), 1,876,133 states left on queue.
+Progress(13) at 2024-03-21 23:56:43: 2,896,043 states generated (68,186 s/min), 2,767,082 distinct states found (67,115 ds/min), 1,923,239 states left on queue.
+Progress(13) at 2024-03-21 23:57:43: 2,962,591 states generated (66,548 s/min), 2,830,983 distinct states found (63,901 ds/min), 1,966,712 states left on queue.
+Progress(13) at 2024-03-21 23:58:43: 3,029,564 states generated (66,973 s/min), 2,893,610 distinct states found (62,627 ds/min), 2,010,106 states left on queue.
+Progress(13) at 2024-03-21 23:59:43: 3,096,040 states generated (66,476 s/min), 2,954,425 distinct states found (60,815 ds/min), 2,052,366 states left on queue.
+Progress(13) at 2024-03-22 00:00:43: 3,159,285 states generated (63,245 s/min), 3,013,944 distinct states found (59,519 ds/min), 2,093,720 states left on queue.
+Progress(13) at 2024-03-22 00:01:43: 3,225,120 states generated (65,835 s/min), 3,071,715 distinct states found (57,771 ds/min), 2,135,557 states left on queue.
+Progress(13) at 2024-03-22 00:02:43: 3,289,603 states generated (64,483 s/min), 3,134,371 distinct states found (62,656 ds/min), 2,178,849 states left on queue.
+Progress(13) at 2024-03-22 00:03:43: 3,356,894 states generated (67,291 s/min), 3,199,079 distinct states found (64,708 ds/min), 2,222,897 states left on queue.
+Progress(13) at 2024-03-22 00:04:43: 3,423,214 states generated (66,320 s/min), 3,261,556 distinct states found (62,477 ds/min), 2,266,615 states left on queue.
+Progress(13) at 2024-03-22 00:05:43: 3,489,328 states generated (66,114 s/min), 3,322,756 distinct states found (61,200 ds/min), 2,308,300 states left on queue.
+Progress(13) at 2024-03-22 00:06:43: 3,555,459 states generated (66,131 s/min), 3,383,406 distinct states found (60,650 ds/min), 2,350,860 states left on queue.
+Checkpointing of run /Users/admin/tmp/tla/tlacc/Paxos/cases/error-1/states/24-03-21-23-07-39.007
+Checkpointing completed at (2024-03-22 00:07:44)
+Progress(13) at 2024-03-22 00:07:44: 3,627,385 states generated (71,926 s/min), 3,449,284 distinct states found (65,878 ds/min), 2,397,488 states left on queue.
+Progress(13) at 2024-03-22 00:08:44: 3,704,431 states generated (77,046 s/min), 3,520,471 distinct states found (71,187 ds/min), 2,446,101 states left on queue.
+Progress(13) at 2024-03-22 00:09:44: 3,781,360 states generated (76,929 s/min), 3,590,974 distinct states found (70,503 ds/min), 2,495,209 states left on queue.
+Progress(13) at 2024-03-22 00:10:44: 3,855,890 states generated (74,530 s/min), 3,660,527 distinct states found (69,553 ds/min), 2,543,760 states left on queue.
+Progress(13) at 2024-03-22 00:11:44: 3,931,144 states generated (75,254 s/min), 3,727,276 distinct states found (66,749 ds/min), 2,590,196 states left on queue.
+Progress(13) at 2024-03-22 00:12:44: 4,006,900 states generated (75,756 s/min), 3,797,233 distinct states found (69,957 ds/min), 2,639,156 states left on queue.
+Progress(13) at 2024-03-22 00:13:44: 4,083,023 states generated (76,123 s/min), 3,865,019 distinct states found (67,786 ds/min), 2,687,778 states left on queue.
+Progress(13) at 2024-03-22 00:14:44: 4,156,447 states generated (73,424 s/min), 3,933,937 distinct states found (68,918 ds/min), 2,734,564 states left on queue.
+Progress(13) at 2024-03-22 00:15:44: 4,231,994 states generated (75,547 s/min), 4,000,028 distinct states found (66,091 ds/min), 2,782,034 states left on queue.
+Progress(13) at 2024-03-22 00:16:44: 4,304,541 states generated (72,547 s/min), 4,068,228 distinct states found (68,200 ds/min), 2,828,978 states left on queue.
+Progress(13) at 2024-03-22 00:17:44: 4,375,679 states generated (71,138 s/min), 4,133,506 distinct states found (65,278 ds/min), 2,872,669 states left on queue.
+Progress(13) at 2024-03-22 00:18:44: 4,444,342 states generated (68,663 s/min), 4,197,838 distinct states found (64,332 ds/min), 2,915,011 states left on queue.
+Progress(13) at 2024-03-22 00:19:44: 4,512,603 states generated (68,261 s/min), 4,261,170 distinct states found (63,332 ds/min), 2,956,241 states left on queue.
+Progress(13) at 2024-03-22 00:20:44: 4,583,823 states generated (71,220 s/min), 4,324,137 distinct states found (62,967 ds/min), 2,997,805 states left on queue.
+Progress(14) at 2024-03-22 00:21:44: 4,652,571 states generated (68,748 s/min), 4,389,105 distinct states found (64,968 ds/min), 3,036,373 states left on queue.
+Progress(14) at 2024-03-22 00:22:44: 4,731,680 states generated (79,109 s/min), 4,467,584 distinct states found (78,479 ds/min), 3,091,707 states left on queue.
+Error: Invariant Inv is violated.
+Error: The behavior up to this point is:
+State 1: <Init line 75, col 9 to line 79, col 23 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {}
+/\ msgsBak = {}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ CCIterator: Initial Action, msgs1 = null, msgs2 = null
+State 2: <Phase1a[b->0, b->0] line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {[type |-> "1a", bal |-> 0]}
+/\ msgsBak = {[type |-> "1a", bal |-> 0]}
+/\ maxBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ CCIterator: [rn = 0, idx = 0, send = 1], msgs1 = null, msgs2 = null
+State 3: <Phase1b[a->a1, a->a1] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None] }
+/\ maxBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ CCIterator: [rn = 0, idx = 1, rcv = 13], msgs1 = null, msgs2 = 1
+State 4: <Phase1b[a->a2, a->a2] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 0, idx = 2, rcv = 15], msgs1 = null, msgs2 = 1
+State 5: <Phase1b[a->a3, a->a3] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 0, idx = 3, rcv = 17], msgs1 = null, msgs2 = 1
+State 6: <Phase1b[a->a4, a->a4] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 0, idx = 4, rcv = 19], msgs1 = null, msgs2 = 1
+State 7: <Phase2a[v->v1, b->0, v->v1, b->0] line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = ( a1 :> None @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> -1 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 1, idx = 0, rcv = 2], msgs1 = null, msgs2 = 4
+State 8: <Phase2b[a->a1, a->a1] line 156, col 15 to line 162, col 69 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 2, idx = 0, rcv = 14], msgs1 = null, msgs2 = 1
+State 9: <Phase1a[b->1, b->1] line 95, col 15 to line 96, col 54 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = {[type |-> "1a", bal |-> 1], [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1]}
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 0 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 3, idx = 0, send = 5], msgs1 = null, msgs2 = 1
+State 10: <Phase1b[a->a1, a->a1] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 0 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 3, idx = 1, rcv = 13], msgs1 = null, msgs2 = 2
+State 11: <Phase1b[a->a2, a->a2] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 0 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 3, idx = 2, rcv = 15], msgs1 = null, msgs2 = 2
+State 12: <Phase1b[a->a3, a->a3] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 0 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 3, idx = 3, rcv = 17], msgs1 = null, msgs2 = 2
+State 13: <Phase1b[a->a4, a->a4] line 104, col 15 to line 110, col 46 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "1a", bal |-> 1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 3, idx = 4, rcv = 19], msgs1 = null, msgs2 = 2
+State 14: <Phase2a[v->v2, b->1, v->v2, b->1] line 133, col 3 to line 145, col 42 of module Paxos>
+/\ maxVal = ( a1 :> v1 @@
+  a2 :> None @@
+  a3 :> None @@
+  a4 :> None @@
+  a5 :> None @@
+  a6 :> None @@
+  a7 :> None )
+/\ maxVBal = ( a1 :> 0 @@
+  a2 :> -1 @@
+  a3 :> -1 @@
+  a4 :> -1 @@
+  a5 :> -1 @@
+  a6 :> -1 @@
+  a7 :> -1 )
+/\ msgs = { [type |-> "2a", bal |-> 1, val |-> v2],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ msgsBak = { [type |-> "1a", bal |-> 0],
+  [type |-> "1a", bal |-> 1],
+  [type |-> "2a", bal |-> 0, val |-> v1],
+  [type |-> "2a", bal |-> 1, val |-> v2],
+  [type |-> "2b", bal |-> 0, acc |-> a1, val |-> v1],
+  [type |-> "1b", bal |-> 0, acc |-> a1, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 0, acc |-> a4, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a1, mbal |-> 0, mval |-> v1],
+  [type |-> "1b", bal |-> 1, acc |-> a2, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a3, mbal |-> -1, mval |-> None],
+  [type |-> "1b", bal |-> 1, acc |-> a4, mbal |-> -1, mval |-> None] }
+/\ maxBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 1 @@ a4 :> 1 @@ a5 :> -1 @@ a6 :> -1 @@ a7 :> -1)
+/\ CCIterator: [rn = 4, idx = 1, rcv = 7], msgs1 = null, msgs2 = 4
+4746727 states generated, 4482316 distinct states found, 3101873 states left on queue.
+The depth of the complete state graph search is 14.
+Finished in 01h 15min at (2024-03-22 00:22:55)
